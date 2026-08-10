@@ -1,0 +1,82 @@
+COSMIC RECURRENCE FRAMEWORK
+Validation date: 2026-08-09
+
+Overall status: PASS
+
+Automated verification
+----------------------
+Umbrella integration tests:                  5 passed
+Recurrence Dynamics tests:                  34 passed
+Cosmological Recurrence Study tests:        38 passed
+Observer Indistinguishability tests:         5 passed
+Total automated tests:                      82 passed
+Cross-study consistency:                    PASS
+
+Reproduction checks executed for this master snapshot
+-----------------------------------------------------
+Observer output regeneration:               PASS
+Cosmology output/figure regeneration:       PASS
+Cosmic-coordinate evaluation:               PASS
+HPP sensor-observability regeneration:      PASS
+HPP observability regression tests:         4 passed (included in 34 dynamics tests)
+Exact committed-data validation:            PASS
+Dynamics repository validation:             PASS
+Dynamics integrity manifest validation:     PASS
+
+Independent deterministic certificates
+--------------------------------------
+HPP ambiguity certificate:                  PASS
+- sector states: 9,153
+- predictive singletons: 9,099
+- predictive doubletons: 27
+- ambiguous microscopic states: 54
+- period-three microscopic cycles: 18
+- time-reversal pairs: 9
+
+Exact HPP observability extension:           PASS
+- minimum exact-mask sensors: 3 fixed sites
+- successful minimum mask layouts: 6
+- minimum mask word length: 4 snapshots
+- minimum local-momentum sensors: 5 fixed sites
+- successful minimum momentum layouts: 36
+- minimum momentum word length: 7 snapshots
+- all-site momentum reconstruction: 2 snapshots
+- all-site axis-count reconstruction: 2 snapshots
+- microscopic cycles: 2,061
+- density-predictive cycles: 2,052
+- merged period-three orbit pairs: 9
+- density quotient period compression: none in certified sector
+
+Period-navigation exact verifier:            PASS
+- 3x3 states/cycles: 9,153 / 2,061
+- 4x4 states/cycles: 94,336 / 19,448
+- 5x5 reference interaction fiber: 2,209 states
+- 5x5 reference interaction macroperiod: 1,941
+
+Key cross-study invariants
+--------------------------
+- Cosmic Coordinate specification equals the frozen cosmology snapshot.
+- Cosmic Coordinate timeline equals the frozen cosmology snapshot.
+- H0/Omega_m/Omega_Lambda reference values agree across modules.
+- z=0 evaluates to M3 / Phi_C=0.7376145673.
+- Reference age evaluates to 13.786919 Gyr.
+- Model-agnostic recurrence probability remains non-identified: partial-identification bound [0,1] (not a probability estimate).
+- Exact HPP observer ambiguity contains 27 predictive doubletons / 54 microscopic states.
+- The certified HPP ambiguity has observer density distance 0 despite microscopic inequality.
+- The irrational torus example has no exact positive recurrence but crosses every bundled finite tolerance.
+- No numerical human-observer recurrence threshold is claimed without a physical observer model.
+
+Scientific boundaries
+---------------------
+- Finite HPP dynamics are not presented as a model of the physical universe.
+- Predictive equivalence is not automatically ontological identity.
+- The cosmic coordinate is not a recurrence phase.
+- No empirically established cosmic recurrence period or cycle count is claimed.
+- Conditional de Sitter thermodynamic recurrence remains distinct from quantum epsilon recurrence.
+- Fate splits remain theory-sensitivity assumptions rather than measured ultimate-fate probabilities.
+
+The repository exposes the deeper deterministic regeneration path through:
+
+    python run.py --full
+
+The validation statements above distinguish the checks actually executed for this master snapshot from optional deeper regeneration paths.

@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Please cite this master repository and, when materially used, the relevant component study."
+title: "Cosmic Recurrence Framework: Dynamics, Predictive Equivalence, Observer Indistinguishability, Cosmic Coordinates, and Fate-Conditioned Cosmology"
+type: software
+authors:
+  - family-names: Sundy
+    given-names: Scott A.
+date-released: 2026-08-09
+abstract: >-
+  A reproducible master framework integrating exact and near recurrence diagnostics,
+  protocol-family predictive quotients, exact finite observability certificates,
+  hidden-state ambiguity, period and phase navigation, observer-indistinguishability,
+  a model-conditional cosmic coordinate, and fate-conditioned partial identification
+  of cosmological recurrence. Finite benchmark recurrence is not used as cosmological
+  evidence, and current inputs do not identify a physical cosmic recurrence phase or
+  a unique model-independent recurrence probability.
+keywords:
+  - recurrence dynamics
+  - predictive equivalence
+  - predictive quotient
+  - observer indistinguishability
+  - hidden-state ambiguity
+  - phase navigation
+  - cosmic coordinate
+  - cosmological recurrence
+  - de Sitter
+  - partial identification
+  - computational physics
