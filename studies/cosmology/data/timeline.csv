@@ -1,0 +1,9 @@
+event,criterion,scale_factor_a,redshift_z,cosmic_age_Gyr,Phi_C,note
+M0→M1,matter-radiation equality,0.00029515938606847696,3387.0,5.15e-05,3.7443387522508027e-11,Early boundary anchored to Planck equality redshift
+M1→M2,reference acceleration-onset boundary,0.6023953302206826,0.6600394289803977,7.555167926889121,0.29516723530086664,Flat matter+Lambda reference
+M2→M3,dark energy = matter,0.7589705569034112,0.31757416793608617,10.112586699705888,0.5000000000000001,Flat matter+Lambda reference
+NOW,current coordinate,1.0,0.0,13.786919294442058,0.7376145673053741,DESI Results IV flat-LambdaCDM reference
+Phi=0.75,phase milestone,1.018161857811751,-0.017837888615062414,14.046363552248483,0.75,Reference-clock milestone
+Phi=0.90,phase milestone,1.40277308237646,-0.2871263267285652,18.95385640144147,0.9,Reference-clock milestone
+M3→M4,dark-energy fraction reaches 0.90,1.5787223775874801,-0.3665764074820128,20.86424842834519,0.9295534250454455,Project-defined deep-dark-energy threshold
+Phi=0.99,phase milestone,3.030444925344586,-0.6700154516464965,31.82570433520269,0.99,Reference-clock milestone

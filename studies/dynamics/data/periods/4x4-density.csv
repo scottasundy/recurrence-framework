@@ -1,0 +1,5 @@
+horizon,observation_classes,ambiguous_period_classes,ambiguous_states,period_determined_for_all_states
+1,3876,2988,69584,False
+2,80296,3088,6704,False
+3,94168,64,128,False
+4,94232,0,0,True

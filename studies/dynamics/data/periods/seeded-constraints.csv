@@ -1,0 +1,16 @@
+size,seed_label,rng_seed,period,analytic_period_divisor,period_divisible_by_analytic_divisor
+3,A,73101,42,3,True
+3,B,73202,357,3,True
+3,C,73303,999,3,True
+4,A,74101,308,4,True
+4,B,74202,56,4,True
+4,C,74303,204,4,True
+5,A,75101,675,5,True
+5,B,75202,9705,5,True
+5,C,75303,30,5,True
+6,A,76101,180,6,True
+6,B,76202,90,6,True
+6,C,76303,324,6,True
+7,A,77101,56,7,True
+7,B,77202,70,7,True
+7,C,77303,539,7,True

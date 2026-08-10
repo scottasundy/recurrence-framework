@@ -1,0 +1,83 @@
+{
+  "axis_counts_all_sites": {
+    "class_counts": [
+      2853,
+      9153,
+      9153
+    ],
+    "minimum_reconstructing_word_length": 2
+  },
+  "cycles": {
+    "density_predictive_cycle_count": 2052,
+    "density_predictive_period_counts": {
+      "3": 1332,
+      "6": 459,
+      "9": 252,
+      "12": 9
+    },
+    "merged_cycle_count": 9,
+    "microscopic_cycle_count": 2061,
+    "microscopic_period_counts": {
+      "3": 1341,
+      "6": 459,
+      "9": 252,
+      "12": 9
+    },
+    "period_compression_observed": false
+  },
+  "density": {
+    "class_counts": [
+      495,
+      6948,
+      9090,
+      9126,
+      9126
+    ],
+    "predictive_classes": 9126,
+    "reconstructs_all_states": false
+  },
+  "momentum_sensors": {
+    "all_9_site_class_counts": [
+      6841,
+      9153,
+      9153
+    ],
+    "class_counts_at_minimum": [
+      1181,
+      8391,
+      8766,
+      9021,
+      9143,
+      9149,
+      9153,
+      9153
+    ],
+    "max_predictive_classes_4_sites": 9081,
+    "minimum_reconstructing_sensor_count": 5,
+    "minimum_reconstructing_word_length": 7,
+    "successful_5_site_layout_count": 36
+  },
+  "sector_states": 9153,
+  "velocity_mask_sensors": {
+    "class_counts_at_minimum": [
+      322,
+      3271,
+      9123,
+      9153,
+      9153
+    ],
+    "max_predictive_classes_1_site": 1156,
+    "max_predictive_classes_2_sites": 4945,
+    "minimum_reconstructing_sensor_count": 3,
+    "minimum_reconstructing_word_length": 4,
+    "successful_3_site_layout_count": 6,
+    "successful_3_site_layouts": [
+      "0;4;8",
+      "0;5;7",
+      "1;3;8",
+      "1;5;6",
+      "2;3;7",
+      "2;4;6"
+    ]
+  }
+}

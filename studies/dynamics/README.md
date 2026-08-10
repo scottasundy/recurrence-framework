@@ -36,9 +36,9 @@ Ambiguous microscopic states:   54
 
 The exceptional set has the exact structure
 
-\[
+$$
 54=18\times3=9\times2\times3.
-\]
+$$
 
 - 18 distinct microscopic cycles have least period 3.
 - The cycles form 9 time-reversal pairs.

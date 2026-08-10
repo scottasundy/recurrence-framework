@@ -1,0 +1,10 @@
+horizon,observation_classes,ambiguous_period_states,period_determined_for_all_states,all_states_uniquely_identified,target_candidate_states,target_candidate_macroperiods,target_same_macrocycle_only
+1,165,1876,False,False,551,3;4;5;7;8;9;10;18;28;44;45;46;1941,False
+2,1179,727,False,False,2,1941,True
+3,1699,242,False,False,1,1941,True
+4,1955,90,False,False,1,1941,True
+5,2199,2,False,False,1,1941,True
+6,2203,0,True,False,1,1941,True
+7,2204,0,True,False,1,1941,True
+8,2205,0,True,False,1,1941,True
+9,2209,0,True,True,1,1941,True

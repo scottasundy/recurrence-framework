@@ -1,0 +1,4 @@
+dataset,lnB_dynamic_vs_lcdm,lnB_sigma,prior_odds_dynamic_to_lcdm,p_LambdaCDM,p_dynamic_DE,p_dynamic_minus_sigma_lnB,p_dynamic_plus_sigma_lnB,status,interpretation
+DESI DR2 + CMB,-0.57,0.26,1.0,0.638763175148842,0.36123682485115804,0.30364507017616593,0.4231147388679537,baseline,posterior model weight within a two-model comparison; not an ultimate-fate probability
+DESI DR2 + CMB + corrected DES-Dovekie SN,-0.01,0.27,1.0,0.5024999791668749,0.497500020833125,0.430453776060771,0.5646362918030292,current calibration-corrected Bayesian comparison; not adopted as the recurrence baseline,posterior model weight within a two-model comparison; not an ultimate-fate probability
+DESI DR2 + CMB + original DES-SN5YR,3.32,0.27,1.0,0.03489140853173689,0.9651085914682631,0.9547825265167125,0.9731428812151904,calibration-sensitive historical comparison; not adopted as baseline,posterior model weight within a two-model comparison; not an ultimate-fate probability

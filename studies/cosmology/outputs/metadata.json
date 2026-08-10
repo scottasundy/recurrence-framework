@@ -1,0 +1,10 @@
+{
+  "study_version": "master",
+  "config": "config.json",
+  "posterior": "data/desi-projection.csv.gz",
+  "posterior_rows": 59891,
+  "posterior_weight": 169444.0,
+  "primary_observational_input": "official DESI DR2 Results II Cobaya chains",
+  "fate_probability_layer": "Model-dependent inference layer. These weights are normalized posterior model weights only within the declared LambdaCDM-versus-w0waCDM comparison and are not objective probabilities of the universe's ultimate fate.",
+  "probability_boundary": "Current observations do not identify the far-future model probabilities, vacuum lifetime, finite de Sitter Hilbert-space interpretation, or recurrent properties of a future bounce. Without theoretical priors the marginalized recurrence probability is non-identified beyond the full logical bound [0,1]; this is a partial-identification result, not an estimated probability distribution."
+}

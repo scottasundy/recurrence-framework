@@ -1,0 +1,19 @@
+scenario,fate,probability,percent,status
+recurrence_conservative,stable_eternal_ds,0.1596907937872105,15.969079378721048,data-informed top-level model weight + explicit theory split; not a measured fate probability
+recurrence_conservative,metastable_ds,0.47907238136163144,47.907238136163144,data-informed top-level model weight + explicit theory split; not a measured fate probability
+recurrence_conservative,fading_dark_energy,0.14449472994046322,14.449472994046323,data-informed top-level model weight + explicit theory split; not a measured fate probability
+recurrence_conservative,phantom_finite_end,0.10837104745534741,10.837104745534742,data-informed top-level model weight + explicit theory split; not a measured fate probability
+recurrence_conservative,recollapse,0.054185523727673705,5.418552372767371,data-informed top-level model weight + explicit theory split; not a measured fate probability
+recurrence_conservative,cyclic_or_bounce,0.054185523727673705,5.418552372767371,data-informed top-level model weight + explicit theory split; not a measured fate probability
+maximum_entropy_split,stable_eternal_ds,0.319381587574421,31.938158757442096,data-informed top-level model weight + explicit theory split; not a measured fate probability
+maximum_entropy_split,metastable_ds,0.319381587574421,31.938158757442096,data-informed top-level model weight + explicit theory split; not a measured fate probability
+maximum_entropy_split,fading_dark_energy,0.09030920621278951,9.030920621278952,data-informed top-level model weight + explicit theory split; not a measured fate probability
+maximum_entropy_split,phantom_finite_end,0.09030920621278951,9.030920621278952,data-informed top-level model weight + explicit theory split; not a measured fate probability
+maximum_entropy_split,recollapse,0.09030920621278951,9.030920621278952,data-informed top-level model weight + explicit theory split; not a measured fate probability
+maximum_entropy_split,cyclic_or_bounce,0.09030920621278951,9.030920621278952,data-informed top-level model weight + explicit theory split; not a measured fate probability
+recurrence_favoring,stable_eternal_ds,0.47907238136163144,47.907238136163144,data-informed top-level model weight + explicit theory split; not a measured fate probability
+recurrence_favoring,metastable_ds,0.1596907937872105,15.969079378721048,data-informed top-level model weight + explicit theory split; not a measured fate probability
+recurrence_favoring,fading_dark_energy,0.07224736497023161,7.224736497023161,data-informed top-level model weight + explicit theory split; not a measured fate probability
+recurrence_favoring,phantom_finite_end,0.036123682485115806,3.6123682485115807,data-informed top-level model weight + explicit theory split; not a measured fate probability
+recurrence_favoring,recollapse,0.07224736497023161,7.224736497023161,data-informed top-level model weight + explicit theory split; not a measured fate probability
+recurrence_favoring,cyclic_or_bounce,0.18061841242557902,18.061841242557904,data-informed top-level model weight + explicit theory split; not a measured fate probability

@@ -1,0 +1,4 @@
+lattice_size,trials,all_initial_density_observations_equal,initial_velocity_bit_hamming_values,min_first_density_difference_step,max_first_density_difference_step,all_became_density_distinguishable_at_step_1
+5,50,True,4,1,1,True
+6,50,True,4,1,1,True
+7,50,True,4,1,1,True

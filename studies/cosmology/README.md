@@ -8,19 +8,19 @@ This study asks:
 
 Current cosmological observations do **not** identify a unique unconditional probability that our universe will recur. If far-future model probabilities and microscopic recurrence assumptions are left unrestricted, the data-only marginalized probability is only partially identified:
 
-\[
+$$
 P(\mathrm{recurrence}\mid D,\mathrm{unrestricted\ future\ theory})\in[0,1].
-\]
+$$
 
 Because this interval is the full logical probability range, it should be read as a **non-identifiability result**, not as an informative probability estimate, a uniform distribution, or a 50/50 statement. The substantive result is the explicit decomposition of the observational and theoretical assumptions that would have to be supplied to narrow it.
 
-Inside an assumed eternal, stable, positive-\(\Lambda\) future, the conventional finite-patch thermodynamic estimate is calculable. At the declared Cosmic Coordinate reference point, the study obtains approximately:
+Inside an assumed eternal, stable, positive-$\Lambda$ future, the conventional finite-patch thermodynamic estimate is calculable. At the declared Cosmic Coordinate reference point, the study obtains approximately:
 
 - asymptotic de Sitter horizon time: **17.2105 Gyr**;
-- de Sitter entropy: **\(3.18835\times10^{122}\,k_B\)**;
-- thermodynamic recurrence scale: **\(\log_{10}(t_{\rm thermo}/{\rm yr})=1.38468\times10^{122}\)**.
+- de Sitter entropy: **$3.18835\times10^{122}\,k_B$**;
+- thermodynamic recurrence scale: **$\log_{10}(t_{\rm thermo}/{\rm yr})=1.38468\times10^{122}$**.
 
-This is a conditional thermodynamic scale, **not** a computed quantum \(\varepsilon\)-recurrence time for the observed universe.
+This is a conditional thermodynamic scale, **not** a computed quantum $\varepsilon$-recurrence time for the observed universe.
 
 ## Reproduce
 

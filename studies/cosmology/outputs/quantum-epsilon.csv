@@ -1,0 +1,4 @@
+target,metric,epsilon,required_spectrum,required_inputs,cosmological_value,status
+finite-system uniform quantum near recurrence,trace distance,0.1,finite discrete spectrum,distinct energy count d; energy span E_max-E_min,not identified,theorem available; cosmological inputs unavailable
+finite-system uniform quantum near recurrence,trace distance,0.01,finite discrete spectrum,distinct energy count d; energy span E_max-E_min,not identified,theorem available; cosmological inputs unavailable
+finite-system uniform quantum near recurrence,trace distance,0.001,finite discrete spectrum,distinct energy count d; energy span E_max-E_min,not identified,theorem available; cosmological inputs unavailable

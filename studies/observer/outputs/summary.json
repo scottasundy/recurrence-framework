@@ -1,0 +1,32 @@
+{
+  "hpp": {
+    "microscopic_states_in_exact_sector": 9153,
+    "present_density_classes": 495,
+    "predictive_classes": 9126,
+    "predictive_doubletons": 27,
+    "microscopic_states_in_permanent_ambiguity": 54,
+    "observer_density_distance_for_certified_pairs": 0,
+    "hidden_information_per_equal_prior_doubleton_bits": 1,
+    "meaning": "microscopically distinct states can be perfectly indistinguishable forever under the declared density observation"
+  },
+  "perturbations": {
+    "trials": 150,
+    "initial_density_equal": true,
+    "all_density_separated_after_one_update": true,
+    "meaning": "other initially hidden microscopic differences become observable almost immediately"
+  },
+  "irrational_torus": {
+    "exact_positive_recurrence": false,
+    "near_recurrence_at_every_listed_finite_tolerance": true,
+    "meaning": "a system can be operationally recurrent at finite resolution while lacking an exact recurrence clock"
+  },
+  "quantum": {
+    "metric": "trace distance",
+    "equal_prior_optimal_success_rule": "P_correct=(1+D)/2",
+    "cosmological_numeric_epsilon_recurrence_time": "not identified"
+  },
+  "human_observer_threshold": {
+    "status": "not numerically identified",
+    "reason": "requires a declared physical observer model, accessible measurements, noise, causal region, lifetime, and tolerance"
+  }
+}

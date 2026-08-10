@@ -1,0 +1,2 @@
+lower_bound,upper_bound,status,interpretation
+0.0,1.0,partial-identification / non-identifiability result,"full logical [0,1] range; not an informative probability estimate because far-future model/theory probabilities are not observationally identified"

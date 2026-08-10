@@ -1,0 +1,4 @@
+prior_set,p_recurrent_patch_given_eternal_ds,conditional_lower_bound,conditional_upper_bound,width,status
+conservative,0.25,0.025,0.775,0.75,theoretical prior sensitivity; not an observational posterior
+agnostic,0.5,0.1,0.8,0.7000000000000001,theoretical prior sensitivity; not an observational posterior
+ds_favoring,0.75,0.375,0.825,0.44999999999999996,theoretical prior sensitivity; not an observational posterior

@@ -1,0 +1,7 @@
+observer_tolerance,first_listed_integer_return_time_q,torus_return_error,exact_positive_recurrence,interpretation
+1e-01,5,0.07106781186547524,False,near return below declared finite resolution; not exact recurrence
+1e-02,70,0.005050633883346584,False,near return below declared finite resolution; not exact recurrence
+1e-03,408,0.0008665517772200889,False,near return below declared finite resolution; not exact recurrence
+1e-04,5741,6.158393867517049e-05,False,near return below declared finite resolution; not exact recurrence
+1e-05,80782,4.3766357677019815e-06,False,near return below declared finite resolution; not exact recurrence
+1e-06,470832,7.509119826032946e-07,False,near return below declared finite resolution; not exact recurrence

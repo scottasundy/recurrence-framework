@@ -93,9 +93,9 @@ For cosmology, the present universe can be assigned a model-conditional referenc
 
 The central cosmological result is therefore a **partial-identification / non-identifiability boundary**:
 
-\[
+$$
 P(\text{cosmic recurrence}\mid\text{present observations, unrestricted future theory})\in[0,1].
-\]
+$$
 
 The interval `[0,1]` is **not** presented as an informative probability estimate. It records that present data, when combined with an unrestricted far-future theory space, do not narrow the recurrence probability beyond the logical probability bounds. The substantive result is the uncertainty decomposition showing which missing theoretical inputs prevent a narrower inference.
 
@@ -143,25 +143,25 @@ The word “recurrence” should always be qualified.
 
 ## 2.1 Exact complete-state recurrence
 
-Let \(X\) be the complete state space and
+Let $X$ be the complete state space and
 
-\[
+$$
 F:X\rightarrow X
-\]
+$$
 
-a deterministic update rule. A state \(x\) has exact recurrence time \(T>0\) when
+a deterministic update rule. A state $x$ has exact recurrence time $T>0$ when
 
-\[
+$$
 F^T(x)=x.
-\]
+$$
 
 If this equality holds, determinism gives
 
-\[
+$$
 F^{t+T}(x)=F^t(x)
-\]
+$$
 
-for all later \(t\).
+for all later $t$.
 
 This is the strongest recurrence claim. The complete predictive state returns.
 
@@ -169,27 +169,27 @@ This is the strongest recurrence claim. The complete predictive state returns.
 
 Let
 
-\[
+$$
 h:X\rightarrow Y
-\]
+$$
 
 be an observation map. Observational recurrence requires only
 
-\[
+$$
 h(F^T(x))=h(x).
-\]
+$$
 
 This may represent repeated positions, density, images, measured cosmological variables, or any reduced description.
 
-It is weaker than complete-state recurrence because \(h\) can discard predictive information.
+It is weaker than complete-state recurrence because $h$ can discard predictive information.
 
 ## 2.3 Finite-horizon recurrence
 
-For a positive integer \(r\), define
+For a positive integer $r$, define
 
-\[
+$$
 D_r(x)=\left(h(x),h(Fx),\ldots,h(F^{r-1}x)\right).
-\]
+$$
 
 Two states may agree for a long finite observational history and later diverge. A finite match is therefore not proof of permanent recurrence.
 
@@ -197,27 +197,27 @@ Two states may agree for a long finite observational history and later diverge. 
 
 Two complete states are predictively equivalent under the observation map when
 
-\[
+$$
 x\sim_h x'
-\]
+$$
 
 if and only if
 
-\[
+$$
 h(F^t x)=h(F^t x')
-\]
+$$
 
-for every \(t\geq0\).
+for every $t\geq0$.
 
 These states can be microscopically different while remaining forever indistinguishable under the selected observation.
 
 ## 2.5 Near recurrence
 
-Given a metric \(d\) and tolerance \(\varepsilon>0\),
+Given a metric $d$ and tolerance $\varepsilon>0$,
 
-\[
+$$
 d(F^T x,x)<\varepsilon
-\]
+$$
 
 defines a near recurrence.
 
@@ -235,25 +235,25 @@ Near recurrence cannot be silently promoted to exact recurrence.
 
 Exact equality is stronger than an observer actually needs in order to experience two states as the same.
 
-Define an observer \(O\) by:
+Define an observer $O$ by:
 
-- an accessible measurement family \(\mathcal M_O\);
-- a causal region \(C_O\);
-- a measurement/noise model \(\eta_O\);
-- a finite observation horizon \(H_O\);
+- an accessible measurement family $\mathcal M_O$;
+- a causal region $C_O$;
+- a measurement/noise model $\eta_O$;
+- a finite observation horizon $H_O$;
 - a memory and data-processing capacity.
 
-For every measurement protocol \(\pi\) available to the observer, let
+For every measurement protocol $\pi$ available to the observer, let
 
-\[
+$$
 P_\pi(\cdot\mid x)
-\]
+$$
 
-be the probability distribution of possible records when the underlying state is \(x\).
+be the probability distribution of possible records when the underlying state is $x$.
 
 Define the observer-relative operational distance
 
-\[
+$$
 d_O(x,x')
 =
 \sup_{\pi\in\Pi_O}
@@ -262,15 +262,15 @@ d_O(x,x')
 P_\pi(\cdot\mid x),
 P_\pi(\cdot\mid x')
 \right],
-\]
+$$
 
-where \(\operatorname{TV}\) is total-variation distance and \(\Pi_O\) is the set of physically available observation protocols.
+where $\operatorname{TV}$ is total-variation distance and $\Pi_O$ is the set of physically available observation protocols.
 
-Then an **observer-indistinguishable recurrence** at tolerance \(\varepsilon_O\) occurs when
+Then an **observer-indistinguishable recurrence** at tolerance $\varepsilon_O$ occurs when
 
-\[
+$$
 d_O(F^T x,x)\leq\varepsilon_O.
-\]
+$$
 
 This definition matters because two universes could fail to match microscopically while producing essentially the same accessible experience and measurement record.
 
@@ -298,9 +298,9 @@ This hierarchy prevents “looks the same,” “cannot be told apart,” “is 
 
 ## 3.1 Finite deterministic state spaces
 
-If \(X\) contains a finite number of complete states and \(F\) is deterministic, a sufficiently long trajectory must eventually repeat a state. Once the same complete state appears twice, all later evolution from those two occurrences is identical.
+If $X$ contains a finite number of complete states and $F$ is deterministic, a sufficiently long trajectory must eventually repeat a state. Once the same complete state appears twice, all later evolution from those two occurrences is identical.
 
-If \(F\) is also bijective, there are no one-way transients into a cycle. Every state belongs to a periodic orbit.
+If $F$ is also bijective, there are no one-way transients into a cycle. Every state belongs to a periodic orbit.
 
 Finiteness is therefore a powerful sufficient condition for exact recurrence in closed deterministic reversible systems.
 
@@ -316,17 +316,17 @@ The important question is not simply “finite or infinite?” It is whether the
 
 If
 
-\[
+$$
 F^m(x)=F^n(x),
-\]
+$$
 
-then every subsequent complete state repeats with period \(n-m\).
+then every subsequent complete state repeats with period $n-m$.
 
 But if only
 
-\[
+$$
 h(F^m(x))=h(F^n(x)),
-\]
+$$
 
 the future need not repeat unless the observation contains all predictive information or is known to define a closed reduced dynamics.
 
@@ -338,7 +338,7 @@ For the universe, a repeated matter distribution, CMB pattern, galaxy arrangemen
 
 Poincaré recurrence is frequently described more strongly than the theorem warrants.
 
-Let \((X,\Sigma,\mu)\) be a finite-measure space and let \(T:X\to X\) preserve \(\mu\). For every measurable set \(A\), almost every point of \(A\) returns to \(A\) infinitely often.
+Let $(X,\Sigma,\mu)$ be a finite-measure space and let $T:X\to X$ preserve $\mu$. For every measurable set $A$, almost every point of $A$ returns to $A$ infinitely often.
 
 Important qualifications are:
 
@@ -365,9 +365,9 @@ Four labeled hard point particles moving on a unit ring with rational positions 
 
 The exact period is
 
-\[
+$$
 T=10,
-\]
+$$
 
 with 36 collision events per period.
 
@@ -377,24 +377,24 @@ This demonstrates that continuous mechanical systems can possess exact periodic 
 
 Consider
 
-\[
+$$
 q(t)=(t,\sqrt{2}\,t)\pmod 1.
-\]
+$$
 
-An exact return at \(T>0\) would require both \(T\) and \(\sqrt{2}T\) to be integers. That is impossible because \(\sqrt{2}\) is irrational.
+An exact return at $T>0$ would require both $T$ and $\sqrt{2}T$ to be integers. That is impossible because $\sqrt{2}$ is irrational.
 
 The orbit nevertheless comes arbitrarily close to its starting point through continued-fraction approximations.
 
 The computed near returns illustrate how an observer threshold changes the practical answer:
 
-| Required return error | First listed return time \(q\) | Actual error |
+| Required return error | First listed return time $q$ | Actual error |
 |---:|---:|---:|
-| \(<10^{-1}\) | 5 | \(7.11\times10^{-2}\) |
-| \(<10^{-2}\) | 70 | \(5.05\times10^{-3}\) |
-| \(<10^{-3}\) | 408 | \(8.67\times10^{-4}\) |
-| \(<10^{-4}\) | 5,741 | \(6.16\times10^{-5}\) |
-| \(<10^{-5}\) | 80,782 | \(4.38\times10^{-6}\) |
-| \(<10^{-6}\) | 470,832 | \(7.51\times10^{-7}\) |
+| $<10^{-1}$ | 5 | $7.11\times10^{-2}$ |
+| $<10^{-2}$ | 70 | $5.05\times10^{-3}$ |
+| $<10^{-3}$ | 408 | $8.67\times10^{-4}$ |
+| $<10^{-4}$ | 5,741 | $6.16\times10^{-5}$ |
+| $<10^{-5}$ | 80,782 | $4.38\times10^{-6}$ |
+| $<10^{-6}$ | 470,832 | $7.51\times10^{-7}$ |
 
 No exact recurrence occurs at any positive time, yet for any finite measurement resolution the orbit eventually returns more closely than that resolution.
 
@@ -420,23 +420,23 @@ Therefore “finite-dimensional Hilbert space” does not mean “finite number 
 
 For a time-independent Hamiltonian,
 
-\[
+$$
 |\psi(t)\rangle
 =
 \sum_n c_n e^{-iE_nt/\hbar}|E_n\rangle.
-\]
+$$
 
-Physical exact recurrence at time \(T\) requires
+Physical exact recurrence at time $T$ requires
 
-\[
+$$
 |\psi(T)\rangle=e^{i\phi}|\psi(0)\rangle.
-\]
+$$
 
 For every pair of occupied energy levels,
 
-\[
+$$
 \frac{(E_n-E_m)T}{\hbar}\in2\pi\mathbb{Z}.
-\]
+$$
 
 Exact recurrence therefore requires the relevant occupied energy gaps to be commensurate.
 
@@ -452,31 +452,31 @@ Infinite-dimensional systems need additional spectral assumptions, and a continu
 
 ## 6.4 Quantum operational distinguishability
 
-For two quantum states \(\rho\) and \(\sigma\), define the trace distance
+For two quantum states $\rho$ and $\sigma$, define the trace distance
 
-\[
+$$
 D(\rho,\sigma)
 =
 \frac{1}{2}\|\rho-\sigma\|_1.
-\]
+$$
 
 Trace distance has a direct operational meaning. With equal prior probability and the best physically allowed single measurement, the maximum probability of correctly identifying which state was supplied is
 
-\[
+$$
 P_{\rm correct}
 =
 \frac{1+D}{2}.
-\]
+$$
 
 Examples:
 
-| Trace distance \(D\) | Best one-shot identification probability |
+| Trace distance $D$ | Best one-shot identification probability |
 |---:|---:|
 | 1 | 100% |
 | 0.1 | 55% |
 | 0.01 | 50.5% |
-| \(10^{-3}\) | 50.05% |
-| \(10^{-6}\) | 50.00005% |
+| $10^{-3}$ | 50.05% |
+| $10^{-6}$ | 50.00005% |
 | 0 | 50% |
 
 Thus two quantum states can be mathematically unequal while being essentially impossible to distinguish in a single available test.
@@ -515,9 +515,9 @@ The recurrence problem is also an observability problem.
 
 Two states can satisfy
 
-\[
+$$
 h(x)=h(x')
-\]
+$$
 
 while remaining physically different.
 
@@ -525,19 +525,19 @@ The omitted variables are “hidden” only relative to the chosen observation m
 
 ## 7.2 Observational closure
 
-The observation map is one-step closed if a deterministic map \(G\) exists such that
+The observation map is one-step closed if a deterministic map $G$ exists such that
 
-\[
+$$
 h\circ F=G\circ h.
-\]
+$$
 
 Equivalently,
 
-\[
+$$
 h(x)=h(x')
 \Longrightarrow
 h(Fx)=h(Fx')
-\]
+$$
 
 for all states in the analyzed sector.
 
@@ -547,9 +547,9 @@ If closure fails, the current observation omits information needed to determine 
 
 The predictive equivalence relation defines a quotient
 
-\[
+$$
 Q_h=X/{\sim_h}.
-\]
+$$
 
 This is the coarsest deterministic state representation that preserves the complete future observation process.
 
@@ -559,33 +559,33 @@ It removes microscopic distinctions that never affect the selected observations 
 
 A single observation map is only one special case. A more general operational model is
 
-\[
+$$
 \mathcal T=(X,F,\Pi,\{P_\pi\}_{\pi\in\Pi}),
-\]
+$$
 
 where `X` is a candidate complete state-description space, `F` is the dynamics, `Pi` is a declared family of admissible physical protocols, and `P_pi(.|x)` is the distribution of records produced by protocol `pi` from state `x`.
 
 For any selected family `A subseteq Pi`, define the complete prediction map
 
-\[
+$$
 \mathcal R_A(x)=\bigl(P_\pi(\cdot\mid x)\bigr)_{\pi\in A}.
-\]
+$$
 
 Then
 
-\[
+$$
 x\sim_Ax'
 \iff
 \mathcal R_A(x)=\mathcal R_A(x').
-\]
+$$
 
 The predictive quotient is
 
-\[
+$$
 Q_A=X/{\sim_A}
 \cong
 \operatorname{Im}\mathcal R_A.
-\]
+$$
 
 This construction unifies deterministic future-observation quotients, restricted observer quotients, finite-horizon quotients, causal-region quotients, noisy classical measurements, and quantum measurement families. It is explicitly **prediction-relative**, not an assertion about ultimate ontology.
 
@@ -599,20 +599,20 @@ The statement is deliberately limited: it does **not** prove that the quotient i
 
 For probabilistic records, define
 
-\[
+$$
 \delta_A(x,x')=
 \sup_{\pi\in A}
 \operatorname{TV}
 \left[P_\pi(\cdot\mid x),P_\pi(\cdot\mid x')\right].
-\]
+$$
 
 Then
 
-\[
+$$
 \delta_A(x,x')=0
 \iff
 x\sim_Ax'.
-\]
+$$
 
 This gives a precise operational meaning to “no admitted experiment can tell these descriptions apart.” It remains distinct from a deterministic trajectory-distance metric, which answers a different approximate-recurrence question.
 
@@ -620,11 +620,11 @@ This gives a precise operational meaning to “no admitted experiment can tell t
 
 If `A subseteq B`, then
 
-\[
+$$
 \sim_B\subseteq\sim_A,
 \qquad
 \delta_A\le\delta_B.
-\]
+$$
 
 Richer protocol families can split equivalence classes but cannot erase a distinction already detectable by a poorer family. Finite-horizon families likewise refine monotonically as the observation horizon grows.
 
@@ -634,12 +634,12 @@ This makes **detection time** a derived quantity: the first horizon at which two
 
 Formal inequality `x != x'` establishes only that two descriptions differ. Within a declared physical theory, a predictive physical difference exists when at least one admitted protocol produces different record statistics:
 
-\[
+$$
 [x]_A\neq[x']_A
 \iff
 \exists\pi\in A:
 P_\pi(\cdot\mid x)\neq P_\pi(\cdot\mid x').
-\]
+$$
 
 That answers an operational physics question. The stronger metaphysical claim that two descriptions represent distinct realities **only** when they make a predictive difference is an optional Difference-Making Principle, not a result forced by the mathematics.
 
@@ -669,27 +669,27 @@ These systems are not proposed models of fundamental cosmology. Their value is m
 
 ## 8.1 Complete 3×3 sector
 
-The four-particle, zero-momentum sector of a periodic \(3\times3\) HPP lattice gas contains exactly
+The four-particle, zero-momentum sector of a periodic $3\times3$ HPP lattice gas contains exactly
 
-\[
+$$
 9,153
-\]
+$$
 
 microscopic states.
 
 Under site-density observation, those 9,153 microscopic states collapse to only
 
-\[
+$$
 495
-\]
+$$
 
 instantaneous density observations.
 
 On average, one present density image is therefore compatible with about
 
-\[
+$$
 \frac{9153}{495}\approx18.49
-\]
+$$
 
 different microscopic states, although the actual class sizes vary.
 
@@ -706,9 +706,9 @@ Future observation dramatically reduces the ambiguity. Exact predictive refineme
 
 The 54 exceptional states have the structure
 
-\[
+$$
 54=18\times3=9\times2\times3.
-\]
+$$
 
 They consist of:
 
@@ -725,15 +725,15 @@ That is stronger than merely “very close.”
 
 For the declared density observer,
 
-\[
+$$
 d_O(x,x')=0
-\]
+$$
 
 for the entire future even though
 
-\[
+$$
 x\neq x'.
-\]
+$$
 
 This is a concrete existence proof of **perfect observer-level recurrence without microscopic identity**.
 
@@ -743,9 +743,9 @@ Inside each exceptional predictive doubleton, the complete density future leaves
 
 Under an equal prior within that pair, the unresolved microscopic information is
 
-\[
+$$
 \log_2 2=1\ {\rm bit}.
-\]
+$$
 
 The observer can know the entire future density movie and still be unable to recover that one microscopic binary distinction.
 
@@ -753,25 +753,25 @@ This is a useful warning for cosmology: more observation time does not necessari
 
 ## 8.3 Time-reversal mechanism
 
-For a bijective map \(F\), let \(R\) be a time-reversal involution satisfying
+For a bijective map $F$, let $R$ be a time-reversal involution satisfying
 
-\[
+$$
 R^2=I,
 \qquad
 RFR=F^{-1}.
-\]
+$$
 
 If the observation satisfies
 
-\[
+$$
 h(Rx)=h(x),
-\]
+$$
 
 then
 
-\[
+$$
 h(F^tRx)=h(F^{-t}x).
-\]
+$$
 
 If a periodic observation word is invariant under reversal up to cyclic phase shift, a state on the reversed microscopic orbit can have the same entire future observation sequence as the original state.
 
@@ -856,7 +856,7 @@ For cosmology, a near recurrence at one instant is not enough. We must also ask 
 
 The finite-state work supports the decomposition
 
-\[
+$$
 \text{complete state}
 \rightarrow
 \text{invariants}
@@ -866,27 +866,27 @@ The finite-state work supports the decomposition
 \text{cycle}
 \rightarrow
 \text{phase}.
-\]
+$$
 
 This gives a constructive route for finding a recurrence clock when the underlying recurrent dynamics are already known.
 
 ## 10.1 3×3 exact orbit structure
 
-The complete \(3\times3\) four-particle zero-momentum sector contains:
+The complete $3\times3$ four-particle zero-momentum sector contains:
 
 - 9,153 states;
 - 2,061 exact cycles;
-- periods \(3,6,9,12\).
+- periods $3,6,9,12$.
 
 Short collision-history information is sufficient to determine the period class in the studied sector.
 
 ## 10.2 4×4 exact orbit structure
 
-The complete \(4\times4\) four-particle zero-momentum sector contains:
+The complete $4\times4$ four-particle zero-momentum sector contains:
 
 - 94,336 states;
 - 19,448 exact cycles;
-- periods \(2,4,6,8,12,20,28\).
+- periods $2,4,6,8,12,20,28$.
 
 Four consecutive density frames determine the period class for every state in the declared sector.
 
@@ -894,51 +894,51 @@ This is an important observability result: temporal information can compensate f
 
 ## 10.3 5×5 reference orbit and interaction fiber
 
-For a studied \(5\times5\), 14-particle zero-momentum system, the full sector contains
+For a studied $5\times5$, 14-particle zero-momentum system, the full sector contains
 
-\[
+$$
 2,240,809,149,480,000
-\]
+$$
 
 states.
 
 A selected reference orbit has exact period
 
-\[
+$$
 T=9705.
-\]
+$$
 
 An exact transport/geometry factor
 
-\[
+$$
 g=5
-\]
+$$
 
 reduces the nonlinear interaction clock to
 
-\[
+$$
 \tau=\frac{T}{g}=1941.
-\]
+$$
 
-Exact invariants reduce the compatible search space from more than \(2.24\times10^{15}\) states to an interaction fiber of only
+Exact invariants reduce the compatible search space from more than $2.24\times10^{15}$ states to an interaction fiber of only
 
-\[
+$$
 2,209
-\]
+$$
 
 states.
 
 That is a search-space reduction by a factor of approximately
 
-\[
+$$
 1.01\times10^{12}.
-\]
+$$
 
-The fiber decomposes into 17 exact \(F^5\) cycles with lengths
+The fiber decomposes into 17 exact $F^5$ cycles with lengths
 
-\[
+$$
 1941,46,45,44,28,18,14,14,10,9,8,8,7,5,5,4,3.
-\]
+$$
 
 For the reference state, a small sequence of collision-orientation frames identifies the exact state within the compatible fiber. Across all 2,209 states, nine collision-orientation frames uniquely identify every state.
 
@@ -949,11 +949,11 @@ Additional sensor-selection calculations give constructive upper bounds:
 
 A sampled 500-state period-scale predictor achieved approximately
 
-\[
+$$
 R^2\approx0.724
-\]
+$$
 
-for \(\log_{10}T\).
+for $\log_{10}T$.
 
 This is an empirical predictive result, not an exact theorem.
 
@@ -986,9 +986,9 @@ The framework can be extended from “exact or not?” to a computable hierarchy
 
 A microscopic norm
 
-\[
+$$
 d_X(x,x')
-\]
+$$
 
 can tell us how far apart two complete states are mathematically.
 
@@ -1000,42 +1000,42 @@ Conversely, a tiny microscopic change can rapidly amplify into a large observer-
 
 Therefore the quantity of interest is not just
 
-\[
+$$
 d_X(x,x'),
-\]
+$$
 
 but
 
-\[
+$$
 d_O(x,x').
-\]
+$$
 
 ## 11.2 Finite-horizon observer distance
 
 For a deterministic observation sequence, define
 
-\[
+$$
 Y_H(x)
 =
 \left(
 h(x),h(Fx),\ldots,h(F^H x)
 \right).
-\]
+$$
 
-For a metric \(d_Y\), one simple finite-horizon observer metric is
+For a metric $d_Y$, one simple finite-horizon observer metric is
 
-\[
+$$
 d_{O,H}(x,x')
 =
 \max_{0\leq t\leq H}
 d_Y\left(h(F^t x),h(F^t x')\right).
-\]
+$$
 
-A return is observer-indistinguishable over horizon \(H\) if
+A return is observer-indistinguishable over horizon $H$ if
 
-\[
+$$
 d_{O,H}(F^T x,x)\leq\varepsilon_O.
-\]
+$$
 
 This answers a more realistic question:
 
@@ -1043,20 +1043,20 @@ This answers a more realistic question:
 
 ## 11.3 Noise-normalized classical metric
 
-Suppose an observer measures quantities \(y_i\) with standard uncertainties \(\sigma_i\).
+Suppose an observer measures quantities $y_i$ with standard uncertainties $\sigma_i$.
 
 Define
 
-\[
+$$
 \chi_O^2(x,x')
 =
 \sum_i
 \left(
 \frac{y_i(x)-y_i(x')}{\sigma_i}
 \right)^2.
-\]
+$$
 
-A practical recurrence criterion can be declared by choosing a detection threshold \(\chi_{\rm crit}^2\).
+A practical recurrence criterion can be declared by choosing a detection threshold $\chi_{\rm crit}^2$.
 
 This is not a universal definition of identity. It is a transparent way to say:
 
@@ -1066,17 +1066,17 @@ This is not a universal definition of identity. It is a transparent way to say:
 
 When measurements are stochastic, use total-variation distance:
 
-\[
+$$
 d_{\rm TV}(P,Q)
 =
 \frac12\sum_y |P(y)-Q(y)|
-\]
+$$
 
 for discrete outcomes, with the corresponding integral form for continuous outcomes.
 
 Then define the strongest available observer test:
 
-\[
+$$
 d_O(x,x')
 =
 \sup_{\pi\in\Pi_O}
@@ -1085,23 +1085,23 @@ d_{\rm TV}
 P_\pi(\cdot|x),
 P_\pi(\cdot|x')
 \right).
-\]
+$$
 
-This is an operational definition. If \(d_O\) is tiny, even the best permitted observation protocol has little discriminatory power.
+This is an operational definition. If $d_O$ is tiny, even the best permitted observation protocol has little discriminatory power.
 
 ## 11.5 Causal-patch observer distance
 
 A real observer cannot measure the complete universe.
 
-Define \(C_O(H)\) as the region capable of influencing observer \(O\) during observation horizon \(H\).
+Define $C_O(H)$ as the region capable of influencing observer $O$ during observation horizon $H$.
 
 Then compare only the reduced state accessible within that causal domain:
 
-\[
+$$
 \rho_{C_O(H)}.
-\]
+$$
 
-Two global universes can differ outside that domain while remaining exactly identical for the observer during \(H\).
+Two global universes can differ outside that domain while remaining exactly identical for the observer during $H$.
 
 This motivates a physically meaningful class:
 
@@ -1113,24 +1113,24 @@ This may ultimately be more scientifically testable than global recurrence.
 
 A still narrower target is the physical state of the observer and relevant local environment.
 
-Let \(B_O\) denote the degrees of freedom encoding:
+Let $B_O$ denote the degrees of freedom encoding:
 
 - the observer’s body or computational substrate;
 - memory;
 - sensory inputs;
 - immediate environment;
-- all variables capable of changing the observer’s experience over horizon \(H\).
+- all variables capable of changing the observer’s experience over horizon $H$.
 
 Then an observer-state recurrence can be defined by
 
-\[
+$$
 d_{B_O}
 \left(
 B_O(F^T x),
 B_O(x)
 \right)
 \leq\varepsilon_B.
-\]
+$$
 
 This does not establish that the entire universe repeated.
 
@@ -1140,7 +1140,7 @@ It asks whether the returned world would be physically and experientially indist
 
 A useful future study would calculate a ladder such as:
 
-\[
+$$
 \varepsilon_{\rm exact}=0
 <
 \varepsilon_{\rm quantum}
@@ -1150,7 +1150,7 @@ A useful future study would calculate a ladder such as:
 \varepsilon_{\rm human}
 <
 \varepsilon_{\rm biographical}.
-\]
+$$
 
 Each level would correspond to a different recurrence claim:
 
@@ -1195,42 +1195,42 @@ The correct quantity is a **dynamical, observer-relative distinguishability**.
 
 A future recurrence study should therefore report at least three values:
 
-\[
+$$
 d_X
 \quad\text{microscopic state distance},
-\]
+$$
 
-\[
+$$
 d_O
 \quad\text{observer-accessible distance},
-\]
+$$
 
-\[
+$$
 \tau_{\rm divergence}
 \quad\text{time until the mismatch becomes detectable}.
-\]
+$$
 
 A particularly interesting regime is
 
-\[
+$$
 d_X>0,
 \qquad
 d_O\approx0,
 \qquad
 \tau_{\rm divergence}>H_{\rm observer}.
-\]
+$$
 
 In that regime the universe is not exactly the same, but it is functionally indistinguishable to that observer for the observer’s entire accessible future.
 
 The HPP predictive-doubleton result realizes an even stronger limit:
 
-\[
+$$
 d_X>0,
 \qquad
 d_O=0,
 \qquad
 \tau_{\rm divergence}=\infty
-\]
+$$
 
 for the selected observation.
 
@@ -1242,32 +1242,32 @@ A recurrence framework needs a way to describe where the observed universe lies 
 
 The coordinate grammar is
 
-\[
+$$
 M/\Phi_C.
-\]
+$$
 
 ## 13.1 Composition phase
 
 Define
 
-\[
+$$
 \Phi_C
 =
 \frac{2}{\pi}
 \tan^{-1}\left(\frac{\rho_{\rm DE}}{\rho_m}\right).
-\]
+$$
 
 Then
 
-\[
+$$
 0\leq\Phi_C\leq1.
-\]
+$$
 
 Interpretation:
 
-- \(\Phi_C\to0\): matter strongly dominates dark energy;
-- \(\Phi_C=0.5\): equal matter and dark-energy densities;
-- \(\Phi_C\to1\): dark energy strongly dominates matter.
+- $\Phi_C\to0$: matter strongly dominates dark energy;
+- $\Phi_C=0.5$: equal matter and dark-energy densities;
+- $\Phi_C\to1$: dark energy strongly dominates matter.
 
 This is a composition coordinate, not a recurrence phase, not a recurrence-cycle phase, and not a percentage of total cosmic lifetime.
 
@@ -1283,54 +1283,54 @@ The reference macrostates are:
 
 ## 13.3 Reference cosmology
 
-Using the declared flat matter-plus-\(\Lambda\) reference values
+Using the declared flat matter-plus-$\Lambda$ reference values
 
-\[
+$$
 H_0=68.11\ {\rm km\,s^{-1}\,Mpc^{-1}},
-\]
+$$
 
-\[
+$$
 \Omega_{m0}=0.3042,
 \qquad
 \Omega_{\Lambda0}=0.6958,
-\]
+$$
 
 the present reference coordinate is
 
-\[
+$$
 \boxed{M3/\Phi_C=0.7376}.
-\]
+$$
 
 The reference cosmic age is
 
-\[
+$$
 13.787\ {\rm Gyr}.
-\]
+$$
 
 ## 13.4 Reference clock equations
 
-For a flat matter-plus-\(\Lambda\) cosmology,
+For a flat matter-plus-$\Lambda$ cosmology,
 
-\[
+$$
 \frac{\rho_\Lambda}{\rho_m}
 =
 \frac{\Omega_{\Lambda0}}{\Omega_{m0}}a^3.
-\]
+$$
 
 Therefore
 
-\[
+$$
 a(\Phi_C)
 =
 \left[
 \frac{\Omega_{m0}}{\Omega_{\Lambda0}}
 \tan\left(\frac{\pi\Phi_C}{2}\right)
 \right]^{1/3}.
-\]
+$$
 
 The late-time analytic age relation is
 
-\[
+$$
 t(\Phi_C)
 =
 \frac{2}{3H_0\sqrt{\Omega_{\Lambda0}}}
@@ -1340,7 +1340,7 @@ t(\Phi_C)
 \tan\left(\frac{\pi\Phi_C}{2}\right)
 }
 \right].
-\]
+$$
 
 Radiation is neglected in this late-time analytic expression, so the early radiation-to-matter transition is anchored separately.
 
@@ -1348,11 +1348,11 @@ Radiation is neglected in this late-time analytic expression, so the early radia
 
 | Event | Reference value |
 |---|---|
-| Radiation → matter transition | near \(z=3387\), about 51,500 years |
-| Acceleration-onset boundary | \(z=0.6600\), age 7.555 Gyr |
-| Dark-energy/matter equality | \(z=0.3176\), age 10.113 Gyr, \(\Phi_C=0.5000\) |
-| Present reference point | \(M3/\Phi_C=0.7376\), age 13.787 Gyr |
-| Deep-dark-energy threshold | 7.077 Gyr after reference present, \(\Phi_C=0.9296\) |
+| Radiation → matter transition | near $z=3387$, about 51,500 years |
+| Acceleration-onset boundary | $z=0.6600$, age 7.555 Gyr |
+| Dark-energy/matter equality | $z=0.3176$, age 10.113 Gyr, $\Phi_C=0.5000$ |
+| Present reference point | $M3/\Phi_C=0.7376$, age 13.787 Gyr |
+| Deep-dark-energy threshold | 7.077 Gyr after reference present, $\Phi_C=0.9296$ |
 
 The reference present lies 3.674 Gyr after M3 entry and 34.17% of the declared M3-to-M4 reference interval has elapsed.
 
@@ -1366,15 +1366,15 @@ The framework deliberately prevents cross-level overreach.
 
 The following substitutions are invalid without additional physics:
 
-- finite lattice recurrence \(\not\Rightarrow\) finite cosmic state space;
-- finite-model period \(\not\Rightarrow\) cosmic period;
-- finite-model phase \(\not\Rightarrow\) cosmic phase;
-- cosmological composition phase \(\Phi_C\) \(\not\Rightarrow\) recurrence phase;
-- de Sitter entropy \(\not\Rightarrow\) microscopic quantum recurrence period;
-- Big Crunch \(\not\Rightarrow\) exact state reset;
-- empty space \(\not\Rightarrow\) unique initial condition;
-- observational similarity \(\not\Rightarrow\) complete-state identity;
-- observer-indistinguishability \(\not\Rightarrow\) microscopic equality.
+- finite lattice recurrence $\not\Rightarrow$ finite cosmic state space;
+- finite-model period $\not\Rightarrow$ cosmic period;
+- finite-model phase $\not\Rightarrow$ cosmic phase;
+- cosmological composition phase $\Phi_C$ $\not\Rightarrow$ recurrence phase;
+- de Sitter entropy $\not\Rightarrow$ microscopic quantum recurrence period;
+- Big Crunch $\not\Rightarrow$ exact state reset;
+- empty space $\not\Rightarrow$ unique initial condition;
+- observational similarity $\not\Rightarrow$ complete-state identity;
+- observer-indistinguishability $\not\Rightarrow$ microscopic equality.
 
 The finite models answer:
 
@@ -1394,7 +1394,7 @@ Recurrence depends strongly on the far-future branch.
 
 | Future branch | Recurrence status | Additional requirement |
 |---|---|---|
-| Stable eternal positive-\(\Lambda\) / de Sitter | Conditional thermodynamic recurrence route | Effectively finite, closed, recurrent causal-patch interpretation |
+| Stable eternal positive-$\Lambda$ / de Sitter | Conditional thermodynamic recurrence route | Effectively finite, closed, recurrent causal-patch interpretation |
 | Metastable de Sitter | Recurrence competes with vacuum decay | Vacuum must survive long enough |
 | Fading dark energy | Standard de Sitter recurrence does not automatically apply | Asymptotic horizon/state-space structure must be specified |
 | Phantom finite endpoint | No eternal de Sitter regime | Future must actually remain phantom to the endpoint |
@@ -1408,70 +1408,70 @@ Ultimate fate is therefore upstream of the recurrence calculation.
 
 # 16. Stable de Sitter thermodynamic recurrence
 
-Under a stable eternal positive-\(\Lambda\) branch, define
+Under a stable eternal positive-$\Lambda$ branch, define
 
-\[
+$$
 H_\Lambda
 =
 H_0\sqrt{\Omega_\Lambda}.
-\]
+$$
 
 The de Sitter horizon radius is
 
-\[
+$$
 r_{\rm dS}
 =
 \frac{c}{H_\Lambda},
-\]
+$$
 
 and the Gibbons-Hawking horizon entropy is
 
-\[
+$$
 \frac{S_{\rm dS}}{k_B}
 =
 \frac{\pi r_{\rm dS}^2}{\ell_P^2}.
-\]
+$$
 
 At the declared reference point:
 
-\[
+$$
 H_\Lambda^{-1}=17.2105\ {\rm Gyr},
-\]
+$$
 
-\[
+$$
 r_{\rm dS}=1.6282\times10^{26}\ {\rm m},
-\]
+$$
 
-\[
+$$
 \frac{S_{\rm dS}}{k_B}
 =
 3.18835\times10^{122}.
-\]
+$$
 
 A conventional entropy-exponential thermodynamic recurrence scale is
 
-\[
+$$
 t_{\rm thermo}
 \sim
 H_\Lambda^{-1}
 \exp(S_{\rm dS}/k_B).
-\]
+$$
 
 It is more useful to report its logarithm:
 
-\[
+$$
 \log_{10}\left(\frac{t_{\rm thermo}}{\rm yr}\right)
 =
 1.38468\times10^{122}.
-\]
+$$
 
 Symbolically,
 
-\[
+$$
 t_{\rm thermo}
 \sim
 10^{\,1.38468\times10^{122}}\ {\rm years}.
-\]
+$$
 
 This number is not a universal countdown.
 
@@ -1481,7 +1481,7 @@ It exists only after imposing the stable eternal de Sitter branch and the finite
 
 # 17. Cosmological quantum recurrence remains unidentified
 
-The de Sitter thermodynamic scale and a rigorous quantum \(\varepsilon\)-recurrence time are different clocks.
+The de Sitter thermodynamic scale and a rigorous quantum $\varepsilon$-recurrence time are different clocks.
 
 For a finite-dimensional unitary system, recurrence-time bounds can depend on microscopic quantities such as the number of relevant distinct energy eigenvalues, energy range, and target trace-distance tolerance.
 
@@ -1492,9 +1492,9 @@ Therefore:
 | Quantum target | Cosmological numerical result |
 |---|---|
 | Exact recurrence | Not identified |
-| Trace-distance recurrence, \(\varepsilon=0.1\) | Not identified |
-| Trace-distance recurrence, \(\varepsilon=0.01\) | Not identified |
-| Trace-distance recurrence, \(\varepsilon=0.001\) | Not identified |
+| Trace-distance recurrence, $\varepsilon=0.1$ | Not identified |
+| Trace-distance recurrence, $\varepsilon=0.01$ | Not identified |
+| Trace-distance recurrence, $\varepsilon=0.001$ | Not identified |
 | Human-observer indistinguishable recurrence | Not identified |
 | Instrument-observer indistinguishable recurrence | Not identified |
 
@@ -1512,12 +1512,12 @@ If the de Sitter-like vacuum is metastable, recurrence competes with vacuum deca
 
 Under a simple independent constant-hazard model,
 
-\[
+$$
 P(\text{recurrence before decay})
 =
 \frac{\tau_{\rm decay}}
 {\tau_{\rm decay}+t_{\rm rec}}.
-\]
+$$
 
 Because a thermodynamic recurrence time can be entropy-exponentially large, a vacuum lifetime that appears immense on ordinary astrophysical scales may still be tiny relative to the recurrence scale.
 
@@ -1531,22 +1531,22 @@ Metastability can therefore eliminate practical recurrence even when the interme
 
 For a constant dark-energy equation of state
 
-\[
+$$
 w<-1,
-\]
+$$
 
 the standard late-time approximation gives a finite remaining proper time
 
-\[
+$$
 \Delta t
 \approx
 \frac{2}
 {3|1+w|H_0\sqrt{\Omega_{\rm DE}}}.
-\]
+$$
 
 At the declared reference cosmology:
 
-| Constant \(w\) | Approximate remaining lifetime |
+| Constant $w$ | Approximate remaining lifetime |
 |---:|---:|
 | -1.01 | 1,147.4 Gyr |
 | -1.05 | 229.5 Gyr |
@@ -1580,31 +1580,31 @@ A bounce does not automatically erase:
 
 A genuinely recurrent cyclic model needs an explicit cycle map
 
-\[
+$$
 x_{n+1}=F(x_n).
-\]
+$$
 
 Exact recurrence requires
 
-\[
+$$
 F^k(x)=x
-\]
+$$
 
-for some \(k>0\).
+for some $k>0$.
 
 Near recurrence requires a declared metric:
 
-\[
+$$
 d(F^k(x),x)<\varepsilon.
-\]
+$$
 
 Observer-indistinguishable recurrence requires the stronger operational statement
 
-\[
+$$
 d_O(F^k x,x)\leq\varepsilon_O.
-\]
+$$
 
-The fact that the scale factor \(a(t)\) oscillates is not enough. A periodic macroscopic geometry can coexist with nonrecurrent microscopic information.
+The fact that the scale factor $a(t)$ oscillates is not enough. A periodic macroscopic geometry can coexist with nonrecurrent microscopic information.
 
 Likewise, an “empty universe” is not automatically a reset state. Empty of ordinary matter does not specify the complete geometry, vacuum, fields, quantum state, topology, horizons, or boundary conditions.
 
@@ -1614,16 +1614,16 @@ Likewise, an “empty universe” is not automatically a reset state. Empty of o
 
 Let:
 
-- \(D\) = present observations;
-- \(M\) = future cosmological model;
-- \(\theta\) = measured parameters inside that model;
-- \(A\) = additional theoretical assumptions needed for recurrence;
-- \(O\) = declared observer model;
-- \(\varepsilon\) = recurrence or distinguishability tolerance.
+- $D$ = present observations;
+- $M$ = future cosmological model;
+- $\theta$ = measured parameters inside that model;
+- $A$ = additional theoretical assumptions needed for recurrence;
+- $O$ = declared observer model;
+- $\varepsilon$ = recurrence or distinguishability tolerance.
 
 Then a finite-horizon recurrence probability can be written schematically as
 
-\[
+$$
 P(R_{\varepsilon,O}<T\mid D)
 =
 \sum_{M,A}
@@ -1631,7 +1631,7 @@ P(R_{\varepsilon,O}<T\mid D)
 P(R_{\varepsilon,O}<T\mid M,\theta,A)
 \,p(\theta,M,A\mid D)
 \,d\theta.
-\]
+$$
 
 This exposes four different uncertainties.
 
@@ -1639,8 +1639,8 @@ This exposes four different uncertainties.
 
 Examples:
 
-- \(H_0\);
-- \(\Omega_m\);
+- $H_0$;
+- $\Omega_m$;
 - dark-energy parameters inside a chosen phenomenological model.
 
 These can be constrained from data.
@@ -1649,7 +1649,7 @@ These can be constrained from data.
 
 Examples:
 
-- eternal \(\Lambda\);
+- eternal $\Lambda$;
 - metastable vacuum;
 - fading dark energy;
 - phantom finite endpoint;
@@ -1686,12 +1686,12 @@ This matters only for observer-relative recurrence, but it can dramatically chan
 
 If unresolved future-model and recurrence-theory terms are allowed to vary across what present observations still permit, then
 
-\[
+$$
 \boxed{
 P(\text{recurrence}\mid\text{present observations, unrestricted future theory})
 \in[0,1]
 }
-\]
+$$
 
 is the rigorous partial-identification statement.
 
@@ -1705,17 +1705,17 @@ It means the evidence does not identify a unique model-independent probability.
 
 ## 22.1 Conditional stable-de-Sitter propagation
 
-When cosmological posterior samples are propagated **inside a flat-\(\Lambda\)CDM stable de Sitter branch**, the relevant quantities are tightly constrained compared with the enormous size of the recurrence exponent.
+When cosmological posterior samples are propagated **inside a flat-$\Lambda$CDM stable de Sitter branch**, the relevant quantities are tightly constrained compared with the enormous size of the recurrence exponent.
 
 A representative propagation gives:
 
 | Quantity | Median | 95% interval |
 |---|---:|---:|
-| \(H_0\) (km s\(^{-1}\) Mpc\(^{-1}\)) | 68.1728 | [67.6174, 68.7181] |
-| \(\Omega_m\) | 0.302655 | [0.295669, 0.309883] |
-| \(H_\Lambda^{-1}\) (Gyr) | 17.1758 | [16.9552, 17.4050] |
-| \(S_{\rm dS}/k_B\) | \(3.17551\times10^{122}\) | \([3.09448,3.26082]\times10^{122}\) |
-| \(\log_{10}(t_{\rm thermo}/{\rm yr})\) | \(1.37911\times10^{122}\) | \([1.34391,1.41616]\times10^{122}\) |
+| $H_0$ (km s$^{-1}$ Mpc$^{-1}$) | 68.1728 | [67.6174, 68.7181] |
+| $\Omega_m$ | 0.302655 | [0.295669, 0.309883] |
+| $H_\Lambda^{-1}$ (Gyr) | 17.1758 | [16.9552, 17.4050] |
+| $S_{\rm dS}/k_B$ | $3.17551\times10^{122}$ | $[3.09448,3.26082]\times10^{122}$ |
+| $\log_{10}(t_{\rm thermo}/{\rm yr})$ | $1.37911\times10^{122}$ | $[1.34391,1.41616]\times10^{122}$ |
 
 The main lesson is scale separation:
 
@@ -1725,7 +1725,7 @@ The main lesson is scale separation:
 
 A published Bayesian comparison of a **restricted two-model set** under equal prior odds gives approximately:
 
-| Data combination | \(\Lambda\)CDM weight | dynamical-DE weight |
+| Data combination | $\Lambda$CDM weight | dynamical-DE weight |
 |---|---:|---:|
 | DESI DR2 BAO + Planck CMB | 63.9% | 36.1% |
 | DESI DR2 BAO + Planck CMB + corrected DES-Dovekie SN | 50.2% | 49.8% |
@@ -1767,25 +1767,25 @@ They should not be reported as measured probabilities.
 
 ## 22.5 Finite-horizon rare-event probability
 
-If a recurrence process is modeled as a stationary rare event with mean wait \(t_{\rm rec}\),
+If a recurrence process is modeled as a stationary rare event with mean wait $t_{\rm rec}$,
 
-\[
+$$
 P(T)=1-e^{-T/t_{\rm rec}}.
-\]
+$$
 
 For
 
-\[
+$$
 T\ll t_{\rm rec},
-\]
+$$
 
-\[
+$$
 \log_{10}P
 \approx
 \log_{10}T-\log_{10}t_{\rm rec}.
-\]
+$$
 
-When the recurrence exponent is of order \(10^{122}\), ordinary floating-point presentation can erase differences between finite horizons. High-precision arithmetic is required even for the numerical bookkeeping.
+When the recurrence exponent is of order $10^{122}$, ordinary floating-point presentation can erase differences between finite horizons. High-precision arithmetic is required even for the numerical bookkeeping.
 
 This numerical issue does not remove the larger physical uncertainty.
 
@@ -1795,17 +1795,17 @@ This numerical issue does not remove the larger physical uncertainty.
 
 At present, the answer is:
 
-\[
+$$
 \boxed{\text{Unknown}}
-\]
+$$
 
 A physical recurrence clock would mean that the relevant complete cosmic state lies on an orbit with a well-defined return structure.
 
-For exact deterministic recurrence, one would need some positive \(T\) satisfying
+For exact deterministic recurrence, one would need some positive $T$ satisfying
 
-\[
+$$
 F^T(X)=X.
-\]
+$$
 
 For quantum exact recurrence, the occupied spectral phases would need to realign exactly.
 
@@ -1857,7 +1857,7 @@ If those objects were known, recurrence might be decided as a theorem rather tha
 
 The finite-state studies show another possibility:
 
-\[
+$$
 \text{observations}
 \rightarrow
 \text{invariants}
@@ -1867,7 +1867,7 @@ The finite-state studies show another possibility:
 \text{cycle}
 \rightarrow
 \text{phase}.
-\]
+$$
 
 A cosmic analogue would require observables that constrain true recurrence invariants strongly enough to reduce the compatible physical state space.
 
@@ -1897,15 +1897,15 @@ It may be easier to demonstrate that an observer-accessible causal state returns
 
 One could in principle derive
 
-\[
+$$
 d_O(F^T x,x)\ll1
-\]
+$$
 
 even while
 
-\[
+$$
 F^T x\neq x.
-\]
+$$
 
 This would not prove exact cosmic repetition.
 
@@ -1951,7 +1951,7 @@ Suppose:
 
 1. physical evolution is deterministic;
 2. an observer and the observer’s memories are fully encoded in the physical state;
-3. the complete state returns exactly after \(T\).
+3. the complete state returns exactly after $T$.
 
 Then the observer-state also returns.
 
@@ -1970,15 +1970,15 @@ Near recurrence is subtler.
 
 Suppose
 
-\[
+$$
 d_X(F^T x,x)>0
-\]
+$$
 
 but
 
-\[
+$$
 d_O(F^T x,x)\ll1.
-\]
+$$
 
 The returned observer may initially be unable to detect the mismatch.
 
@@ -1986,7 +1986,7 @@ Whether the two experiences remain the same depends on the divergence time.
 
 Define
 
-\[
+$$
 \tau_{\rm detect}
 =
 \inf
@@ -1994,13 +1994,13 @@ Define
 t>0:
 d_O(F^{T+t}x,F^t x)>\varepsilon_O
 \right\}.
-\]
+$$
 
 Then:
 
-- if \(\tau_{\rm detect}\) is short, the worlds quickly become observably different;
-- if \(\tau_{\rm detect}\) exceeds the observer’s lifetime, the mismatch is never experienced;
-- if \(\tau_{\rm detect}=\infty\), the states are predictively equivalent for that observer despite microscopic difference.
+- if $\tau_{\rm detect}$ is short, the worlds quickly become observably different;
+- if $\tau_{\rm detect}$ exceeds the observer’s lifetime, the mismatch is never experienced;
+- if $\tau_{\rm detect}=\infty$, the states are predictively equivalent for that observer despite microscopic difference.
 
 This quantity may be more relevant to lived recurrence than exact global equality.
 
@@ -2008,11 +2008,11 @@ This quantity may be more relevant to lived recurrence than exact global equalit
 
 A possible future concept is **biographical recurrence**.
 
-Two histories are biographically recurrent for observer \(O\) over lifetime \(L\) if every accessible record relevant to that observer remains within tolerance:
+Two histories are biographically recurrent for observer $O$ over lifetime $L$ if every accessible record relevant to that observer remains within tolerance:
 
-\[
+$$
 d_{O,L}(F^T x,x)\leq\varepsilon_O.
-\]
+$$
 
 The universes may differ elsewhere or in inaccessible microscopic degrees of freedom.
 
@@ -2054,23 +2054,23 @@ The importance of a mismatch depends on dynamics and observability, not just its
 
 ## 26.5 More time can substitute for more sensors
 
-In the exact \(4\times4\) finite sector, four consecutive density frames identify the period class even though one density frame does not contain the complete microscopic state.
+In the exact $4\times4$ finite sector, four consecutive density frames identify the period class even though one density frame does not contain the complete microscopic state.
 
 Temporal information can compensate for spatially coarse observation.
 
 ## 26.6 Invariants can collapse astronomical search spaces
 
-In the \(5\times5\) reference problem, exact invariants reduce a compatible search from more than
+In the $5\times5$ reference problem, exact invariants reduce a compatible search from more than
 
-\[
+$$
 2.24\times10^{15}
-\]
+$$
 
 states to only
 
-\[
+$$
 2,209.
-\]
+$$
 
 That is a reduction by roughly one trillion.
 
@@ -2096,13 +2096,13 @@ An observer could in principle experience the same local biography while the glo
 
 This creates a useful hierarchy:
 
-\[
+$$
 \text{global exact recurrence}
 \Rightarrow
 \text{local exact recurrence}
 \Rightarrow
 \text{observer recurrence},
-\]
+$$
 
 but the reverse implications do not automatically hold.
 
@@ -2135,12 +2135,12 @@ Claims should be labeled by evidence type.
 | Irrational torus nonrecurrence | analytic proof + numerical near returns | declared continuous flow |
 | Quantum exact-recurrence criterion | analytic spectral condition | closed time-independent quantum systems |
 | Quantum observer distinguishability | operational theorem from trace distance | declared quantum states |
-| Cosmic composition coordinate | analytic mapping within reference cosmology | declared flat matter+\(\Lambda\) reference |
+| Cosmic composition coordinate | analytic mapping within reference cosmology | declared flat matter+$\Lambda$ reference |
 | de Sitter horizon/entropy scale | standard conditional thermodynamic calculation | declared stable de Sitter branch |
 | Cosmological posterior propagation | observational posterior propagation | chosen cosmological branch |
 | Model-family Bayesian weights | model comparison | restricted selected model set |
 | Fate decomposition | sensitivity assumption | not a measured future-fate probability |
-| Unrestricted recurrence probability \([0,1]\) | partial-identification / non-identifiability result | full logical bound; not an estimated probability distribution |
+| Unrestricted recurrence probability $[0,1]$ | partial-identification / non-identifiability result | full logical bound; not an estimated probability distribution |
 | Human-observer recurrence threshold | open research target | not yet numerically identified |
 
 A result may be used as a definition, diagnostic analogy, or consistency check across layers. It may not be promoted to a stronger evidence level merely because another layer exists.
@@ -2161,7 +2161,7 @@ This framework does **not** establish that:
 - a bounce necessarily resets information;
 - empty space is a unique reset state;
 - finite de Sitter entropy proves a finite number of exact quantum states;
-- the thermodynamic de Sitter recurrence estimate is a rigorous quantum \(\varepsilon\)-recurrence time;
+- the thermodynamic de Sitter recurrence estimate is a rigorous quantum $\varepsilon$-recurrence time;
 - present dark-energy fits uniquely determine the remote future;
 - a spatial duplicate is the same thing as temporal recurrence;
 - observer-indistinguishability proves microscopic equality;
@@ -2199,13 +2199,13 @@ Build a dedicated computational study with:
 
 For each pair of near states, report:
 
-\[
+$$
 d_X,
 \qquad
 d_O,
 \qquad
 \tau_{\rm detect}.
-\]
+$$
 
 This would directly study “not exactly the same, but indistinguishable to us.”
 
@@ -2216,7 +2216,7 @@ For controlled deterministic systems:
 - generate states at known microscopic distances;
 - evolve both states;
 - measure when different observer maps first separate;
-- estimate the distribution of \(\tau_{\rm detect}\);
+- estimate the distribution of $\tau_{\rm detect}$;
 - identify perturbations that remain permanently hidden.
 
 This can distinguish harmless mismatch from dynamically amplified mismatch.
@@ -2238,7 +2238,7 @@ For finite Hamiltonians with controlled spectra:
 
 - separate exact commensurate cases from incommensurate cases;
 - compute trace-distance return curves;
-- calculate first passage below selected \(\varepsilon\);
+- calculate first passage below selected $\varepsilon$;
 - compare mathematical near recurrence with practical observer discrimination;
 - study how recurrence time scales with dimension and tolerance.
 
@@ -2313,13 +2313,13 @@ The complete framework can be summarized in the following statements.
 
 5. **The practical recurrence threshold is observer-relative.** What matters to an observer is not only microscopic state distance but whether any accessible measurement can distinguish the states.
 
-6. **A useful observer recurrence calculation requires three quantities:** microscopic mismatch \(d_X\), observer mismatch \(d_O\), and detection/divergence time \(\tau_{\rm detect}\).
+6. **A useful observer recurrence calculation requires three quantities:** microscopic mismatch $d_X$, observer mismatch $d_O$, and detection/divergence time $\tau_{\rm detect}$.
 
 7. **Quantum recurrence is spectral.** Exact unitary recurrence requires commensurate occupied energy gaps. Near phase recurrence does not imply exact recurrence.
 
 8. **Period and phase can sometimes be reconstructed from incomplete observations.** In finite benchmark systems, invariants and short temporal records can collapse enormous state spaces and localize cycles.
 
-9. **The present universe can be assigned a reference cosmological coordinate without claiming recurrence.** The reference position is \(M3/\Phi_C=0.7376\), where \(\Phi_C\) tracks matter–dark-energy composition.
+9. **The present universe can be assigned a reference cosmological coordinate without claiming recurrence.** The reference position is $M3/\Phi_C=0.7376$, where $\Phi_C$ tracks matter–dark-energy composition.
 
 10. **The universe’s far-future branch dominates the cosmic recurrence problem.** Stable de Sitter, metastable de Sitter, fading dark energy, phantom endings, recollapse, and cyclic futures are physically different recurrence environments.
 
@@ -2327,9 +2327,9 @@ The complete framework can be summarized in the following statements.
 
 12. **Current cosmological data do not determine a unique recurrence probability.** Without theory priors resolving the far future and recurrence mechanism,
 
-\[
+$$
 P(\text{cosmic recurrence}\mid\text{present observations, unrestricted future theory})\in[0,1].
-\]
+$$
 
 Here `[0,1]` is the full logical bound: a non-identifiability result, not a 50/50 claim or an estimated distribution over recurrence probabilities.
 
@@ -2389,7 +2389,7 @@ This file is intended to function as the single canonical GitHub document for th
 
 All recurrence claims should preserve the distinctions defined here:
 
-\[
+$$
 \text{exact}
 \neq
 \text{near}
@@ -2397,7 +2397,7 @@ All recurrence claims should preserve the distinctions defined here:
 \text{observational}
 \neq
 \text{observer-indistinguishable}.
-\]
+$$
 
 All cosmological recurrence claims should state the assumed future branch.
 

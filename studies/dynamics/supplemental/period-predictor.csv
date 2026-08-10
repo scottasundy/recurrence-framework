@@ -1,0 +1,2 @@
+sample_states,feature_count,history_updates,model,cross_validated_r2,median_multiplicative_error,p90_multiplicative_error,interpretation
+500,67,30,RandomForestRegressor,0.723801020427,2.174196710552,9.161208841912,empirical period-scale signal only; not an exact or universal period law

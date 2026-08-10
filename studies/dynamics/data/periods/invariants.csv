@@ -1,0 +1,2 @@
+lattice_size,map,binary_state_variables,known_invariant_vectors,known_invariant_rank,explicit_difference_witnesses,difference_constraint_rank_mod_1000003,universal_linear_invariant_dimension,witness_seed
+5,F^5,100,30,27,80,73,27,12345

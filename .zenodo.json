@@ -1,0 +1,23 @@
+{
+  "title": "Cosmic Recurrence Framework: Dynamics, Predictive Equivalence, Observer Indistinguishability, Cosmic Coordinates, and Fate-Conditioned Cosmology",
+  "publication_date": "2026-08-09",
+  "upload_type": "software",
+  "access_right": "open",
+  "language": "eng",
+  "creators": [{"name": "Sundy, Scott A."}],
+  "description": "A reproducible master research repository for exact and near recurrence, predictive quotients, observer-relative indistinguishability, recurrence-period and phase constraints in finite dynamics, a model-conditional cosmic coordinate, and fate-conditioned cosmological recurrence. Finite benchmark results are explicitly separated from cosmological inference; the repository does not claim that the physical universe is known to recur or that a cosmic recurrence period is currently identified.",
+  "keywords": [
+    "recurrence dynamics",
+    "predictive equivalence",
+    "predictive quotient",
+    "observer indistinguishability",
+    "reversible dynamics",
+    "HPP lattice gas",
+    "phase navigation",
+    "cosmological recurrence",
+    "cosmic coordinate",
+    "de Sitter recurrence",
+    "partial identification",
+    "computational physics"
+  ]
+}
