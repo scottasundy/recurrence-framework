@@ -81,7 +81,7 @@
     \delta_A(x,x')
     =
     \sup_{\pi\in A}
-    {TV}\!\left[P_\pi(\cdot|x),P_\pi(\cdot|x')\right]
+    \mathrm{TV}\!\left[P_\pi(\cdot|x),P_\pi(\cdot|x')\right]
     ```
     has zero set exactly $\sim_A$.
 25. **[AUDIT] Keep $\delta_A$ separate from deterministic trajectory discrepancy**

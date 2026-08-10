@@ -257,14 +257,14 @@ Define the observer-relative operational distance
 d_O(x,x')
 =
 \sup_{\pi\in\Pi_O}
-{TV}
+\mathrm{TV}
 \left[
 P_\pi(\cdot\mid x),
 P_\pi(\cdot\mid x')
 \right],
 ```
 
-where ${TV}$ is total-variation distance and $\Pi_O$ is the set of physically available observation protocols.
+where $\mathrm{TV}$ is total-variation distance and $\Pi_O$ is the set of physically available observation protocols.
 
 Then an **observer-indistinguishable recurrence** at tolerance $\varepsilon_O$ occurs when
 
@@ -602,7 +602,7 @@ For probabilistic records, define
 ```math
 \delta_A(x,x')=
 \sup_{\pi\in A}
-{TV}
+\mathrm{TV}
 \left[P_\pi(\cdot\mid x),P_\pi(\cdot\mid x')\right].
 ```
 
@@ -1067,7 +1067,7 @@ This is not a universal definition of identity. It is a transparent way to say:
 When measurements are stochastic, use total-variation distance:
 
 ```math
-d_{TV}(P,Q)
+d_\mathrm{TV}(P,Q)
 =
 \frac12\sum_y |P(y)-Q(y)|
 ```
@@ -1080,7 +1080,7 @@ Then define the strongest available observer test:
 d_O(x,x')
 =
 \sup_{\pi\in\Pi_O}
-d_{TV}
+d_\mathrm{TV}
 \left(
 P_\pi(\cdot|x),
 P_\pi(\cdot|x')

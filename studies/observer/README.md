@@ -14,7 +14,7 @@ For an observer $O$ with physically accessible protocols $\Pi_O$, define
 d_O(x,x')
 =
 \sup_{\pi\in\Pi_O}
-{TV}
+\mathrm{TV}
 \left[
 P_\pi(\cdot|x),P_\pi(\cdot|x')
 \right].

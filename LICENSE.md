@@ -22,10 +22,7 @@ Unless otherwise stated, new root documentation is licensed under Creative Commo
 
 - `README.md`
 - `docs/`
-- `CHANGELOG.md`
-- `RELEASE_NOTES.md`
 - `CONTRIBUTING.md`
-- `VERSIONS.md`
 
 See `LICENSES/CC-BY-4.0.txt`.
 

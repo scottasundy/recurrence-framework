@@ -169,7 +169,7 @@ For a declared family $A$, define
 \delta_A(x,x')
 =
 \sup_{\pi\in A}
-{TV}
+\mathrm{TV}
 \left[
 P_\pi(\cdot\mid x),
 P_\pi(\cdot\mid x')
