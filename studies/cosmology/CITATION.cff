@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this study, please cite it using the metadata below and add the Zenodo DOI after deposition."
+title: "Cosmological Recurrence Probability Study: A Fate-Conditioned Partial-Identification Framework"
+type: software
+date-released: 2026-08-09
+authors:
+  - family-names: Sundy
+    given-names: Scott A.
+license: CC-BY-4.0
+keywords:
+  - cosmology
+  - recurrence
+  - de Sitter
+  - Poincare recurrence
+  - dark energy
+  - partial identification
+  - DESI
+abstract: >-
+  A reproducible fate-conditioned framework separating observational parameter uncertainty,
+  Bayesian model-family uncertainty, explicit ultimate-fate sensitivity, thermodynamic de Sitter
+  recurrence scales, and finite-system quantum epsilon recurrence. Master study uses the current cited DES-Dovekie comparison evidence while retaining
+  the DESI DR2+CMB two-model evidence weights and six-future fate decompositions and preserving
+  the theory-agnostic recurrence-probability bound [0,1] as an explicit
+  partial-identification/non-identifiability result rather than a probability estimate.

@@ -1,0 +1,40 @@
+COSMOLOGICAL RECURRENCE STUDY
+VALIDATION SUMMARY
+Date: 2026-08-09
+
+Automated tests
+---------------
+The bundled cosmology test suite verifies the configuration, DESI posterior
+projection, recurrence calculations, fate sensitivity layer, and I/O behavior.
+
+Reproduction
+------------
+The study can be rerun from the bundled DESI DR2 + CMB posterior projection.
+Outputs and figures are generated deterministically from config.json.
+
+Fate-probability layer
+----------------------
+The baseline published Bayesian evidence input is ln B(dynamic/LambdaCDM) =
+-0.57 +/- 0.26 for DESI DR2 BAO + Planck CMB. With equal prior odds over the
+restricted two-model set, the study reproduces approximately 0.638763
+LambdaCDM weight and 0.361237 dynamical-dark-energy weight.
+
+Specific future-fate decompositions are generated only after explicit
+within-family theory splits are supplied. They are sensitivity scenarios, not
+measured ultimate-fate probabilities.
+
+The corrected DES-Dovekie comparison uses the current cited evidence value
+ln B(dynamic/LambdaCDM) = -0.01 +/- 0.27.
+
+Primary-data provenance
+-----------------------
+The bundled posterior projection was constructed from four official DESI DR2
+Cobaya source chains. Source-chain hashes and provenance are recorded under
+data/.
+
+Scientific boundary
+-------------------
+The study does not identify a unique unconditional recurrence probability.
+The unrestricted current-data/theory result remains non-identified at the full logical bound [0,1]; this is a partial-identification result, not a probability estimate. The conditional
+de Sitter thermodynamic scale is not presented as a cosmological quantum
+epsilon-recurrence time.

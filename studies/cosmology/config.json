@@ -1,0 +1,189 @@
+{
+  "study_version": "master",
+  "date": "2026-08-09",
+  "study_title": "Cosmological Recurrence Probability Study",
+  "recurrence_targets": {
+    "thermodynamic_de_sitter_scale": {
+      "definition": "H_Lambda^-1 exp(S_dS/k_B)",
+      "status": "conditional thermodynamic/Poincare scale; not an epsilon-recurrence time"
+    },
+    "quantum_near_recurrence": {
+      "metric": "trace distance",
+      "epsilons": [
+        0.1,
+        0.01,
+        0.001
+      ],
+      "status": "finite-system theorem available; cosmological finite spectrum not identified"
+    }
+  },
+  "cps_reference": {
+    "label": "Cosmic Coordinate reference point",
+    "H0": 68.11,
+    "Omega_m": 0.3042,
+    "Omega_Lambda": 0.6958,
+    "Phi_C_now": 0.7376145673,
+    "status": "declared reference point only; not an observational posterior"
+  },
+  "observational_posterior": {
+    "primary": {
+      "dataset": "DESI DR2 BAO + default CMB, flat LambdaCDM",
+      "projection_file": "data/desi-projection.csv.gz",
+      "source": "official DESI DR2 Results II Cobaya chains",
+      "source_documentation": "https://data.desi.lbl.gov/public/papers/y3/bao-cosmo-params/README.html",
+      "model": "base",
+      "dataset_directory": "desi-bao-all_planck2018-lowl-TT-clik_planck2018-lowl-EE-clik_planck-NPIPE-highl-CamSpec-TTTEEE_planck-act-dr6-lensing",
+      "columns": [
+        "weight",
+        "H0",
+        "omega_m"
+      ],
+      "total_projected_rows": 59891,
+      "total_weight": 169444
+    },
+    "gaussian_crosscheck": {
+      "dataset": "DESI DR2 + CMB, flat LambdaCDM",
+      "H0_mean": 68.17,
+      "H0_sd": 0.28,
+      "Omega_m_mean": 0.3027,
+      "Omega_m_sd": 0.0036,
+      "correlation_H0_Omega_m": -0.975,
+      "samples": 100000,
+      "seed": 20260809,
+      "source": "DESI DR2 Results II, arXiv:2503.14738 / Phys. Rev. D 112, 083515 (2025)"
+    }
+  },
+  "finite_horizon_log10_years": [
+    "10",
+    "100",
+    "1000",
+    "1e6",
+    "1e20",
+    "1e100",
+    "1e120"
+  ],
+  "big_rip_constant_w_examples": [
+    -1.01,
+    -1.05,
+    -1.1,
+    -1.2
+  ],
+  "entropy_deficit_fraction_range": {
+    "log10_min": -12,
+    "log10_max": 0,
+    "points": 121
+  },
+  "theoretical_prior_sensitivity": {
+    "warning": "These are illustrative theoretical priors, not probabilities inferred from cosmological observations.",
+    "sets": {
+      "conservative": {
+        "weights": {
+          "eternal_ds": 0.1,
+          "metastable_ds": 0.2,
+          "fading_de": 0.35,
+          "finite_end": 0.25,
+          "cyclic": 0.1
+        },
+        "p_recurrent_patch_given_eternal_ds": 0.25
+      },
+      "agnostic": {
+        "weights": {
+          "eternal_ds": 0.2,
+          "metastable_ds": 0.2,
+          "fading_de": 0.2,
+          "finite_end": 0.2,
+          "cyclic": 0.2
+        },
+        "p_recurrent_patch_given_eternal_ds": 0.5
+      },
+      "ds_favoring": {
+        "weights": {
+          "eternal_ds": 0.5,
+          "metastable_ds": 0.2,
+          "fading_de": 0.1,
+          "finite_end": 0.1,
+          "cyclic": 0.1
+        },
+        "p_recurrent_patch_given_eternal_ds": 0.75
+      }
+    }
+  },
+  "scientific_boundary": "Current observations do not identify the far-future model probabilities, vacuum lifetime, finite de Sitter Hilbert-space interpretation, or recurrent properties of a future bounce. Without theoretical priors the marginalized recurrence probability is non-identified beyond the full logical bound [0,1]; this is a partial-identification result, not an estimated probability distribution.",
+  "fate_probability_layer": {
+    "status": "Model-dependent inference layer. These weights are normalized posterior model weights only within the declared LambdaCDM-versus-w0waCDM comparison and are not objective probabilities of the universe's ultimate fate.",
+    "baseline_model_comparison": {
+      "dataset": "DESI DR2 BAO + Planck CMB",
+      "models": [
+        "LambdaCDM",
+        "w0waCDM"
+      ],
+      "ln_bayes_factor_dynamic_vs_lcdm": -0.57,
+      "ln_bayes_factor_sigma": 0.26,
+      "model_prior_odds_dynamic_to_lcdm": 1.0,
+      "source": "Ong, Yallup & Handley (2026), arXiv:2603.05472",
+      "interpretation": "Equal prior odds over only LambdaCDM and w0waCDM using the Ong, Yallup & Handley DESI DR2 BAO + Planck CMB Bayesian evidence. The numerical uncertainty is the reported evidence-computation uncertainty, not a complete systematic uncertainty or a probability over all cosmological theories."
+    },
+    "comparison_model_evidence": [
+      {
+        "label": "DESI DR2 + CMB",
+        "lnB_dynamic_vs_lcdm": -0.57,
+        "sigma": 0.26,
+        "status": "baseline"
+      },
+      {
+        "label": "DESI DR2 + CMB + corrected DES-Dovekie SN",
+        "lnB_dynamic_vs_lcdm": -0.01,
+        "sigma": 0.27,
+        "status": "current calibration-corrected Bayesian comparison; not adopted as the recurrence baseline"
+      },
+      {
+        "label": "DESI DR2 + CMB + original DES-SN5YR",
+        "lnB_dynamic_vs_lcdm": 3.32,
+        "sigma": 0.27,
+        "status": "calibration-sensitive historical comparison; not adopted as baseline"
+      }
+    ],
+    "fate_decomposition_sensitivity": {
+      "warning": "The top-level LambdaCDM versus dynamical-dark-energy weight is data-informed under the stated two-model/equal-prior comparison. The splits below are explicit theory sensitivity assumptions, not measured conditional fate probabilities.",
+      "sets": {
+        "recurrence_conservative": {
+          "lambda_family": {
+            "stable_eternal_ds": 0.25,
+            "metastable_ds": 0.75
+          },
+          "dynamic_family": {
+            "fading_dark_energy": 0.4,
+            "phantom_finite_end": 0.3,
+            "recollapse": 0.15,
+            "cyclic_or_bounce": 0.15
+          }
+        },
+        "maximum_entropy_split": {
+          "lambda_family": {
+            "stable_eternal_ds": 0.5,
+            "metastable_ds": 0.5
+          },
+          "dynamic_family": {
+            "fading_dark_energy": 0.25,
+            "phantom_finite_end": 0.25,
+            "recollapse": 0.25,
+            "cyclic_or_bounce": 0.25
+          }
+        },
+        "recurrence_favoring": {
+          "lambda_family": {
+            "stable_eternal_ds": 0.75,
+            "metastable_ds": 0.25
+          },
+          "dynamic_family": {
+            "fading_dark_energy": 0.2,
+            "phantom_finite_end": 0.1,
+            "recollapse": 0.2,
+            "cyclic_or_bounce": 0.5
+          }
+        }
+      }
+    },
+    "comparison_scope_note": "These evidence values are from the Ong, Yallup & Handley Bayesian reanalysis and refer to a restricted LambdaCDM-versus-w0waCDM model set. DESI DR2 Results IV adds Lyman-alpha Alcock-Paczynski/full-shape information and quotes frequentist significances; it is a distinct inferential object and is not substituted for these Bayes factors."
+  }
+}

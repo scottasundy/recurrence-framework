@@ -1,0 +1,18 @@
+The Cosmological Recurrence Probability Study uses a scoped dual-license structure.
+
+1. Source code
+   Files under src/, scripts/, tests/, run.py, and other original source-code
+   components are available under the MIT License. See LICENSE-CODE.
+
+2. Written study and original non-code content
+   The manuscript, original figures, documentation, and other original non-code
+   content are licensed under Creative Commons Attribution 4.0 International
+   (CC BY 4.0). See LICENSE-CONTENT.
+
+3. DESI-derived data
+   data/desi-projection.csv.gz is a compact projection derived
+   from public DESI cosmology chains and remains subject to DESI's applicable
+   CC BY 4.0 attribution and acknowledgment requirements. See
+   data/desi-source.md and ACKNOWLEDGMENTS.md.
+
+Where a file states a more specific license, that file-specific notice controls.

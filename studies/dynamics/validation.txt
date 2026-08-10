@@ -1,0 +1,74 @@
+VALIDATION SUMMARY
+==================
+
+Scientific verification status: PASS
+
+Exact period and invariant verification
+---------------------------------------
+- Analytic transport-clock and diagonal-histogram identities are covered by tests.
+- Exact row-wise horizontal and column-wise vertical momentum conservation is covered by tests.
+- Even-torus checkerboard sign modes are covered by tests.
+- 5x5 seed-75202 exact period: 9,705.
+- 5x5 seed-75202 geometric histogram period: 5.
+- 5x5 seed-75202 interaction macroperiod under F^5: 1,941.
+- Exact fixed-histogram + line-momentum interaction fiber: 2,209 states.
+- Exact macrocycle decomposition: 17 cycles with lengths
+  1941, 46, 45, 44, 28, 18, 14, 14, 10, 9, 8, 8, 7, 5, 5, 4, 3.
+- Minimum velocity-bit Hamming distance on the 9,705-state reference orbit: 4.
+- Greedy phase-identifying sensors: 49/100 velocity channels in one snapshot,
+  or 11/25 density sites across three consecutive frames.
+- Universal linear-invariant dimension for 5x5 F^5: 27.
+
+Exhaustive small-sector verification
+------------------------------------
+- 3x3 four-particle zero-momentum sector: 9,153 states, 2,061 cycles.
+- 3x3 least periods: 3, 6, 9, 12.
+- Six collision-count observations determine period class for every 3x3 state.
+- 4x4 four-particle zero-momentum sector: 94,336 states, 19,448 cycles.
+- 4x4 least periods: 2, 4, 6, 8, 12, 20, 28.
+- Four density frames determine period class for every 4x4 state.
+- 4x4 interaction fibers: 58,758.
+- States in fibers that are already a single macrocycle: 51,648
+  (54.7489823609 percent).
+
+Predictive-observability verification
+-------------------------------------
+- Independent HPP ambiguity verifier:
+  9,153 sector states; 9,099 predictive singletons; 27 predictive doubletons;
+  54 ambiguous states; 18 period-three cycles; 9 time-reversal pairs.
+
+Exact sensor-observability verification
+--------------------------------------
+- Exact-mask fixed-site search: minimum 3 sensors; exactly 6 minimum layouts.
+- Exact-mask reconstruction at the minimum: 4 snapshots.
+- Local-momentum fixed-site search: minimum 5 sensors; exactly 36 minimum layouts.
+- Local-momentum reconstruction at the minimum: 7 snapshots.
+- All-site momentum reconstructs in 2 snapshots.
+- All-site horizontal/vertical axis counts reconstruct in 2 snapshots.
+- Complete future density remains at 9,126 predictive classes with 27 doubletons.
+- Microscopic cycles: 2,061; density-predictive cycles: 2,052.
+- Exactly 9 period-three orbit-pair mergers; no density period compression.
+- Dedicated observability regression tests: 4 passed.
+
+Period-navigation reproduction
+------------------------------
+- 13 committed CSV files under data/periods can be regenerated
+  independently and checked against committed results.
+
+Empirical period-scale predictor
+--------------------------------
+- 500 fixed-seed states, seeds 880000 through 880499.
+- 344 distinct exact periods.
+- Minimum period: 5.
+- Maximum period: 201,810.
+- Optional five-fold random-forest result on log10(period):
+  R^2 = 0.723801020427;
+  median multiplicative error = 2.174196710552;
+  90th-percentile multiplicative error = 9.161208841912.
+- This is supplemental empirical evidence, not an exact or universal period law.
+
+Scientific boundary
+-------------------
+The orbit-specific calibrated interaction clock is supplemental and is not
+promoted as a universal law. The study does not claim that physical reality is
+finite, exactly recurrent, or described by HPP dynamics.
