@@ -74,7 +74,9 @@ The statement 'the universe recurs' is incomplete until the object being compare
 
 
 
-$$ R_epsilon(t): d[x(t), x(0)] <= epsilon $$
+```math
+R_epsilon(t): d[x(t), x(0)] <= epsilon
+```
 
 The study preserves the separation between the de Sitter thermodynamic clock and quantum epsilon recurrence, and adds a hierarchical fate-probability layer: observed data constrain top-level model-family weights, while unresolved within-family fate splits are exposed as explicit theory sensitivity assumptions rather than hidden inside a single percentage.
 
@@ -82,7 +84,9 @@ The study preserves the separation between the de Sitter thermodynamic clock and
 
 Let D denote present observations, M a far-future cosmological model, theta measured cosmological parameters within M, and A additional theoretical assumptions required for a recurrence theorem or mechanism. The target probability has the schematic form:
 
-$$ P(R_epsilon < T | D) = sum_{M,A} integral P(R_epsilon < T | M, theta, A) p(theta, M, A | D) dtheta $$
+```math
+P(R_epsilon < T | D) = sum_{M,A} integral P(R_epsilon < T | M, theta, A) p(theta, M, A | D) dtheta
+```
 
 Only part of this expression is presently data-driven. The posterior p(theta | M,D) can be propagated from released cosmological chains. The probabilities of the far-future models and quantum assumptions are not presently identified. CRPS therefore refuses to collapse them into a single measured percentage.
 
@@ -118,17 +122,25 @@ Only part of this expression is presently data-driven. The posterior p(theta | M
 
 ## 5.1 Horizon scale and entropy
 
-$$ H_Lambda = H0 sqrt(Omega_Lambda) $$
+```math
+H_Lambda = H0 sqrt(Omega_Lambda)
+```
 
-$$ r_dS = c / H_Lambda $$
+```math
+r_dS = c / H_Lambda
+```
 
-$$ S_dS/k_B = pi r_dS^2 / l_P^2 $$
+```math
+S_dS/k_B = pi r_dS^2 / l_P^2
+```
 
 At the Cosmic Coordinate reference point H0 = 68.11 km s^-1 Mpc^-1 and Omega_Lambda = 0.6958, CRPS obtains H_Lambda^-1 = 17.2105 Gyr, r_dS = 1.6282 x 10^26 m, and S_dS/k_B = 3.18835 x 10^122.
 
 ## 5.2 Conditional entropy-exponential recurrence scale
 
-$$ t_thermo ~ H_Lambda^-1 exp(S_dS/k_B) $$
+```math
+t_thermo ~ H_Lambda^-1 exp(S_dS/k_B)
+```
 
 The scale is too large to construct directly. In logarithmic form, log10(t_thermo/yr) = 1.38468 x 10^122 and log10(log10(t_thermo/yr)) = 122.14135. The latter is only a compact plotting coordinate.
 
@@ -165,9 +177,13 @@ The result is a scale-separation statement: current uncertainty in H0 and Omega_
 
 Gupta and Short define finite-system quantum recurrence using trace distance. For a finite-dimensional unitary system with a finite discrete Hamiltonian spectrum, their continuous-time theorem gives an upper bound on the time at which all states return within epsilon, provided at least one state has moved farther than epsilon at an earlier time.
 
-$$ T(rho(t_r), rho(0)) <= epsilon $$
+```math
+T(rho(t_r), rho(0)) <= epsilon
+```
 
-$$ t_r <= [2 pi hbar / (E_max-E_min)] [2 ceil(pi/epsilon)]^(d-2) $$
+```math
+t_r <= [2 pi hbar / (E_max-E_min)] [2 ceil(pi/epsilon)]^(d-2)
+```
 
 This theorem is rigorous for the stated finite-system assumptions, but CRPS does not substitute de Sitter entropy into it. A cosmological numerical application would require, at minimum, a justified finite Hamiltonian description, the number d of distinct energy eigenvalues, and the energy span E_max-E_min. Those microscopic inputs are not identified by current cosmological data.
 
@@ -189,7 +205,9 @@ The clean conclusion is therefore two-clock, not one-clock: CRPS can compute a c
 
 If the universe approaches a de Sitter-like phase but the vacuum is metastable, recurrence competes with vacuum decay. Under constant independent hazards:
 
-$$ P(recurrence before decay) = tau_decay / (tau_decay + t_rec) $$
+```math
+P(recurrence before decay) = tau_decay / (tau_decay + t_rec)
+```
 
 A vacuum lifetime that is enormous by astrophysical standards can still be negligible compared with an entropy-exponential recurrence scale. CRPS therefore performs competing-hazard calculations in logarithmic space. It does not assign a decay lifetime because present cosmological data do not measure the relevant microscopic vacuum-decay rate.
 
@@ -197,7 +215,9 @@ A vacuum lifetime that is enormous by astrophysical standards can still be negli
 
 A constant equation of state w<-1 produces a finite future proper time in the standard late-time approximation:
 
-$$ Delta t ~= 2 / [3 |1+w| H0 sqrt(Omega_DE)] $$
+```math
+Delta t ~= 2 / [3 |1+w| H0 sqrt(Omega_DE)]
+```
 
 | Constant w | Approximate remaining lifetime | Status |
 
@@ -222,7 +242,9 @@ These examples illustrate why a finite future endpoint and an eternal de Sitter 
 
 A Big Crunch does not by itself imply recurrence. Contraction is not a time-reversal operator, and a bounce is not automatically a reset. A genuinely recurrent cyclic model needs an explicit cycle-to-cycle map whose dynamics return to, or approach, a prior state under a declared metric.
 
-$$ x_{n+1} = F(x_n) $$
+```math
+x_{n+1} = F(x_n)
+```
 
 Temporal recurrence then becomes a property of iterates of F, not a consequence of the word 'cycle'. Dissipation, entropy production, particle creation, phase changes, or hidden degrees of freedom can prevent state return even if the scale factor oscillates.
 
@@ -230,7 +252,9 @@ Temporal recurrence then becomes a property of iterates of F, not a consequence 
 
 If the branch weights and the recurrence-theory probabilities are allowed to vary over everything consistent with current observations, the marginalized recurrence probability can range from zero to one. The current-data-only result is therefore:
 
-$$ P(recurrence | current observations, unrestricted future theory) in [0,1] $$
+```math
+P(recurrence | current observations, unrestricted future theory) in [0,1]
+```
 
 This is the formal consequence of an underidentified problem, not an informative probability estimate. Observations constrain the recent and intermediate expansion history; they do not yet identify the full dark-energy potential, vacuum lifetime, microscopic de Sitter state space, or a future cycle map. The full [0,1] interval means the target is non-identified under unrestricted future theory; it does not assign equal plausibility to every value.
 

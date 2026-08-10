@@ -69,11 +69,11 @@ The generalized protocol-family mathematics is documented in:
 
 The conceptual generalization is:
 
-\[
+```math
 \mathcal R_A(x)=\bigl(P_\pi(\cdot\mid x)\bigr)_{\pi\in A},
 \qquad
 x\sim_Ax'\iff\mathcal R_A(x)=\mathcal R_A(x').
-\]
+```
 
 This cleanly separates a state-description difference from a difference that changes at least one permitted physical prediction.
 

@@ -18,7 +18,7 @@ Inside an assumed eternal, stable, positive-$\Lambda$ future, the conventional f
 
 - asymptotic de Sitter horizon time: **17.2105 Gyr**;
 - de Sitter entropy: **$3.18835\times10^{122}\,k_B$**;
-- thermodynamic recurrence scale: **$\log_{10}(t_{\rm thermo}/{\rm yr})=1.38468\times10^{122}$**.
+- thermodynamic recurrence scale: **$\log_{10}(t_\mathrm{thermo}/\mathrm{yr})=1.38468\times10^{122}$**.
 
 This is a conditional thermodynamic scale, **not** a computed quantum $\varepsilon$-recurrence time for the observed universe.
 

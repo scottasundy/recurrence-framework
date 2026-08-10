@@ -14,7 +14,7 @@ For an observer $O$ with physically accessible protocols $\Pi_O$, define
 d_O(x,x')
 =
 \sup_{\pi\in\Pi_O}
-\operatorname{TV}
+\mathrm{TV}
 \left[
 P_\pi(\cdot|x),P_\pi(\cdot|x')
 \right].
@@ -87,7 +87,7 @@ Thus every finite threshold in this table eventually declares a practical return
 For quantum states with trace distance $D$, the optimal equal-prior one-shot discrimination probability is
 
 ```math
-P_{\rm correct}=\frac{1+D}{2}.
+P_\mathrm{correct}=\frac{1+D}{2}.
 ```
 
 A trace distance $D=10^{-6}$, for example, gives only $50.00005\%$ optimal single-shot identification success.
@@ -107,19 +107,19 @@ This does not by itself produce a cosmic recurrence time. A cosmological applica
 The quantity most relevant to a returned human observer is not a bare global norm. A future study should jointly estimate
 
 ```math
-d_X,\qquad d_O,\qquad \tau_{\rm detect},
+d_X,\qquad d_O,\qquad \tau_\mathrm{detect},
 ```
 
 where:
 
 - $d_X$ is complete-state mismatch;
 - $d_O$ is observer-accessible mismatch;
-- $\tau_{\rm detect}$ is the first time residual differences become detectable.
+- $\tau_\mathrm{detect}$ is the first time residual differences become detectable.
 
 The especially interesting regime is
 
 ```math
-d_X>0,\quad d_O\approx0,\quad \tau_{\rm detect}>H_O,
+d_X>0,\quad d_O\approx0,\quad \tau_\mathrm{detect}>H_O,
 ```
 
 where the universe is not exactly identical but no difference becomes available to the observer during the observer’s accessible future.

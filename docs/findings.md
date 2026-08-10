@@ -19,7 +19,7 @@
 
 1. **[DERIVED] Exact complete-state recurrence would not carry an internal record of earlier cycles.** If the complete physical state returns, the observer's brain, memory, instruments, notebooks, and other records return as part of that state.
 2. **[DERIVED] Remembering a previous exact cycle would itself be a state difference.** A system that accumulates memory across cycles is not undergoing exact complete-state recurrence unless the memory is stored in a larger nonrecurring system outside the declared recurring subsystem.
-3. **[CONCEPTUAL] A cycle number need not be an intrinsic physical variable.** An external mathematical description can label occurrences \(1,2,3,\ldots\), but if no internal variable changes from cycle to cycle, the ordinal label may be coordinate structure rather than an internally measurable state property.
+3. **[CONCEPTUAL] A cycle number need not be an intrinsic physical variable.** An external mathematical description can label occurrences $1,2,3,\ldots$, but if no internal variable changes from cycle to cycle, the ordinal label may be coordinate structure rather than an internally measurable state property.
 4. **[DERIVED] Exact global recurrence, observer recurrence, and experiential recurrence are different claims.**
 5. **[CONCEPTUAL] Biographical recurrence:** two globally different histories can be identical for an observer over a finite lifetime if every accessible record remains indistinguishable during that lifetime.
 6. **[DERIVED] Infinite observation time does not guarantee microscopic reconstruction under an information-losing observation map.** The HPP density benchmark supplies an exact finite example.
@@ -32,9 +32,9 @@
 ## 2. Difference, distinction, and reality
 
 10. **[DERIVED] Formal inequality is not automatically physical inequality.**
-    \[
+    ```math
     x\neq x'
-    \]
+    ```
     establishes descriptive difference only.
 11. **[DERIVED] Physical-predictive difference is defined by difference in some permitted consequence.**
 12. **[DERIVED] Observer-relative difference is weaker than theory-level physical-predictive difference.**
@@ -50,47 +50,47 @@
 ## 3. Audited core model
 
 17. **[AUDIT] Foundational object:** use a dynamical operational model
-    \[
+    ```math
     \mathcal T=(X,F,\Pi,\{P_\pi\}_{\pi\in\Pi}).
-    \]
-18. **[AUDIT] The complete prediction map is the primary construction.** For \(A\subseteq\Pi\),
-    \[
+    ```
+18. **[AUDIT] The complete prediction map is the primary construction.** For $A\subseteq\Pi$,
+    ```math
     \mathcal R_A(x)=\bigl(P_\pi(\cdot\mid x)\bigr)_{\pi\in A}.
-    \]
+    ```
 19. **[THEOREM] Predictive equivalence**
-    \[
+    ```math
     x\sim_Ax' \iff \mathcal R_A(x)=\mathcal R_A(x')
-    \]
+    ```
     is an equivalence relation.
 20. **[THEOREM] Predictive quotient**
-    \[
+    ```math
     Q_A=X/{\sim_A}
-    \cong \operatorname{Im}\mathcal R_A.
-    \]
+    \cong \mathrm{Im}\mathcal R_A.
+    ```
 21. **[THEOREM] Difference criterion**
-    \[
+    ```math
     [x]_A\neq[x']_A
     \iff
     \exists \pi\in A:
     P_\pi(\cdot|x)\neq P_\pi(\cdot|x').
-    \]
-22. **[THEOREM] Prediction-sufficient factorization:** if a deterministic encoding \(s:X\to S\) preserves all predictions in \(A\), then the quotient map factors uniquely through \(s(X)\).
-23. **[AUDIT] Correct strength:** \(Q_A\) is the unique coarsest deterministic prediction-sufficient representation up to predictive isomorphism. It is **not** proved to be a unique or minimal ontology.
+    ```
+22. **[THEOREM] Prediction-sufficient factorization:** if a deterministic encoding $s:X\to S$ preserves all predictions in $A$, then the quotient map factors uniquely through $s(X)$.
+23. **[AUDIT] Correct strength:** $Q_A$ is the unique coarsest deterministic prediction-sufficient representation up to predictive isomorphism. It is **not** proved to be a unique or minimal ontology.
 24. **[THEOREM] Operational discrimination pseudometric**
-    \[
+    ```math
     \delta_A(x,x')
     =
     \sup_{\pi\in A}
     \mathrm{TV}\!\left[P_\pi(\cdot|x),P_\pi(\cdot|x')\right]
-    \]
-    has zero set exactly \(\sim_A\).
-25. **[AUDIT] Keep \(\delta_A\) separate from deterministic trajectory discrepancy**
-    \[
+    ```
+    has zero set exactly $\sim_A$.
+25. **[AUDIT] Keep $\delta_A$ separate from deterministic trajectory discrepancy**
+    ```math
     \Delta_{h,H}
     =
     \max_{0\le t\le H}
     d_Y(h(F^tx),h(F^tx')).
-    \]
+    ```
     They may have matching zero sets in special deterministic settings but answer different approximate-distinguishability questions.
 
 ---
@@ -99,14 +99,14 @@
 
 ## 4. Canonical density result
 
-26. **[EXACT] Sector:** periodic \(3\times3\) HPP, four particles, zero total momentum:
-    \[
+26. **[EXACT] Sector:** periodic $3\times3$ HPP, four particles, zero total momentum:
+    ```math
     |X|=9153.
-    \]
+    ```
 27. **[EXACT] Complete future-density refinement**
-    \[
+    ```math
     495\to6948\to9090\to9126\to9126.
-    \]
+    ```
 28. **[EXACT] Stable density quotient:** 9,099 singletons + 27 doubletons = 9,126 predictive classes.
 29. **[EXACT] 54 microscopic states remain permanently ambiguous to the complete density-history observer.
 30. **[EXACT] Residual density-observer ambiguity is only 27 binary classes, but it is exact and permanent under that observation map.
@@ -117,14 +117,14 @@
 32. **[EXACT] Two fixed mask sensors reach at most 4,945 predictive classes.
 33. **[EXACT] Three fixed sites are necessary and sufficient among the enumerated fixed-site subsets to reconstruct all 9,153 states.
 34. **[EXACT] Exactly six three-site layouts succeed:
-    \[
+    ```math
     (0,4,8),(0,5,7),(1,3,8),(1,5,6),(2,3,7),(2,4,6).
-    \]
+    ```
 35. **[EXACT] These six layouts are the six toroidal diagonals in row-major indexing.
 36. **[EXACT] Successful refinement:
-    \[
+    ```math
     322\to3271\to9123\to9153\to9153.
-    \]
+    ```
 37. **[EXACT] Minimum reconstructing word length at the three-site minimum is four snapshots.
 
 ## 6. Local momentum sensors
@@ -133,22 +133,22 @@
 39. **[EXACT] Five fixed momentum sites are necessary and sufficient among the enumerated fixed-site subsets to reconstruct all 9,153 states.
 40. **[EXACT] Exactly 36 five-site momentum layouts succeed.
 41. **[EXACT] Successful refinement:
-    \[
+    ```math
     1181\to8391\to8766\to9021\to9143\to9149\to9153\to9153.
-    \]
+    ```
 42. **[EXACT] Minimum reconstructing word length at the five-site minimum is seven snapshots.
 43. **[EXACT] All-site momentum reconstructs in two snapshots:
-    \[
+    ```math
     6841\to9153\to9153.
-    \]
+    ```
 
 ## 7. Axis-count sensor
 
 44. **[EXACT] If every site reports only horizontal and vertical particle counts, the present observation has 2,853 classes.
 45. **[EXACT] One additional time slice reconstructs the complete state:
-    \[
+    ```math
     2853\to9153\to9153.
-    \]
+    ```
 
 ## 8. Main HPP observability conclusion
 
@@ -160,18 +160,18 @@
 
 # Step 3 — Predictive refinement structure
 
-49. **[THEOREM] If \(A\subseteq B\), then
-    \[
+49. **[THEOREM] If $A\subseteq B$, then
+    ```math
     \sim_B\subseteq\sim_A
-    \]
+    ```
     and there is a canonical coarse-graining
-    \[
+    ```math
     Q_B\to Q_A.
-    \]
+    ```
 50. **[THEOREM] Combining protocol families gives
-    \[
+    ```math
     \sim_{A\cup B}=\sim_A\cap\sim_B.
-    \]
+    ```
 51. **[AUDIT] Call the structure a predictive refinement poset unless the selected protocol family is proved closed under the operations needed for a full lattice.
 52. **[THEOREM] Longer finite horizons monotonically refine prediction classes.
 53. **[AUXILIARY] HPP stable predictive-class counts found during the refinement study:
@@ -205,7 +205,7 @@
 63. **[EXACT] The HPP 27 density doubletons are a finite exact example of Case 3.
 64. **[CONDITIONAL] Case 4: gauge/representational redundancy — distinct mathematical representatives can correspond to one physical state when the theory itself identifies them through gauge redundancy.
 65. **[METAPHYSICAL] Case 5: inert ontological surplus — postulated differences that never alter any physically permitted consequence.
-66. **[THEOREM] Inert-extension underdetermination:** if an added variable \(\lambda\) never affects any prediction or physically accessible dynamics, the original theory and the \(\lambda\)-refined theory are empirically indistinguishable with respect to the declared protocol family.
+66. **[THEOREM] Inert-extension underdetermination:** if an added variable $\lambda$ never affects any prediction or physically accessible dynamics, the original theory and the $\lambda$-refined theory are empirically indistinguishable with respect to the declared protocol family.
 67. **[DERIVED] Permanent invisibility to one observer does not imply prediction-inertness for the full theory.
 68. **[DERIVED] Gauge redundancy and inert ontology can have the same prediction profile while carrying different interpretive status.
 
@@ -215,18 +215,18 @@
 
 69. **[CONDITIONAL] Nongauge classical mechanics:** if the admitted physical observables separate phase-space points, then the predictive quotient is isomorphic to the physical phase space.
 70. **[CONDITIONAL] Gauge theory:** when operational-equivalence classes coincide with gauge orbits and the relevant gauge-invariant observables separate physical orbits,
-    \[
+    ```math
     Q_T\cong X/G.
-    \]
-71. **[AUDIT] Do not state \(Q_T=X/G\) unconditionally for every gauge theory; global/singular/boundary issues can matter.
+    ```
+71. **[AUDIT] Do not state $Q_T=X/G$ unconditionally for every gauge theory; global/singular/boundary issues can matter.
 72. **[THEOREM/CONDITIONAL] Quantum density operators:** with all POVMs allowed,
-    \[
+    ```math
     \rho\sim_T\sigma \iff \rho=\sigma.
-    \]
+    ```
 73. **[DERIVED] Pure state vectors differing only by global phase are predictively equivalent:
-    \[
+    ```math
     |\psi\rangle\sim e^{i\phi}|\psi\rangle,
-    \]
+    ```
     giving projective Hilbert space at the pure-state level.
 74. **[DERIVED] Different ensemble decompositions of the same density operator are indistinguishable at the state level unless a larger retained preparation record is part of the declared state/protocol description.
 75. **[CONDITIONAL] Restricted quantum measurement families can produce coarser quotients than the full density-operator state space.
@@ -238,50 +238,50 @@
 # Step 6 — Predictive recurrence
 
 78. **[THEOREM] If predictive equivalence is forward invariant—for example because protocols are closed under delayed execution—then quotient dynamics are well-defined:
-    \[
+    ```math
     \bar F_A([x]_A)=[F(x)]_A.
-    \]
-79. **[THEOREM] Exact \(A\)-predictive recurrence:
-    \[
+    ```
+79. **[THEOREM] Exact $A$-predictive recurrence:
+    ```math
     \bar F_A^T([x]_A)=[x]_A
     \iff
     F^Tx\sim_Ax.
-    \]
+    ```
 80. **[DERIVED] Recurrence hierarchy:
-    \[
+    ```math
     F^Tx=x
     \Rightarrow
     F^Tx\sim_Tx
     \Rightarrow
     F^Tx\sim_Ox.
-    \]
+    ```
 81. **[THEOREM] For a periodic microscopic orbit, the least quotient period divides the microscopic period:
-    \[
+    ```math
     p_A\mid p_X.
-    \]
+    ```
 82. **[DERIVED] Quotienting can merge distinct cycles, shorten a period, or both. These are different phenomena.
 83. **[EXACT] HPP microscopic cycle count:
-    \[
+    ```math
     2061
-    \]
+    ```
     with
-    \[
+    ```math
     1341\times3,\ 459\times6,\ 252\times9,\ 9\times12.
-    \]
+    ```
 84. **[EXACT] Complete future-density quotient:
-    \[
+    ```math
     2052
-    \]
+    ```
     cycles with
-    \[
+    ```math
     1332\times3,\ 459\times6,\ 252\times9,\ 9\times12.
-    \]
+    ```
 85. **[EXACT] Exactly nine period-three orbit-pair mergers occur.
 86. **[EXACT] No density-quotient period compression occurs in this sector.
 87. **[DERIVED] Near physical-predictive recurrence can be defined by
-    \[
+    ```math
     \delta_A(F^Tx,x)\le\varepsilon_A,
-    \]
+    ```
     but must remain distinct from exact recurrence.
 88. **[CONDITIONAL] A trajectory can fail to close in a redundant gauge representative while closing in the reduced/predictive physical state space.
 
@@ -294,12 +294,12 @@
 91. **[METAPHYSICAL] Richer ontologies can always be postulated inside prediction-map fibers if the added structure is declared prediction-inert.
 92. **[THEOREM/LOGICAL] No experiment internal to a theory can identify a variable defined never to influence any permitted record.
 93. **[METAPHYSICAL] Minimal physical realism adopts
-    \[
-    \Omega_{\rm physical}\cong Q_T.
-    \]
-94. **[METAPHYSICAL] Surplus realism permits a many-to-one ontology over \(Q_T\).
+    ```math
+    \Omega_\mathrm{physical}\cong Q_T.
+    ```
+94. **[METAPHYSICAL] Surplus realism permits a many-to-one ontology over $Q_T$.
 95. **[METAPHYSICAL] Instrumentalism can remain silent about deeper ontology and use only the predictive structure.
-96. **[CONDITIONAL] \(Q_T\) is theory-relative, not automatically ultimate. A successor theory with a richer protocol set can split classes that were equivalent under \(T\).
+96. **[CONDITIONAL] $Q_T$ is theory-relative, not automatically ultimate. A successor theory with a richer protocol set can split classes that were equivalent under $T$.
 97. **[CONCEPTUAL] Recurrence itself can therefore be metaphysically underdetermined if one insists on permanently inert hidden variables: every predictive distinction may recur while an alleged deeper inert label does not.
 
 ---
@@ -307,17 +307,17 @@
 # Step 8 — Causal, finite-observer, reference-frame, and cosmological extensions
 
 98. **[THEOREM] Protocol inclusion produces the hierarchy
-    \[
+    ```math
     Q_T\to Q_C\to Q_O\to Q_{O,H}.
-    \]
-99. **[THEOREM] Causal monotonicity:** if \(C_1\subseteq C_2\) with nested protocol access, then
-    \[
+    ```
+99. **[THEOREM] Causal monotonicity:** if $C_1\subseteq C_2$ with nested protocol access, then
+    ```math
     \delta_{C_1}\le\delta_{C_2}.
-    \]
-100. **[THEOREM] Finite-horizon monotonicity:** if \(H_1\le H_2\), then
-    \[
+    ```
+100. **[THEOREM] Finite-horizon monotonicity:** if $H_1\le H_2$, then
+    ```math
     \delta_{O,H_1}\le\delta_{O,H_2}.
-    \]
+    ```
 101. **[DERIVED] Detection time can be defined as the first horizon at which two states become distinguishable relative to the chosen observer/protocol family.
 102. **[CONCEPTUAL] Finite-life equivalence formalizes “same life from the inside” without asserting global state equality.
 103. **[DERIVED] Global predictive recurrence implies patch recurrence implies observer recurrence when protocol families are nested; reverse implications need not hold.
@@ -327,9 +327,9 @@
 107. **[THEOREM] If the dynamics also intertwine under the operational isomorphism, quotient recurrence is preserved.
 108. **[AUDIT] Do not overclaim equality of numerical coordinate recurrence times under arbitrary relativistic/reference-frame reparameterizations; preserve the structural return claim.
 109. **[CONDITIONAL] A cosmic predictive quotient is conceptually definable only relative to a theory specifying enough of
-    \[
-    (X_{\rm cosmic},F_{\rm cosmic},\Pi_{\rm cosmic}).
-    \]
+    ```math
+    (X_\mathrm{cosmic},F_\mathrm{cosmic},\Pi_\mathrm{cosmic}).
+    ```
 110. **[CURRENT BOUNDARY] The actual cosmic predictive quotient is presently not constructible because those fundamental ingredients are not known at the necessary level.
 111. **[DERIVED] The predictive-quotient framework does not itself create a cosmic recurrence mechanism; asymptotic future physics still decides whether a return structure exists.
 
@@ -337,8 +337,8 @@
 
 # Step 9A — Full mathematics audit
 
-112. **[AUDIT] The prediction map \(\mathcal R_A\) plus protocol inclusion generates most of the framework and should be primary.
-113. **[AUDIT] Separate quotient definitions for observer, causal patch, finite horizon, and full theory are special cases of the same \(Q_A\) construction.
+112. **[AUDIT] The prediction map $\mathcal R_A$ plus protocol inclusion generates most of the framework and should be primary.
+113. **[AUDIT] Separate quotient definitions for observer, causal patch, finite horizon, and full theory are special cases of the same $Q_A$ construction.
 114. **[AUDIT] Replace the claimed distinction lattice with a refinement poset unless lattice closure is proven.
 115. **[AUDIT] Keep operational TV distance and deterministic trajectory discrepancy distinct.
 116. **[AUDIT] The quotient-dynamics theorem requires explicit forward-invariance / delayed-protocol closure.
@@ -351,75 +351,75 @@
      - exact return of every initial state requires bijectivity/reversibility or another no-transient periodicity condition.
 122. **[AUDIT] HPP is unaffected by that correction because the HPP update is reversible.
 123. **[AUDIT] HPP scalar transport-clock result survives:
-    \[
+    ```math
     \Phi(FX)=\Phi(X)+N\pmod L
-    \]
+    ```
     implies
-    \[
+    ```math
     \frac{L}{\gcd(N,L)}\mid T.
-    \]
+    ```
 124. **[AUDIT] HPP diagonal-species clocks, line-momentum invariants, and checkerboard parity arguments remain consistent with the update law.
-125. **[AUDIT] Interaction-fiber relation \(T=g\tau\) is valid when \(g\) is a proven period divisor and \(\tau\) is the least period of \(F^g\) on the declared reference/fiber.
+125. **[AUDIT] Interaction-fiber relation $T=g\tau$ is valid when $g$ is a proven period divisor and $\tau$ is the least period of $F^g$ on the declared reference/fiber.
 126. **[AUDIT] Quantum exact recurrence condition survives:
-    \[
+    ```math
     \frac{(E_n-E_m)T}{\hbar}\in2\pi\mathbb Z
-    \]
+    ```
     for occupied energy gaps.
 127. **[AUDIT] Finite-spectrum near recurrence must remain distinct from exact recurrence.
 128. **[AUDIT] Quantum trace distance is an instance of the operational discrimination structure when the protocol family contains all POVMs.
 129. **[AUDIT] Gauge-quotient statements require explicit separation assumptions.
-130. **[AUDIT] The theory-level quotient \(Q_T\) should never be called “ultimate reality” without an additional metaphysical principle.
+130. **[AUDIT] The theory-level quotient $Q_T$ should never be called “ultimate reality” without an additional metaphysical principle.
 
 ---
 
 # Audited cosmological mathematics retained from the broader framework
 
 131. **[EXACT ALGEBRAIC CHECK] Cosmic composition coordinate
-    \[
+    ```math
     \Phi_C=\frac{2}{\pi}\arctan\frac{\rho_\Lambda}{\rho_m}
-    \]
-    with \(\Omega_{m0}=0.3042,\Omega_{\Lambda0}=0.6958\) gives
-    \[
+    ```
+    with $\Omega_{m0}=0.3042,\Omega_{\Lambda0}=0.6958$ gives
+    ```math
     \Phi_C=0.7376145673.
-    \]
-132. **[AUDIT] \(\Phi_C\) is a model-conditional composition coordinate, not a recurrence phase.
+    ```
+132. **[AUDIT] $\Phi_C$ is a model-conditional composition coordinate, not a recurrence phase.
 133. **[EXACT ALGEBRAIC CHECK] Inversion
-    \[
+    ```math
     a(\Phi_C)=
     \left[
       \frac{\Omega_{m0}}{\Omega_{\Lambda0}}
       \tan\left(\frac{\pi\Phi_C}{2}\right)
     \right]^{1/3}
-    \]
+    ```
     is correct for the declared reference model.
 134. **[EXACT ALGEBRAIC CHECK] Declared late-time age relation reproduces approximately
-    \[
+    ```math
     13.7869193\ \text{Gyr},
-    \]
+    ```
     with the stated radiation-neglect caveat.
 135. **[EXACT NUMERICAL CHECK] Declared de Sitter reference arithmetic reproduces approximately
-    \[
+    ```math
     H_\Lambda^{-1}=17.2105\ \text{Gyr},
-    \]
-    \[
-    r_{\rm dS}=1.62824\times10^{26}\ \text{m},
-    \]
-    \[
-    S_{\rm dS}/k_B=3.18835\times10^{122}.
-    \]
+    ```
+    ```math
+    r_\mathrm{dS}=1.62824\times10^{26}\ \text{m},
+    ```
+    ```math
+    S_\mathrm{dS}/k_B=3.18835\times10^{122}.
+    ```
 136. **[CONDITIONAL] Entropy-exponential recurrence scale
-    \[
-    t_{\rm thermo}\sim H_\Lambda^{-1}e^{S_{\rm dS}/k_B}
-    \]
+    ```math
+    t_\mathrm{thermo}\sim H_\Lambda^{-1}e^{S_\mathrm{dS}/k_B}
+    ```
     is a conditional thermodynamic estimate, not a demonstrated quantum recurrence time.
-137. **[EXACT NUMERICAL CHECK] Equal-prior conversion of \(\ln B=-0.57\) gives approximately 63.9% / 36.1% weights for the declared two-model comparison.
+137. **[EXACT NUMERICAL CHECK] Equal-prior conversion of $\ln B=-0.57$ gives approximately 63.9% / 36.1% weights for the declared two-model comparison.
 138. **[AUDIT] Those weights are not ultimate-fate probabilities and not cosmic-recurrence probabilities.
 139. **[AUDIT] The unrestricted
-    \[
+    ```math
     [0,1]
-    \]
+    ```
     cosmic-recurrence result is a non-identification statement: under the deliberately unrestricted future-theory class, current data do not narrow the identified set below logical bounds.
-140. **[AUDIT] Do not present \([0,1]\) itself as a numerical observational discovery; its scientific content lies in the uncertainty decomposition explaining why the target is unidentified.
+140. **[AUDIT] Do not present $[0,1]$ itself as a numerical observational discovery; its scientific content lies in the uncertainty decomposition explaining why the target is unidentified.
 
 ---
 
@@ -460,7 +460,7 @@
 162. Finite de Sitter entropy is not by itself proof of a finite exact cosmic quantum state space or a rigorous quantum recurrence clock.
 163. The Cosmic Coordinate is not a recurrence phase.
 164. Restricted Bayesian model weights are not probabilities of ultimate cosmic fate.
-165. The \([0,1]\) identified set is not an informative probability estimate.
+165. The $[0,1]$ identified set is not an informative probability estimate.
 166. Operational equivalence does not automatically imply ontological identity.
 167. Quantum-reference-frame covariance does not imply all frame-dependent quantities are numerically identical.
 168. The predictive refinement structure is not called a full lattice without a closure proof.

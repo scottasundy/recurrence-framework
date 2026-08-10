@@ -43,7 +43,7 @@ The observer layer asks a different question from exact state identity:
 If the complete states differ, can any physically available observation distinguish them?
 ```
 
-For a declared observer \(O\), the framework uses an operational distance \(d_O\) over accessible measurement-record distributions. A return can therefore be exact, merely near in complete-state space, or observer-indistinguishable within a stated tolerance.
+For a declared observer $O$, the framework uses an operational distance $d_O$ over accessible measurement-record distributions. A return can therefore be exact, merely near in complete-state space, or observer-indistinguishable within a stated tolerance.
 
 The bundled exact HPP certificate supplies a limiting example: 27 pairs of distinct microscopic states have density-observer distance zero forever. The conserved-sector perturbation study supplies the opposite case: 150 pairs start with identical density observations but every pair becomes density-distinguishable after one update.
 

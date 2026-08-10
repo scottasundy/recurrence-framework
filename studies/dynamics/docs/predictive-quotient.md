@@ -20,142 +20,142 @@ a special case of this construction.
 
 Let
 
-\[
+```math
 \mathcal T=(X,F,\Pi,\{P_\pi\}_{\pi\in\Pi}),
-\]
+```
 
 where:
 
-- \(X\) is a candidate complete state-description space;
-- \(F:X\to X\) is a deterministic discrete-time evolution map;
-- \(\Pi\) is a declared family of admissible protocols;
-- \(P_\pi(\cdot\mid x)\) is the probability distribution of records generated
-  by protocol \(\pi\) from state \(x\).
+- $X$ is a candidate complete state-description space;
+- $F:X\to X$ is a deterministic discrete-time evolution map;
+- $\Pi$ is a declared family of admissible protocols;
+- $P_\pi(\cdot\mid x)$ is the probability distribution of records generated
+  by protocol $\pi$ from state $x$.
 
 For deterministic observations, the distributions may be point masses. The
 probabilistic notation is used only to provide one common language for
 deterministic, noisy, and quantum examples.
 
-For any selected protocol family \(A\subseteq\Pi\), define the complete
+For any selected protocol family $A\subseteq\Pi$, define the complete
 prediction map
 
-\[
+```math
 \mathcal R_A:X\to\mathcal P_A,
 \qquad
 \mathcal R_A(x)=\bigl(P_\pi(\cdot\mid x)\bigr)_{\pi\in A}.
-\]
+```
 
-The codomain \(\mathcal P_A\) is simply the product of the relevant record-
+The codomain $\mathcal P_A$ is simply the product of the relevant record-
 distribution spaces. No additional physical interpretation is assumed.
 
 ## 3. Predictive equivalence and quotient
 
 Define
 
-\[
+```math
 x\sim_A x'
 \quad\Longleftrightarrow\quad
 \mathcal R_A(x)=\mathcal R_A(x').
-\]
+```
 
 Equivalently,
 
-\[
+```math
 x\sim_Ax'
 \quad\Longleftrightarrow\quad
 P_\pi(\cdot\mid x)=P_\pi(\cdot\mid x')
 \ \text{for every }\pi\in A.
-\]
+```
 
-Because equality is reflexive, symmetric, and transitive, \(\sim_A\) is an
+Because equality is reflexive, symmetric, and transitive, $\sim_A$ is an
 equivalence relation.
 
 The corresponding predictive quotient is
 
-\[
+```math
 Q_A=X/{\sim_A}.
-\]
+```
 
 The quotient is canonically isomorphic to the image of the prediction map:
 
-\[
+```math
 \boxed{
-Q_A\cong\operatorname{Im}\mathcal R_A.
+Q_A\cong\mathrm{Im}\mathcal R_A.
 }
-\]
+```
 
 Each quotient state therefore represents one complete prediction profile under
 the declared protocol family.
 
 ## 4. Prediction-sufficient factorization theorem
 
-Let \(s:X\to S\) be any deterministic representation through which every
-prediction in \(A\) factors. That is, suppose there exists
-\(\widehat{\mathcal R}_A:S\to\mathcal P_A\) such that
+Let $s:X\to S$ be any deterministic representation through which every
+prediction in $A$ factors. That is, suppose there exists
+$\widehat{\mathcal R}_A:S\to\mathcal P_A$ such that
 
-\[
+```math
 \mathcal R_A=\widehat{\mathcal R}_A\circ s.
-\]
+```
 
 Then
 
-\[
+```math
 s(x)=s(x')
 \Longrightarrow
 x\sim_Ax'.
-\]
+```
 
 Hence there is a unique induced map
 
-\[
+```math
 g:s(X)\to Q_A
-\]
+```
 
 satisfying
 
-\[
+```math
 q_A=g\circ s,
-\]
+```
 
-where \(q_A:X\to Q_A\) is the quotient map.
+where $q_A:X\to Q_A$ is the quotient map.
 
-Therefore \(Q_A\) is the unique coarsest deterministic representation,
-up to predictive isomorphism, that preserves every prediction in \(A\).
+Therefore $Q_A$ is the unique coarsest deterministic representation,
+up to predictive isomorphism, that preserves every prediction in $A$.
 
 This is a theorem about prediction-sufficient deterministic representations.
-It is not a theorem that \(Q_A\) is the unique possible ontology.
+It is not a theorem that $Q_A$ is the unique possible ontology.
 
 ## 5. Protocol refinement
 
 If
 
-\[
+```math
 A\subseteq B,
-\]
+```
 
-then equality of every prediction in \(B\) implies equality of every prediction
-in \(A\). Thus
+then equality of every prediction in $B$ implies equality of every prediction
+in $A$. Thus
 
-\[
+```math
 \sim_B\subseteq\sim_A.
-\]
+```
 
 There is therefore a canonical coarse-graining map
 
-\[
+```math
 Q_B\to Q_A.
-\]
+```
 
 Adding admissible protocols can split predictive classes but cannot merge
 classes that were already distinguishable.
 
 For two protocol families,
 
-\[
+```math
 \boxed{
 \sim_{A\cup B}=\sim_A\cap\sim_B.
 }
-\]
+```
 
 The resulting family of predictive quotients is naturally ordered by
 refinement. It should be called a refinement poset unless the chosen protocol
@@ -163,49 +163,49 @@ family is shown to be closed under the operations required for a full lattice.
 
 ## 6. Operational discrimination pseudometric
 
-For a declared family \(A\), define
+For a declared family $A$, define
 
-\[
+```math
 \delta_A(x,x')
 =
 \sup_{\pi\in A}
-\operatorname{TV}
+\mathrm{TV}
 \left[
 P_\pi(\cdot\mid x),
 P_\pi(\cdot\mid x')
 \right].
-\]
+```
 
 Then
 
-\[
+```math
 \delta_A(x,x')=0
 \quad\Longleftrightarrow\quad
 x\sim_Ax'.
-\]
+```
 
-On the description space \(X\), \(\delta_A\) is generally a pseudometric
+On the description space $X$, $\delta_A$ is generally a pseudometric
 because distinct descriptions may have zero operational distance. It induces a
 metric on the quotient whenever the usual metric-space conditions are
 satisfied.
 
-If \(A\subseteq B\), then
+If $A\subseteq B$, then
 
-\[
+```math
 \boxed{
 \delta_A(x,x')\le\delta_B(x,x').
 }
-\]
+```
 
 This stochastic operational distance should remain distinct from a deterministic
 trajectory discrepancy such as
 
-\[
+```math
 \Delta_{h,H}(x,x')
 =
 \max_{0\le t\le H}
 d_Y\!\left(h(F^tx),h(F^tx')\right).
-\]
+```
 
 The two quantities can have the same zero set in suitable deterministic
 settings, but they answer different approximate-distinguishability questions.
@@ -214,125 +214,125 @@ settings, but they answer different approximate-distinguishability questions.
 
 For a deterministic observation map
 
-\[
+```math
 h:X\to Y,
-\]
+```
 
 define the infinite delayed-observation family
 
-\[
+```math
 A_h^\infty
 =
 \{h,h\circ F,h\circ F^2,\ldots\}.
-\]
+```
 
 Then
 
-\[
+```math
 x\sim_{A_h^\infty}x'
-\]
+```
 
 if and only if
 
-\[
+```math
 h(F^tx)=h(F^tx')
 \qquad
 \text{for every }t\ge0.
-\]
+```
 
 Therefore
 
-\[
+```math
 Q_{A_h^\infty}=Q_h,
-\]
+```
 
 the predictive quotient already used throughout this repository.
 
-For a finite horizon \(H\), use
+For a finite horizon $H$, use
 
-\[
+```math
 A_{h,H}=\{h,h\circ F,\ldots,h\circ F^{H-1}\}.
-\]
+```
 
-Increasing \(H\) produces a monotone refinement of the finite-horizon
+Increasing $H$ produces a monotone refinement of the finite-horizon
 predictive quotient.
 
 ## 8. Induced quotient dynamics
 
-To use \(Q_A\) as a dynamical state space, predictive equivalence must be
+To use $Q_A$ as a dynamical state space, predictive equivalence must be
 forward-invariant.
 
 A sufficient operational condition is closure under delayed execution: for
-each \(\pi\in A\), the protocol "evolve one step and then execute \(\pi\)" is
-also represented in \(A\).
+each $\pi\in A$, the protocol "evolve one step and then execute $\pi$" is
+also represented in $A$.
 
 Under that condition,
 
-\[
+```math
 x\sim_Ax'
 \Longrightarrow
 F(x)\sim_AF(x').
-\]
+```
 
 Hence
 
-\[
+```math
 \boxed{
 \bar F_A([x]_A)=[F(x)]_A
 }
-\]
+```
 
 is well-defined.
 
-For the deterministic future-observation quotient \(Q_h\), this property is
+For the deterministic future-observation quotient $Q_h$, this property is
 automatic from the definition of complete future equivalence.
 
 ## 9. Predictive recurrence
 
-When quotient dynamics are well-defined, define exact \(A\)-predictive
+When quotient dynamics are well-defined, define exact $A$-predictive
 recurrence by
 
-\[
+```math
 \boxed{
 \bar F_A^T([x]_A)=[x]_A.
 }
-\]
+```
 
 Equivalently,
 
-\[
+```math
 F^T(x)\sim_Ax.
-\]
+```
 
 This gives a hierarchy:
 
-\[
+```math
 F^Tx=x
-\]
+```
 
 is exact complete-description recurrence,
 
-\[
+```math
 [F^Tx]_T=[x]_T
-\]
+```
 
 is theory-level predictive recurrence for a declared complete theory protocol
 family, and
 
-\[
+```math
 [F^Tx]_O=[x]_O
-\]
+```
 
 is observer-level predictive recurrence for a restricted observer family.
 
-If a periodic microscopic orbit has least period \(p_X\), the least period
-\(p_A\) of its quotient orbit satisfies
+If a periodic microscopic orbit has least period $p_X$, the least period
+$p_A$ of its quotient orbit satisfies
 
-\[
+```math
 \boxed{
 p_A\mid p_X.
 }
-\]
+```
 
 Quotienting may merge different microscopic cycles or reduce a period. Those
 are distinct phenomena and must be reported separately.
@@ -340,9 +340,9 @@ are distinct phenomena and must be reported separately.
 Near predictive recurrence is defined only after choosing a distance and
 tolerance, for example
 
-\[
+```math
 \delta_A(F^Tx,x)\le\varepsilon_A.
-\]
+```
 
 It must not be promoted to exact recurrence.
 
@@ -353,24 +353,24 @@ mathematics.
 
 If
 
-\[
+```math
 A_{O,H}\subseteq A_O\subseteq A_C\subseteq A_T,
-\]
+```
 
 then
 
-\[
+```math
 Q_T\to Q_C\to Q_O\to Q_{O,H}.
-\]
+```
 
 The arrows are canonical coarse-grainings.
 
 Thus:
 
-- \(Q_T\): distinctions recognized by the declared full theory protocol family;
-- \(Q_C\): distinctions accessible within a declared causal region;
-- \(Q_O\): distinctions accessible to a declared observer class;
-- \(Q_{O,H}\): distinctions accessible to that observer during a finite
+- $Q_T$: distinctions recognized by the declared full theory protocol family;
+- $Q_C$: distinctions accessible within a declared causal region;
+- $Q_O$: distinctions accessible to a declared observer class;
+- $Q_{O,H}$: distinctions accessible to that observer during a finite
   observation horizon.
 
 These are theory- and protocol-relative objects. They are not claims that an
@@ -380,39 +380,39 @@ observer creates the underlying state space.
 
 Suppose two descriptions are related by bijections
 
-\[
+```math
 U:X_A\to X_B,
 \qquad
 V:\Pi_A\to\Pi_B,
-\]
+```
 
 that preserve outcome statistics:
 
-\[
+```math
 P^A_\pi(\cdot\mid x)
 =
 P^B_{V\pi}(\cdot\mid Ux).
-\]
+```
 
 Then
 
-\[
+```math
 x\sim_Ax'
 \quad\Longleftrightarrow\quad
 Ux\sim_BUx',
-\]
+```
 
 and consequently
 
-\[
+```math
 Q_A\cong Q_B.
-\]
+```
 
 If the dynamics also intertwine,
 
-\[
+```math
 UF_A=F_BU,
-\]
+```
 
 then quotient recurrence is preserved under the change of description.
 
@@ -423,18 +423,18 @@ stated hypotheses.
 
 ## 12. HPP observability benchmark
 
-The established \(3\times3\), four-particle, zero-momentum HPP sector contains
+The established $3\times3$, four-particle, zero-momentum HPP sector contains
 
-\[
+```math
 |X|=9153
-\]
+```
 
 microscopic states. Under full site-density observation the exact predictive
 refinement is
 
-\[
+```math
 495\to6948\to9090\to9126\to9126.
-\]
+```
 
 The stable quotient contains 9,099 singletons and 27 doubletons, leaving 54
 microscopic states in permanent ambiguity under density observation.
@@ -452,27 +452,27 @@ search over fixed site subsets gives:
 
 The six successful three-site layouts are
 
-\[
+```math
 (0,4,8),\ (0,5,7),\ (1,3,8),
-\]
+```
 
-\[
+```math
 (1,5,6),\ (2,3,7),\ (2,4,6),
-\]
+```
 
 using row-major site indices. They are the six toroidal diagonals. Each has
 refinement sequence
 
-\[
+```math
 322\to3271\to9123\to9153\to9153.
-\]
+```
 
 Thus the minimum fixed spatial sensor count is three and the minimum
 reconstructing word length at that count is four.
 
 ### Local-momentum sensors
 
-A momentum sensor records only the local vector \((p_x,p_y)\). Exhaustive
+A momentum sensor records only the local vector $(p_x,p_y)$. Exhaustive
 search gives:
 
 - four sites: at most 9,081 predictive classes;
@@ -480,9 +480,9 @@ search gives:
 
 Every successful five-site layout has the refinement sequence
 
-\[
+```math
 1181\to8391\to8766\to9021\to9143\to9149\to9153\to9153.
-\]
+```
 
 Thus the minimum fixed spatial momentum-sensor count is five and the minimum
 reconstructing word length at that count is seven.
@@ -506,16 +506,16 @@ doubletons unresolved.
 
 The same 9,153-state sector contains 2,061 exact microscopic cycles:
 
-\[
+```math
 1341\times3,\quad459\times6,\quad252\times9,\quad9\times12.
-\]
+```
 
 Under complete future-density equivalence, the induced quotient has 2,052
 predictive cycles:
 
-\[
+```math
 1332\times3,\quad459\times6,\quad252\times9,\quad9\times12.
-\]
+```
 
 The nine missing cycles arise because 18 distinct microscopic period-three
 cycles merge into nine density-predictive cycle pairs. No period compression
@@ -526,20 +526,20 @@ This distinguishes orbit merging from period shortening.
 
 ## 14. Physical and metaphysical boundary
 
-For a declared full protocol family \(A_T\), the quotient
+For a declared full protocol family $A_T$, the quotient
 
-\[
+```math
 Q_T
-\]
+```
 
 is the coarsest deterministic representation sufficient for every prediction
 encoded by that family.
 
 It does not follow that
 
-\[
+```math
 Q_T=\text{ultimate ontology}.
-\]
+```
 
 One can always postulate additional variables that never affect any prediction.
 Such permanently prediction-inert structure cannot be experimentally
@@ -558,9 +558,9 @@ principle, not a theorem of the predictive quotient framework.
 A cosmic predictive quotient can be defined formally only relative to a
 candidate theory that supplies enough of:
 
-\[
-(X_{\rm cosmic},F_{\rm cosmic},\Pi_{\rm cosmic})
-\]
+```math
+(X_\mathrm{cosmic},F_\mathrm{cosmic},\Pi_\mathrm{cosmic})
+```
 
 to specify the relevant state descriptions, dynamics, and physically admissible
 distinctions.

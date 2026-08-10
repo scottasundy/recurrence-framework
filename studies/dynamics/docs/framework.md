@@ -31,25 +31,25 @@ This document extends the accompanying study, [*Predictive State Quotients and I
 
 A dynamics problem is specified by the tuple
 
-\[
+```math
 \mathcal{D}=(X,F,h,\mathcal{S},\mathcal{T}),
-\]
+```
 
 where:
 
-- \(X\) is the complete state space;
-- \(F:X\to X\) is the deterministic update map;
-- \(h:X\to Y\) is the observation or coarse-graining map;
-- \(\mathcal{S}\subseteq X\) is the state sector being analyzed;
-- \(\mathcal{T}\) is the declared observation horizon or stopping rule.
+- $X$ is the complete state space;
+- $F:X\to X$ is the deterministic update map;
+- $h:X\to Y$ is the observation or coarse-graining map;
+- $\mathcal{S}\subseteq X$ is the state sector being analyzed;
+- $\mathcal{T}$ is the declared observation horizon or stopping rule.
 
 The framework requires the analyst to separate five objects that are often conflated:
 
 1. **Complete state** — all variables required to make the update rule single-valued.
-2. **Present observation** — the value \(h(x)\) recorded from the complete state.
+2. **Present observation** — the value $h(x)$ recorded from the complete state.
 3. **Finite observation word** — a sequence of observations over a declared horizon.
 4. **Complete future observation sequence** — the full observation trajectory generated from a state.
-5. **Exact complete-state trajectory** — the actual orbit under \(F\).
+5. **Exact complete-state trajectory** — the actual orbit under $F$.
 
 The distinction is operational, not semantic. Every conclusion must identify which object has repeated or become equivalent.
 
@@ -59,21 +59,21 @@ The distinction is operational, not semantic. Every conclusion must identify whi
 
 ### 3.1 Complete-state recurrence
 
-A complete state \(x\) has exact recurrence time \(T>0\) when
+A complete state $x$ has exact recurrence time $T>0$ when
 
-\[
+```math
 F^T x=x.
-\]
+```
 
 For deterministic dynamics,
 
-\[
+```math
 F^T x=x
 \quad\Longrightarrow\quad
 F^{t+T}x=F^t x
-\]
+```
 
-for every \(t\geq0\).
+for every $t\geq0$.
 
 This result concerns the complete state. A repeated image, density field, position snapshot, conserved quantity, or other reduced record is not enough unless that record is already known to determine the complete predictive state.
 
@@ -81,51 +81,51 @@ This result concerns the complete state. A repeated image, density field, positi
 
 Two states are present-observation equivalent when
 
-\[
+```math
 x\equiv_h x'
 \quad\Longleftrightarrow\quad
 h(x)=h(x').
-\]
+```
 
 This relation identifies states that look the same at one instant under the selected observation.
 
 ### 3.3 Finite-horizon equivalence
 
-For a positive integer \(r\), define the length-\(r\) forward observation word
+For a positive integer $r$, define the length-$r$ forward observation word
 
-\[
+```math
 D_r(x)=\bigl(h(x),h(Fx),\ldots,h(F^{r-1}x)\bigr).
-\]
+```
 
-States are equivalent through horizon \(r\) when
+States are equivalent through horizon $r$ when
 
-\[
+```math
 x\equiv_{h,r}x'
 \quad\Longleftrightarrow\quad
 D_r(x)=D_r(x').
-\]
+```
 
 Finite-horizon agreement is evidence of observational similarity over the declared interval. It is not, by itself, proof of permanent equivalence.
 
 ### 3.4 Predictive future equivalence
 
-Two complete states are future-equivalent under \(h\) when
+Two complete states are future-equivalent under $h$ when
 
-\[
+```math
 x\sim_h x'
 \quad\Longleftrightarrow\quad
 h(F^t x)=h(F^t x')
-\]
+```
 
-for every \(t\geq0\).
+for every $t\geq0$.
 
-The equivalence classes of \(\sim_h\) are the **predictive states induced by the observation**.
+The equivalence classes of $\sim_h$ are the **predictive states induced by the observation**.
 
 The quotient
 
-\[
+```math
 Q_h=X/{\sim_h}
-\]
+```
 
 is the coarsest deterministic state representation that preserves the complete future observation process. It removes microscopic distinctions that never affect the selected future observations while retaining every distinction that does.
 
@@ -133,23 +133,23 @@ is the coarsest deterministic state representation that preserves the complete f
 
 The raw observation is closed when there is a deterministic map
 
-\[
+```math
 G:h(X)\to h(X)
-\]
+```
 
 such that
 
-\[
+```math
 h\circ F=G\circ h.
-\]
+```
 
 Equivalently,
 
-\[
+```math
 h(x)=h(x')
 \quad\Longrightarrow\quad
 h(Fx)=h(Fx')
-\]
+```
 
 for all analyzed states.
 
@@ -157,17 +157,17 @@ Closure means that the present observed value alone determines the next observed
 
 ### 3.6 Hidden-state ambiguity
 
-A pair \(x\neq x'\) has hidden-state ambiguity under \(h\) when
+A pair $x\neq x'$ has hidden-state ambiguity under $h$ when
 
-\[
+```math
 h(x)=h(x').
-\]
+```
 
 The ambiguity is:
 
 - **immediate** if the next observations differ;
 - **delayed** if the observations agree temporarily and later diverge;
-- **permanent** if \(x\sim_h x'\);
+- **permanent** if $x\sim_h x'$;
 - **symmetry-generated** if a verified transformation maps one state to the other while preserving the observation process;
 - **unresolved** if the diagnostic horizon ends before divergence or proof of permanence.
 
@@ -181,63 +181,63 @@ Every analyzed state pair should be assigned to one of the following classes.
 
 ### Class A — Exact complete-state recurrence
 
-\[
+```math
 F^T x=x.
-\]
+```
 
-The complete state and its entire subsequent evolution repeat with period dividing \(T\).
+The complete state and its entire subsequent evolution repeat with period dividing $T$.
 
 ### Class B — Closed observational recurrence
 
-\[
+```math
 h(F^T x)=h(x)
-\]
+```
 
 and the observation map is known to be closed on the relevant sector.
 
-The repeated observation determines the repeated predictive state within that closed reduced model. It still need not imply microscopic equality unless \(h\) is injective.
+The repeated observation determines the repeated predictive state within that closed reduced model. It still need not imply microscopic equality unless $h$ is injective.
 
 ### Class C — Temporary observational recurrence
 
-\[
+```math
 D_r(F^T x)=D_r(x)
-\]
+```
 
-for a finite \(r\), but later observations differ.
+for a finite $r$, but later observations differ.
 
 This is a finite-duration observational match, not recurrence of the complete state or predictive state.
 
 ### Class D — Predictive equivalence without microscopic equality
 
-\[
+```math
 x\neq x',
 \qquad
 x\sim_h x'.
-\]
+```
 
 The complete states differ, but the selected observation cannot distinguish their future trajectories, even with an arbitrarily long exact record.
 
 ### Class E — Present ambiguity with future separation
 
-\[
+```math
 h(x)=h(x'),
 \qquad
 h(F^k x)\neq h(F^k x')
-\]
+```
 
-for some \(k>0\).
+for some $k>0$.
 
 The present observation is insufficient, but a sufficiently long observation history resolves the states.
 
 ### Class F — Near recurrence
 
-A declared metric \(d\) satisfies
+A declared metric $d$ satisfies
 
-\[
+```math
 d(F^T x,x)<\varepsilon
-\]
+```
 
-for a chosen tolerance \(\varepsilon>0\), while exact equality is absent or untested.
+for a chosen tolerance $\varepsilon>0$, while exact equality is absent or untested.
 
 Near recurrence must always report the metric, tolerance, variables compared, precision model, and search horizon. It cannot be silently upgraded to exact recurrence.
 
@@ -255,7 +255,7 @@ For finite deterministic systems, the framework can be implemented exactly.
 
 ### Step 1 — Declare the complete state
 
-Specify every variable required for \(F\) to be single-valued.
+Specify every variable required for $F$ to be single-valued.
 
 Examples include:
 
@@ -270,7 +270,7 @@ A state description is incomplete if two physical or computational configuration
 
 ### Step 2 — Declare the sector
 
-Define the analyzed subset \(\mathcal{S}\subseteq X\), including all constraints:
+Define the analyzed subset $\mathcal{S}\subseteq X$, including all constraints:
 
 - lattice size;
 - boundary conditions;
@@ -286,15 +286,15 @@ Claims must be scoped to this sector unless a proof covers the full state space.
 
 Check that
 
-\[
+```math
 F(\mathcal{S})\subseteq\mathcal{S}.
-\]
+```
 
 If the sector is not forward invariant, either enlarge it or explicitly define how trajectories leaving the sector are handled.
 
 ### Step 4 — Declare the observation map
 
-Specify \(h\) as an explicit function of the complete state.
+Specify $h$ as an explicit function of the complete state.
 
 Examples include:
 
@@ -313,60 +313,60 @@ The analysis is always conditional on this map. Richer observations can split am
 
 Group states by present observation:
 
-\[
+```math
 P_1=\bigl\{\{x\in\mathcal{S}:h(x)=y\}:y\in h(\mathcal{S})\bigr\}.
-\]
+```
 
 This partition measures present observational ambiguity.
 
 ### Step 6 — Refine by future behavior
 
-Given a partition \(P_r\), assign each state the signature
+Given a partition $P_r$, assign each state the signature
 
-\[
+```math
 \sigma_r(x)=\bigl(h(x),[Fx]_{P_r}\bigr),
-\]
+```
 
-where \([Fx]_{P_r}\) is the block of \(P_r\) containing the successor.
+where $[Fx]_{P_r}$ is the block of $P_r$ containing the successor.
 
-States with different signatures are split. The resulting partition is \(P_{r+1}\).
+States with different signatures are split. The resulting partition is $P_{r+1}$.
 
 Equivalent direct construction:
 
-\[
+```math
 x\equiv_{h,r}x'
 \quad\Longleftrightarrow\quad
 D_r(x)=D_r(x').
-\]
+```
 
 Repeat until
 
-\[
+```math
 P_{r+1}=P_r.
-\]
+```
 
 Because the state set is finite and the partitions only refine, the process terminates.
 
 ### Step 7 — Interpret the stable partition
 
-Let \(P_\ast\) be the first stable partition.
+Let $P_\ast$ be the first stable partition.
 
 Three principal outcomes are possible:
 
-1. **Raw closure:** \(P_2=P_1\).  
+1. **Raw closure:** $P_2=P_1$.  
    The current observation determines its next value.
 
-2. **Finite reconstruction:** \(P_\ast\) is discrete.  
+2. **Finite reconstruction:** $P_\ast$ is discrete.  
    Every complete state is uniquely determined by a sufficiently long finite observation word.
 
-3. **Irreducible ambiguity:** \(P_\ast\) has nonsingleton blocks.  
+3. **Irreducible ambiguity:** $P_\ast$ has nonsingleton blocks.  
    Distinct complete states generate identical complete future observation sequences.
 
-The smallest \(r\) for which \(P_r=P_\ast\) is a finite observability horizon for the analyzed finite sector.
+The smallest $r$ for which $P_r=P_\ast$ is a finite observability horizon for the analyzed finite sector.
 
 ### Step 8 — Analyze each nonsingleton class
 
-For every predictive class \(C\in P_\ast\) with \(|C|>1\), determine:
+For every predictive class $C\in P_\ast$ with $|C|>1$, determine:
 
 - class size;
 - orbit periods;
@@ -442,19 +442,19 @@ A complete framework report should produce the following.
 
 ### 7.2 Observation specification
 
-- explicit formula or procedure for \(h\);
+- explicit formula or procedure for $h$;
 - variables retained;
 - variables discarded;
-- whether \(h\) is injective;
+- whether $h$ is injective;
 - whether one-step closure holds.
 
 ### 7.3 Refinement profile
 
 Report
 
-\[
+```math
 |P_1|,|P_2|,\ldots,|P_\ast|.
-\]
+```
 
 This profile shows how rapidly future observations resolve present ambiguity.
 
@@ -472,10 +472,10 @@ Report:
 
 For distinguishable pairs with equal present observation, report the first divergence time
 
-\[
+```math
 \tau(x,x')=
 \min\{t\geq0:h(F^t x)\neq h(F^t x')\}.
-\]
+```
 
 Pairs with no such time belong to the same predictive class.
 
@@ -483,17 +483,17 @@ Pairs with no such time belong to the same predictive class.
 
 Given a declared probability distribution over complete states, useful quantities include:
 
-\[
+```math
 H(X\mid h(X))
-\]
+```
 
 for uncertainty after one observation, and
 
-\[
+```math
 H(X\mid W)
-\]
+```
 
-for residual uncertainty after the complete future observation record \(W\).
+for residual uncertainty after the complete future observation record $W$.
 
 These values depend on the state sector, observation map, and prior. They are not universal properties of the dynamics.
 
@@ -501,16 +501,16 @@ These values depend on the state sector, observation map, and prior. They are no
 
 When ambiguity is symmetry-generated, report:
 
-- the symmetry or involution \(R\);
-- whether \(R^2=I\);
+- the symmetry or involution $R$;
+- whether $R^2=I$;
 - its relationship to the dynamics, such as
-  \[
+  ```math
   RFR=F^{-1};
-  \]
+  ```
 - observation invariance, such as
-  \[
+  ```math
   h\circ R=h;
-  \]
+  ```
 - orbit distinctness;
 - required temporal or phase alignment.
 
@@ -518,43 +518,43 @@ When ambiguity is symmetry-generated, report:
 
 ## 8. Time-reversal ambiguity module
 
-For a reversible system, suppose there is an involution \(R:X\to X\) satisfying
+For a reversible system, suppose there is an involution $R:X\to X$ satisfying
 
-\[
+```math
 R^2=I,
 \qquad
 RFR=F^{-1},
 \qquad
 h(Rx)=h(x).
-\]
+```
 
 Then
 
-\[
+```math
 h(F^tRx)=h(F^{-t}x).
-\]
+```
 
 Time reversal converts the future observation of the reversed state into the past observation of the original state.
 
-For a periodic orbit of period \(p\), permanent future ambiguity can occur when its observation word is invariant under temporal reversal up to a cyclic shift. Specifically, if there is an integer \(s\) such that
+For a periodic orbit of period $p$, permanent future ambiguity can occur when its observation word is invariant under temporal reversal up to a cyclic shift. Specifically, if there is an integer $s$ such that
 
-\[
+```math
 h(F^t x)=h(F^{s-t}x)
-\]
+```
 
-for all \(t\) modulo \(p\), then the phase-aligned reversed state
+for all $t$ modulo $p$, then the phase-aligned reversed state
 
-\[
+```math
 z=F^{-s}Rx
-\]
+```
 
 satisfies
 
-\[
+```math
 h(F^t z)=h(F^t x)
-\]
+```
 
-for every \(t\geq0\).
+for every $t\geq0$.
 
 This criterion does not state that every reversible trajectory is ambiguous. It identifies a specific mechanism requiring all of the following:
 
@@ -568,7 +568,7 @@ This criterion does not state that every reversible trajectory is ambiguous. It 
 
 ## 9. HPP benchmark case
 
-The reference exact application is the \(3\times3\) periodic Hardy-Pomeau-de Pazzis lattice gas in the complete four-particle, zero-momentum sector under sitewise-density observation.
+The reference exact application is the $3\times3$ periodic Hardy-Pomeau-de Pazzis lattice gas in the complete four-particle, zero-momentum sector under sitewise-density observation.
 
 The sector contains exactly 9,153 microscopic states.
 
@@ -587,9 +587,9 @@ The stable quotient contains:
 
 The exceptional structure is
 
-\[
+```math
 54=18\times3=9\times2\times3.
-\]
+```
 
 It consists of:
 
@@ -662,13 +662,13 @@ Possible mechanisms include:
 
 Test candidate augmented observations
 
-\[
+```math
 \tilde h(x)=\bigl(h(x),g(x)\bigr)
-\]
+```
 
 and recompute the predictive partition.
 
-The smallest practical \(g\) that removes the target ambiguity is a candidate minimal sensor or state augmentation.
+The smallest practical $g$ that removes the target ambiguity is a candidate minimal sensor or state augmentation.
 
 ---
 
@@ -829,7 +829,7 @@ Scope limitation:
 
 Recommended terminology:
 
-- **complete-state recurrence** for \(F^T x=x\);
+- **complete-state recurrence** for $F^T x=x$;
 - **observational recurrence** for repeated reduced records;
 - **finite-horizon agreement** for matching finite words;
 - **predictive equivalence** for identical complete future observation sequences;

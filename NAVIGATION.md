@@ -56,7 +56,7 @@ Principal outputs include:
 - restricted model-family Bayesian weights;
 - fate-decomposition sensitivity tables;
 - prior-conditioned recurrence sensitivity;
-- constant-\(w\) finite-end scenarios;
+- constant-$w$ finite-end scenarios;
 - finite-horizon thermodynamic recurrence calculations;
 - quantum epsilon-recurrence input requirements;
 - model-agnostic recurrence partial-identification bound `[0,1]` (a non-identifiability result, not an estimated probability distribution).

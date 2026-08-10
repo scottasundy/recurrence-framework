@@ -8,25 +8,25 @@ An **observation** is a chosen map `h: X -> Y`. It may discard information prese
 
 The **future observation sequence** of `x` is
 
-\[
+```math
 \Phi_h^+(x)=\bigl(h(F^t x)\bigr)_{t\ge 0}.
-\]
+```
 
 Two states are **predictively equivalent** or **future-equivalent** when
 
-\[
+```math
 x\sim_h x'
 \quad\Longleftrightarrow\quad
 h(F^t x)=h(F^t x')\text{ for every }t\ge0.
-\]
+```
 
 An **orbit** is the set of states visited by repeated application of `F`. For a periodic state, its **least period** is the smallest positive integer `p` such that `F^p(x)=x`.
 
 For a period-`p` orbit, the **observation word** is
 
-\[
+```math
 W_h(x)=\bigl(h(x),h(Fx),\ldots,h(F^{p-1}x)\bigr).
-\]
+```
 
 Two finite words are **cyclically equivalent** if one is a cyclic rotation of the other. An **aligned phase** is a choice of starting states on two periodic orbits for which corresponding observation phases agree.
 
@@ -49,15 +49,15 @@ Observational indistinguishability under one map `h` is not physical identity an
 
 Let `F: X -> X` be deterministic. If
 
-\[
+```math
 F^m(x)=F^n(x),
-\]
+```
 
 then for every nonnegative integer `k`,
 
-\[
+```math
 F^{m+k}(x)=F^{n+k}(x).
-\]
+```
 
 Reversibility is not required. The conclusion fails only when the object called a state omits variables required by the update law.
 
@@ -65,31 +65,31 @@ Reversibility is not required. The conclusion fails only when the object called 
 
 The raw observation is one-step closed when a deterministic map `G` exists with
 
-\[
+```math
 h\circ F=G\circ h.
-\]
+```
 
 Such a `G` exists exactly when
 
-\[
+```math
 h(x)=h(x')\Longrightarrow h(Fx)=h(Fx')
-\]
+```
 
 for every pair of complete states.
 
 Future equivalence is the stronger relation
 
-\[
+```math
 x\sim_h x'
 \Longleftrightarrow
 \Phi_h^+(x)=\Phi_h^+(x').
-\]
+```
 
 The quotient by this relation has a well-defined deterministic update `[x] -> [Fx]`. On a finite state space it is computed exactly by partition refinement. Start with classes defined by `h(x)`, then repeatedly split states by the pair
 
-\[
+```math
 \bigl(h(x),[Fx]\bigr).
-\]
+```
 
 Stabilization gives equality of complete future observation sequences.
 
@@ -99,39 +99,39 @@ This construction is a deterministic output-state minimization. It is closely re
 
 Let `F: X -> X` be a bijection. Let `R: X -> X` be an involution satisfying
 
-\[
+```math
 R^2=I,
 \qquad
 RFR=F^{-1}.
-\]
+```
 
 Let `h: X -> Y` satisfy
 
-\[
+```math
 h(Rx)=h(x)
-\]
+```
 
 for every `x`.
 
 Then for every integer `t`,
 
-\[
+```math
 h(F^tRx)=h(F^{-t}x).
-\]
+```
 
 ### Proof
 
 From `RFR=F^{-1}` it follows by iteration that
 
-\[
+```math
 F^tR=RF^{-t}.
-\]
+```
 
 Therefore
 
-\[
+```math
 h(F^tRx)=h(RF^{-t}x)=h(F^{-t}x),
-\]
+```
 
 using observation invariance under `R`.
 
@@ -141,23 +141,23 @@ The theorem says that the observed future of a reversed state is the observed pa
 
 Suppose `x` has least period `p`. Assume there is a phase shift `s` modulo `p` such that
 
-\[
+```math
 h(F^t x)=h(F^{s-t}x)
-\]
+```
 
 for every integer `t` modulo `p`.
 
 Define the phase-aligned state on the reversed orbit by
 
-\[
+```math
 z=F^{-s}Rx=RF^s x.
-\]
+```
 
 Then
 
-\[
+```math
 h(F^t z)=h(F^t x)
-\]
+```
 
 for every `t >= 0`. Thus `x` and `z` are future-equivalent.
 
@@ -165,12 +165,12 @@ for every `t >= 0`. Thus `x` and `z` are future-equivalent.
 
 Using the time-reversal theorem,
 
-\[
+```math
 h(F^t z)
 =h(F^{t-s}Rx)
 =h(F^{s-t}x)
 =h(F^t x).
-\]
+```
 
 Periodicity extends the modular equality to every nonnegative time.
 
@@ -187,31 +187,31 @@ The criterion separates four possibilities.
 
 For the project’s update convention, the HPP map is
 
-\[
+```math
 F=S\circ C,
-\]
+```
 
 where `C` is the local head-on collision involution and `S` is streaming. Let `V` reverse every particle velocity. Bare velocity reversal satisfies `VSV=S^{-1}` and commutes with `C`, but it is not the global time-reversal involution for an arbitrary collide-then-stream state.
 
 The correct involution is
 
-\[
+```math
 R=C\circ V.
-\]
+```
 
 It satisfies
 
-\[
+```math
 R^2=I,
 \qquad
 RFR=F^{-1}.
-\]
+```
 
 Site density is invariant under both `C` and `V`, so
 
-\[
+```math
 h(Rx)=h(x).
-\]
+```
 
 On a collision-free state, `C(x)=x`, and therefore `R(x)=V(x)`. This is why the exceptional HPP cycles can be described directly as velocity-reversed partners.
 
@@ -219,21 +219,21 @@ On a collision-free state, `C(x)=x`, and therefore `R(x)=V(x)`. This is why the 
 
 The full `3x3` sector with exactly four particles and total momentum `(0,0)` contains
 
-\[
+```math
 |X|=9153
-\]
+```
 
 complete microscopic states. The density-refinement class counts are
 
-\[
+```math
 (495,6948,9090,9126,9126).
-\]
+```
 
 The stable quotient contains 9,099 predictive singletons and 27 predictive doubletons. The 54 states in the doubletons have the exact organization
 
-\[
+```math
 54=18\times3=9\times2\times3.
-\]
+```
 
 - 18 disjoint microscopic cycles;
 - least period 3 for every cycle;
@@ -244,9 +244,9 @@ The stable quotient contains 9,099 predictive singletons and 27 predictive doubl
 
 Every exceptional state is collision-free. Each particle streams one lattice site per update while retaining its velocity. On a periodic lattice of side length three, three streaming steps return every particle to its initial site. Hence
 
-\[
+```math
 F^3(x)=x.
-\]
+```
 
 Direct checking excludes periods one and two, so the least period is three.
 
@@ -258,19 +258,19 @@ The exhaustive stable partition proves completeness: all 27 nonsingleton classes
 
 For each exceptional complete future-density record, exactly two microscopic trajectories are compatible under the uniform prior on the stated sector. Conditioned on membership in the exceptional set,
 
-\[
+```math
 H(X\mid\text{complete density future},\ X\text{ exceptional})
 =\log_2 2
 =1\text{ bit}.
-\]
+```
 
 The sector-wide mean residual conditional entropy is
 
-\[
+```math
 H(X\mid\text{complete density future})
 =\frac{54}{9153}\log_2 2
 \approx0.00590\text{ bits}.
-\]
+```
 
 Density does not generally lose one bit. The one-bit statement applies only after conditioning on the exceptional set under the stated prior.
 

@@ -26,15 +26,15 @@ Two systems display exactly the same visible configuration at a particular momen
 
 However, hidden variables differ.
 
-\[
+```math
 h(x)=h(x')
-\]
+```
 
 while
 
-\[
+```math
 x\neq x'.
-\]
+```
 
 ### What happens next?
 
@@ -66,15 +66,15 @@ Their hidden microscopic differences then propagate into observable variables.
 
 Initially,
 
-\[
+```math
 d_O(x,x')=0,
-\]
+```
 
 but later,
 
-\[
+```math
 d_O(F^t x,F^t x')>0.
-\]
+```
 
 ### Demonstrated analogue
 
@@ -82,9 +82,9 @@ In the conserved-sector perturbation experiment, all 150 state pairs began with 
 
 After one update:
 
-\[
+```math
 150/150
-\]
+```
 
 were density-distinguishable.
 
@@ -106,21 +106,21 @@ A microscopic difference can initially be invisible but dynamically important.
 
 Two complete microscopic states differ, but the observer never gains access to the distinction.
 
-\[
+```math
 x\neq x'
-\]
+```
 
 while
 
-\[
+```math
 h(F^t x)=h(F^t x')
 \qquad
 \forall t\geq0.
-\]
+```
 
 ### Demonstrated analogue
 
-In the exact \(3\times3\) HPP benchmark:
+In the exact $3\times3$ HPP benchmark:
 
 - 27 predictive doubletons exist;
 - they contain 54 distinct microscopic states;
@@ -149,37 +149,37 @@ A continuous system never returns to its exact initial point.
 
 Nevertheless, it approaches that point arbitrarily closely.
 
-\[
+```math
 F^T(x)\neq x
-\]
+```
 
-for every positive \(T\), while for any finite tolerance \(\varepsilon\), sufficiently close returns can occur:
+for every positive $T$, while for any finite tolerance $\varepsilon$, sufficiently close returns can occur:
 
-\[
+```math
 d(F^T x,x)<\varepsilon.
-\]
+```
 
 ### Demonstrated analogue
 
 For the irrational torus flow
 
-\[
+```math
 q(t)=(t,\sqrt2\,t)\pmod1,
-\]
+```
 
 exact positive recurrence is mathematically impossible.
 
-The calculated return below \(10^{-6}\) occurs at
+The calculated return below $10^{-6}$ occurs at
 
-\[
+```math
 T=470{,}832
-\]
+```
 
 with error
 
-\[
+```math
 7.51\times10^{-7}.
-\]
+```
 
 ### Interpretation
 
@@ -199,11 +199,11 @@ This motivates distinguishing **exact recurrence** from **observer-indistinguish
 
 Suppose a deterministic complete physical state returns exactly:
 
-\[
+```math
 F^T(x)=x.
-\]
+```
 
-If the observer, brain state, memories, instruments, and records are contained in \(x\), they return as well.
+If the observer, brain state, memories, instruments, and records are contained in $x$, they return as well.
 
 Unless a physical cycle counter survives the recurrence, the returned observer contains no information saying that a previous occurrence happened.
 
@@ -225,15 +225,15 @@ A useful intermediate concept is **biographical recurrence**.
 
 Suppose the global states differ:
 
-\[
+```math
 F^T(x)\neq x,
-\]
+```
 
 but every state accessible to a particular observer throughout that observer's lifetime remains within the observer's distinguishability tolerance:
 
-\[
+```math
 d_{O,L}(F^T x,x)\leq\varepsilon_O.
-\]
+```
 
 The universes could differ:
 
@@ -258,7 +258,7 @@ Microscopic mismatch alone does not determine whether a recurrence matters to an
 
 Define
 
-\[
+```math
 \tau_{\mathrm{detect}}
 =
 \inf
@@ -266,31 +266,31 @@ Define
 t>0:
 d_O(F^{T+t}x,F^t x)>\varepsilon_O
 \right\}.
-\]
+```
 
 Three qualitatively different situations follow.
 
 ### Immediate divergence
 
-\[
+```math
 \tau_{\mathrm{detect}}\approx0.
-\]
+```
 
 The recurrence only looks correct momentarily.
 
 ### Hidden for the observer's lifetime
 
-\[
+```math
 \tau_{\mathrm{detect}}>L_O.
-\]
+```
 
 The physical mismatch exists but is never experienced by that observer.
 
 ### Permanent predictive equivalence
 
-\[
+```math
 \tau_{\mathrm{detect}}=\infty.
-\]
+```
 
 The states remain observably equivalent indefinitely under the declared observation.
 
@@ -298,9 +298,9 @@ The HPP results demonstrate that both very short and infinite detection times ar
 
 This suggests that recurrence studies should report at least:
 
-\[
+```math
 (d_X,\;d_O,\;\tau_{\mathrm{detect}})
-\]
+```
 
 rather than using a single notion of “similarity.”
 

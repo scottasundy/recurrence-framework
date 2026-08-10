@@ -10,17 +10,17 @@ A raw mathematical description can contain more distinctions than a particular o
 
 For a complete state `x` and deterministic evolution `F`:
 
-\[
+```math
 F^T x=x
-\]
+```
 
 is exact complete-state recurrence.
 
 For a declared predictive-equivalence relation `~_A`:
 
-\[
+```math
 F^T x\sim_A x
-\]
+```
 
 is predictive recurrence relative to protocol family `A`.
 
@@ -28,7 +28,7 @@ For a restricted observer family `O`, observer recurrence can therefore occur ev
 
 With nested protocol families the logical direction is:
 
-\[
+```math
 \text{exact complete-state recurrence}
 \Rightarrow
 \text{full-theory predictive recurrence}
@@ -36,7 +36,7 @@ With nested protocol families the logical direction is:
 \text{causal-patch recurrence}
 \Rightarrow
 \text{observer recurrence},
-\]
+```
 
 while the reverse implications need not hold.
 
@@ -44,21 +44,21 @@ while the reverse implications need not hold.
 
 For a family of physically admitted protocols `A`, define the total prediction map
 
-\[
+```math
 \mathcal R_A(x)=\bigl(P_\pi(\cdot\mid x)\bigr)_{\pi\in A}.
-\]
+```
 
 Two descriptions are predictively equivalent when this entire map agrees:
 
-\[
+```math
 x\sim_Ax'\iff\mathcal R_A(x)=\mathcal R_A(x').
-\]
+```
 
 The quotient
 
-\[
+```math
 Q_A=X/{\sim_A}
-\]
+```
 
 is the coarsest deterministic representation sufficient to retain every prediction in `A`.
 
@@ -68,12 +68,12 @@ This is a mathematical statement about predictive sufficiency. It does not, by i
 
 The sharp operational criterion is:
 
-\[
+```math
 [x]_A\ne[x']_A
 \iff
 \exists\pi\in A:
 P_\pi(\cdot\mid x)\ne P_\pi(\cdot\mid x').
-\]
+```
 
 So a descriptive difference survives the physical prediction map exactly when at least one admitted physical protocol can make it matter to a record distribution.
 
@@ -192,9 +192,9 @@ The far-future branch and microscopic theory dominate the uncertainty.
 
 The repository can calculate conditional recurrence-related quantities under specific assumptions. It cannot currently construct the full cosmic predictive quotient because the required ingredients are not known at the necessary level:
 
-\[
-(X_{\rm cosmic},F_{\rm cosmic},\Pi_{\rm cosmic}).
-\]
+```math
+(X_\mathrm{cosmic},F_\mathrm{cosmic},\Pi_\mathrm{cosmic}).
+```
 
 As a result, the theory-agnostic recurrence probability remains non-identified. The `[0,1]` interval is not a probability estimate; it is a statement that the chosen unrestricted theory class leaves the target unconstrained by the present input set.
 

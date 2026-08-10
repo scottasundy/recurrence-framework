@@ -10,22 +10,22 @@ projective space after global phase is removed.
 
 For a time-independent Hamiltonian,
 
-\[
+```math
 \lvert\psi(t)\rangle
  = \sum_n c_n e^{-iE_nt/\hbar}\lvert E_n\rangle .
-\]
+```
 
-Physical exact recurrence at time \(T\) means
+Physical exact recurrence at time $T$ means
 
-\[
+```math
 \lvert\psi(T)\rangle=e^{i\phi}\lvert\psi(0)\rangle .
-\]
+```
 
 For each pair of occupied energy levels,
 
-\[
+```math
 \frac{(E_n-E_m)T}{\hbar}\in 2\pi\mathbb Z .
-\]
+```
 
 Exact recurrence therefore requires commensurate relevant energy gaps.
 Generic incommensurate gaps do not produce an exact positive return.

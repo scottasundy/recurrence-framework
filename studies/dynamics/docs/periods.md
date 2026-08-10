@@ -5,10 +5,10 @@ reduction, and phase navigation to the Recurrence Dynamics Framework.
 
 The organizing chain is:
 
-\[
+```math
 \text{state}\rightarrow\text{invariants}\rightarrow\text{fiber}\rightarrow
 \text{cycle}\rightarrow\text{phase}.
-\]
+```
 
 All results here concern the finite reversible HPP lattice gas. They do not
 claim that the physical universe is finite, exactly recurrent, or HPP-like.
@@ -17,52 +17,52 @@ claim that the physical universe is finite, exactly recurrent, or HPP-like.
 
 ### Scalar transport clock
 
-For an \(L\times L\) torus,
+For an $L\times L$ torus,
 
-\[
+```math
 \Phi(X)=\sum_E x-\sum_W x-\sum_N y+\sum_S y\pmod L.
-\]
+```
 
 Head-on collisions preserve this quantity locally and streaming advances every
 occupied channel by one, so
 
-\[
+```math
 \Phi(FX)=\Phi(X)+N\pmod L.
-\]
+```
 
 Thus every exact recurrence period satisfies
 
-\[
+```math
 NT\equiv0\pmod L,
 \qquad
 \frac{L}{\gcd(N,L)}\mid T.
-\]
+```
 
 ### Four diagonal-species clocks
 
-The local species \(E+N\), \(E+S\), \(W+N\), and \(W+S\) are each preserved by
+The local species $E+N$, $E+S$, $W+N$, and $W+S$ are each preserved by
 the head-on collision. Their histograms on coordinates
 
-\[
+```math
 x-y,\ x+y,\ -x-y,\ -x+y \pmod L
-\]
+```
 
 rotate rigidly by one bin per update. If their joint rotational period is
-\(g\), then \(g\mid T\), and the present state supplies phase modulo \(g\).
+$g$, then $g\mid T$, and the present state supplies phase modulo $g$.
 
 ### Exact line momenta
 
 Horizontal momentum in each row,
 
-\[
+```math
 P_x(y)=\sum_x(n_E-n_W),
-\]
+```
 
 and vertical momentum in each column,
 
-\[
+```math
 P_y(x)=\sum_y(n_S-n_N),
-\]
+```
 
 are conserved by every HPP update.
 
@@ -73,20 +73,20 @@ update. Any nonzero mode forces an even recurrence period.
 
 ## Interaction-fiber decomposition
 
-After \(g\) updates, the diagonal histograms return. The macro-map
+After $g$ updates, the diagonal histograms return. The macro-map
 
-\[
+```math
 G=F^g
-\]
+```
 
 is therefore confined to the set of states with the reference diagonal
 histograms and line momenta. We call this the **interaction fiber**.
 
-If the \(G\)-cycle has length \(\tau\),
+If the $G$-cycle has length $\tau$,
 
-\[
+```math
 T=g\tau.
-\]
+```
 
 This is the main simplification of the framework: transport/geometry is separated from
 the remaining nonlinear interaction cycle.
@@ -96,9 +96,9 @@ the remaining nonlinear interaction cycle.
 The four-particle zero-momentum sector contains 9,153 states and 2,061 cycles.
 Only periods
 
-\[
+```math
 3,6,9,12
-\]
+```
 
 occur. Six consecutive active-collision counts determine the exact period
 class for all 9,153 states; five counts leave 1,800 states ambiguous.
@@ -108,9 +108,9 @@ class for all 9,153 states; five counts leave 1,800 states ambiguous.
 The four-particle zero-momentum sector contains 94,336 states and 19,448
 cycles. Only
 
-\[
+```math
 2,4,6,8,12,20,28
-\]
+```
 
 occur.
 
@@ -121,8 +121,8 @@ Under site-density observation, the number of period-ambiguous states falls:
 - 3 frames: 128
 - 4 frames: 0
 
-The diagonal-histogram period is \(g=4\) for 93,312 states and \(g=2\) for
-1,024 states, with zero violations of \(g\mid T\).
+The diagonal-histogram period is $g=4$ for 93,312 states and $g=2$ for
+1,024 states, with zero violations of $g\mid T$.
 
 Exact diagonal histograms plus line momenta split the sector into 58,758
 interaction fibers. 45,536 fibers, containing 51,648 states
@@ -132,31 +132,31 @@ interaction fibers. 45,536 fibers, containing 51,648 states
 
 The existing seeded sweep contains a 5x5, 14-particle, zero-momentum state with
 
-\[
+```math
 T=9705,\qquad g=5,\qquad \tau=1941.
-\]
+```
 
 The full 5x5, 14-particle, zero-momentum sector contains exactly
 
-\[
+```math
 2,240,809,149,480,000
-\]
+```
 
 complete states. The reference diagonal histograms and line momenta reduce
 that sector to only 2,209 compatible states.
 
-The 2,209-state fiber decomposes under \(G=F^5\) into exactly 17 cycles:
+The 2,209-state fiber decomposes under $G=F^5$ into exactly 17 cycles:
 
-\[
+```math
 1941,46,45,44,28,18,14,14,10,9,8,8,7,5,5,4,3.
-\]
+```
 
 The reference lies on the 1,941-state macrocycle. The invariant fiber therefore
 gives the pre-traversal bound
 
-\[
+```math
 T\le 5\times2209=11045.
-\]
+```
 
 ### Short observation inside the fiber
 
@@ -175,7 +175,7 @@ Across all 2,209 fiber states:
 
 ## Phase navigation and sensor reduction
 
-Once \(T\) is known, the histogram residue plus reversibility locates exact
+Once $T$ is known, the histogram residue plus reversibility locates exact
 phase without storing a complete orbit atlas. It is constant-memory navigation,
 not generic fast-forwarding.
 
@@ -194,9 +194,9 @@ The sensor counts are greedy upper bounds, not proofs of global minimality.
 
 The known diagonal-histogram and line-momentum coefficient vectors span 27
 independent linear invariants. A deterministic 80-state finite-field witness
-produces difference vectors \(F^5(X)-X\) of rank 73 modulo 1,000,003. A
+produces difference vectors $F^5(X)-X$ of rank 73 modulo 1,000,003. A
 nonzero minor modulo a prime is nonzero over the rationals, so any universal
-rational/real linear invariant space has dimension at most \(100-73=27\).
+rational/real linear invariant space has dimension at most $100-73=27$.
 Therefore the known family exhausts the universal **linear** invariant space.
 
 This does not rule out nonlinear invariants.
@@ -211,9 +211,9 @@ The optional regression analysis uses only the first 30 updates of collision
 and step-Hamming history plus simple initial/summary features. Five-fold
 cross-validation on the committed sample gives approximately:
 
-- \(R^2=0.724\) for \(\log_{10}T\);
-- median multiplicative error about \(2.17\times\);
-- 90th-percentile multiplicative error about \(9.16\times\).
+- $R^2=0.724$ for $\log_{10}T$;
+- median multiplicative error about $2.17\times$;
+- 90th-percentile multiplicative error about $9.16\times$.
 
 This is empirical period-scale prediction, not exact prediction and not a
 universal law.

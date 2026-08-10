@@ -36,11 +36,11 @@
 
 The generalized protocol-family construction defines
 
-\[
+```math
 \mathcal R_A(x)=\bigl(P_\pi(\cdot\mid x)\bigr)_{\pi\in A},
 \qquad
 x\sim_Ax'\iff\mathcal R_A(x)=\mathcal R_A(x').
-\]
+```
 
 The quotient `Q_A` is the coarsest deterministic representation sufficient for every declared prediction in `A`, up to predictive isomorphism. If `A subseteq B`, the richer family can only refine classes. The construction is operational and theory-relative; it does not prove that predictive equivalence is ontological identity.
 
@@ -113,7 +113,7 @@ These numbers are **not measured ultimate-fate probabilities**. The repository a
 | Trials initially identical in density | 150 / 150 | deterministic experiments |
 | Trials density-distinguishable after one update | 150 / 150 | deterministic experiments |
 | Irrational torus exact positive recurrence | none | analytic proof |
-| First listed return below \(10^{-6}\) | 470,832 | continued-fraction computation |
+| First listed return below $10^{-6}$ | 470,832 | continued-fraction computation |
 | Human-observer recurrence threshold | not identified | requires physical observer model |
 
 The paired HPP result and the perturbation result deliberately point in opposite directions. A microscopic difference can be completely invisible forever under one observation map, or it can be invisible now and observable one step later. The magnitude of a state mismatch alone therefore does not determine observer distinguishability.
