@@ -8,9 +8,9 @@ This study asks:
 
 Current cosmological observations do **not** identify a unique unconditional probability that our universe will recur. If far-future model probabilities and microscopic recurrence assumptions are left unrestricted, the data-only marginalized probability is only partially identified:
 
-$$
+```math
 P(\mathrm{recurrence}\mid D,\mathrm{unrestricted\ future\ theory})\in[0,1].
-$$
+```
 
 Because this interval is the full logical probability range, it should be read as a **non-identifiability result**, not as an informative probability estimate, a uniform distribution, or a 50/50 statement. The substantive result is the explicit decomposition of the observational and theoretical assumptions that would have to be supplied to narrow it.
 

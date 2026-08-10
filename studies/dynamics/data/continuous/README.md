@@ -19,9 +19,9 @@ paired trajectories.
 
 For
 
-$$
+```math
 q(t)=(t,\sqrt{2}\,t)\pmod 1,
-$$
+```
 
 exact recurrence at $T>0$ would require both $T$ and $\sqrt{2}T$ to be
 integers, which is impossible. Continued-fraction convergents to $\sqrt{2}$

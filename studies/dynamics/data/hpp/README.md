@@ -12,9 +12,9 @@ The density observation records the particle count at each site and discards vel
 
 The full `3x3` sector with exactly four particles and total momentum `(0,0)` contains 9,153 complete microstates. Sitewise density produces the exact refinement sequence
 
-$$
+```math
 (495, 6948, 9090, 9126, 9126).
-$$
+```
 
 The stable predictive quotient contains:
 
@@ -26,9 +26,9 @@ An ambiguous state is a complete velocity-channel microstate in one of those dou
 
 The exceptional count decomposes as
 
-$$
+```math
 54=18\times3=9\times2\times3.
-$$
+```
 
 - `18 x 3`: 54 states on 18 disjoint microscopic cycles of least period 3.
 - `9 x 2 x 3`: 9 density movies, 2 microscopic time orientations per movie, and 3 aligned phases.
@@ -44,9 +44,9 @@ The exhaustive stable partition contains no additional nonsingleton class, so no
 
 Each exceptional complete future-density record is compatible with exactly two microscopic trajectories under the uniform sector prior. Conditioned on the exceptional set, the residual uncertainty is one bit. Averaged over all 9,153 sector states, it is
 
-$$
+```math
 \frac{54}{9153}\log_2 2\approx0.00590\text{ bits}.
-$$
+```
 
 This does not mean that density generally loses one bit.
 

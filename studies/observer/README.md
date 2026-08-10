@@ -10,7 +10,7 @@ It does not assign a guessed “human similarity percentage.” Instead, it comp
 
 For an observer $O$ with physically accessible protocols $\Pi_O$, define
 
-$$
+```math
 d_O(x,x')
 =
 \sup_{\pi\in\Pi_O}
@@ -18,13 +18,13 @@ d_O(x,x')
 \left[
 P_\pi(\cdot|x),P_\pi(\cdot|x')
 \right].
-$$
+```
 
 An observer-indistinguishable return at tolerance $\varepsilon_O$ satisfies
 
-$$
+```math
 d_O(F^T x,x)\leq\varepsilon_O.
-$$
+```
 
 This is weaker than exact state equality and stronger than vague visual similarity.
 
@@ -43,17 +43,17 @@ The exact $3\times3$ HPP certificate contains **27 predictive doubletons / 54 mi
 
 For the declared density observer:
 
-$$
+```math
 d_O=0
-$$
+```
 
 while the microscopic states are unequal.
 
 Under an equal prior within one doubleton, the unresolved microscopic information is exactly
 
-$$
+```math
 \log_2 2=1\ \text{bit}.
-$$
+```
 
 ### Hidden now, visible one step later
 
@@ -65,9 +65,9 @@ This is the complementary result: microscopic mismatch can be either permanently
 
 For the irrational torus flow
 
-$$
+```math
 q(t)=(t,\sqrt2\,t)\pmod1,
-$$
+```
 
 there is no exact positive recurrence. The bundled continued-fraction returns nevertheless cross increasingly strict finite observer tolerances:
 
@@ -86,9 +86,9 @@ Thus every finite threshold in this table eventually declares a practical return
 
 For quantum states with trace distance $D$, the optimal equal-prior one-shot discrimination probability is
 
-$$
+```math
 P_{\rm correct}=\frac{1+D}{2}.
-$$
+```
 
 A trace distance $D=10^{-6}$, for example, gives only $50.00005\%$ optimal single-shot identification success.
 
@@ -106,9 +106,9 @@ This does not by itself produce a cosmic recurrence time. A cosmological applica
 
 The quantity most relevant to a returned human observer is not a bare global norm. A future study should jointly estimate
 
-$$
+```math
 d_X,\qquad d_O,\qquad \tau_{\rm detect},
-$$
+```
 
 where:
 
@@ -118,8 +118,8 @@ where:
 
 The especially interesting regime is
 
-$$
+```math
 d_X>0,\quad d_O\approx0,\quad \tau_{\rm detect}>H_O,
-$$
+```
 
 where the universe is not exactly identical but no difference becomes available to the observer during the observer’s accessible future.
