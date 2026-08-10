@@ -80,7 +80,7 @@ The quotient is canonically isomorphic to the image of the prediction map:
 
 ```math
 \boxed{
-Q_A\cong\mathrm{Im}\mathcal R_A.
+Q_A\cong{Im}\mathcal R_A.
 }
 ```
 
@@ -169,7 +169,7 @@ For a declared family $A$, define
 \delta_A(x,x')
 =
 \sup_{\pi\in A}
-\mathrm{TV}
+{TV}
 \left[
 P_\pi(\cdot\mid x),
 P_\pi(\cdot\mid x')
@@ -559,7 +559,7 @@ A cosmic predictive quotient can be defined formally only relative to a
 candidate theory that supplies enough of:
 
 ```math
-(X_\mathrm{cosmic},F_\mathrm{cosmic},\Pi_\mathrm{cosmic})
+(X_{cosmic},F_{cosmic},\Pi_{cosmic})
 ```
 
 to specify the relevant state descriptions, dynamics, and physically admissible

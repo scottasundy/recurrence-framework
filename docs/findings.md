@@ -65,7 +65,7 @@
 20. **[THEOREM] Predictive quotient**
     ```math
     Q_A=X/{\sim_A}
-    \cong \mathrm{Im}\mathcal R_A.
+    \cong {Im}\mathcal R_A.
     ```
 21. **[THEOREM] Difference criterion**
     ```math
@@ -81,7 +81,7 @@
     \delta_A(x,x')
     =
     \sup_{\pi\in A}
-    \mathrm{TV}\!\left[P_\pi(\cdot|x),P_\pi(\cdot|x')\right]
+    {TV}\!\left[P_\pi(\cdot|x),P_\pi(\cdot|x')\right]
     ```
     has zero set exactly $\sim_A$.
 25. **[AUDIT] Keep $\delta_A$ separate from deterministic trajectory discrepancy**
@@ -295,7 +295,7 @@
 92. **[THEOREM/LOGICAL] No experiment internal to a theory can identify a variable defined never to influence any permitted record.
 93. **[METAPHYSICAL] Minimal physical realism adopts
     ```math
-    \Omega_\mathrm{physical}\cong Q_T.
+    \Omega_{physical}\cong Q_T.
     ```
 94. **[METAPHYSICAL] Surplus realism permits a many-to-one ontology over $Q_T$.
 95. **[METAPHYSICAL] Instrumentalism can remain silent about deeper ontology and use only the predictive structure.
@@ -328,7 +328,7 @@
 108. **[AUDIT] Do not overclaim equality of numerical coordinate recurrence times under arbitrary relativistic/reference-frame reparameterizations; preserve the structural return claim.
 109. **[CONDITIONAL] A cosmic predictive quotient is conceptually definable only relative to a theory specifying enough of
     ```math
-    (X_\mathrm{cosmic},F_\mathrm{cosmic},\Pi_\mathrm{cosmic}).
+    (X_{cosmic},F_{cosmic},\Pi_{cosmic}).
     ```
 110. **[CURRENT BOUNDARY] The actual cosmic predictive quotient is presently not constructible because those fundamental ingredients are not known at the necessary level.
 111. **[DERIVED] The predictive-quotient framework does not itself create a cosmic recurrence mechanism; asymptotic future physics still decides whether a return structure exists.
@@ -402,14 +402,14 @@
     H_\Lambda^{-1}=17.2105\ \text{Gyr},
     ```
     ```math
-    r_\mathrm{dS}=1.62824\times10^{26}\ \text{m},
+    r_{dS}=1.62824\times10^{26}\ \text{m},
     ```
     ```math
-    S_\mathrm{dS}/k_B=3.18835\times10^{122}.
+    S_{dS}/k_B=3.18835\times10^{122}.
     ```
 136. **[CONDITIONAL] Entropy-exponential recurrence scale
     ```math
-    t_\mathrm{thermo}\sim H_\Lambda^{-1}e^{S_\mathrm{dS}/k_B}
+    t_{thermo}\sim H_\Lambda^{-1}e^{S_{dS}/k_B}
     ```
     is a conditional thermodynamic estimate, not a demonstrated quantum recurrence time.
 137. **[EXACT NUMERICAL CHECK] Equal-prior conversion of $\ln B=-0.57$ gives approximately 63.9% / 36.1% weights for the declared two-model comparison.

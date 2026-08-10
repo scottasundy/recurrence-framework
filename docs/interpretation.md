@@ -259,7 +259,7 @@ Microscopic mismatch alone does not determine whether a recurrence matters to an
 Define
 
 ```math
-\tau_{\mathrm{detect}}
+\tau_{{detect}}
 =
 \inf
 \left\{
@@ -273,7 +273,7 @@ Three qualitatively different situations follow.
 ### Immediate divergence
 
 ```math
-\tau_{\mathrm{detect}}\approx0.
+\tau_{{detect}}\approx0.
 ```
 
 The recurrence only looks correct momentarily.
@@ -281,7 +281,7 @@ The recurrence only looks correct momentarily.
 ### Hidden for the observer's lifetime
 
 ```math
-\tau_{\mathrm{detect}}>L_O.
+\tau_{{detect}}>L_O.
 ```
 
 The physical mismatch exists but is never experienced by that observer.
@@ -289,7 +289,7 @@ The physical mismatch exists but is never experienced by that observer.
 ### Permanent predictive equivalence
 
 ```math
-\tau_{\mathrm{detect}}=\infty.
+\tau_{{detect}}=\infty.
 ```
 
 The states remain observably equivalent indefinitely under the declared observation.
@@ -299,7 +299,7 @@ The HPP results demonstrate that both very short and infinite detection times ar
 This suggests that recurrence studies should report at least:
 
 ```math
-(d_X,\;d_O,\;\tau_{\mathrm{detect}})
+(d_X,\;d_O,\;\tau_{{detect}})
 ```
 
 rather than using a single notion of “similarity.”

@@ -193,7 +193,7 @@ The far-future branch and microscopic theory dominate the uncertainty.
 The repository can calculate conditional recurrence-related quantities under specific assumptions. It cannot currently construct the full cosmic predictive quotient because the required ingredients are not known at the necessary level:
 
 ```math
-(X_\mathrm{cosmic},F_\mathrm{cosmic},\Pi_\mathrm{cosmic}).
+(X_{cosmic},F_{cosmic},\Pi_{cosmic}).
 ```
 
 As a result, the theory-agnostic recurrence probability remains non-identified. The `[0,1]` interval is not a probability estimate; it is a statement that the chosen unrestricted theory class leaves the target unconstrained by the present input set.

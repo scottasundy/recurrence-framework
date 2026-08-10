@@ -257,14 +257,14 @@ Define the observer-relative operational distance
 d_O(x,x')
 =
 \sup_{\pi\in\Pi_O}
-\mathrm{TV}
+{TV}
 \left[
 P_\pi(\cdot\mid x),
 P_\pi(\cdot\mid x')
 \right],
 ```
 
-where $\mathrm{TV}$ is total-variation distance and $\Pi_O$ is the set of physically available observation protocols.
+where ${TV}$ is total-variation distance and $\Pi_O$ is the set of physically available observation protocols.
 
 Then an **observer-indistinguishable recurrence** at tolerance $\varepsilon_O$ occurs when
 
@@ -463,7 +463,7 @@ D(\rho,\sigma)
 Trace distance has a direct operational meaning. With equal prior probability and the best physically allowed single measurement, the maximum probability of correctly identifying which state was supplied is
 
 ```math
-P_\mathrm{correct}
+P_{correct}
 =
 \frac{1+D}{2}.
 ```
@@ -584,7 +584,7 @@ The predictive quotient is
 ```math
 Q_A=X/{\sim_A}
 \cong
-\mathrm{Im}\mathcal R_A.
+{Im}\mathcal R_A.
 ```
 
 This construction unifies deterministic future-observation quotients, restricted observer quotients, finite-horizon quotients, causal-region quotients, noisy classical measurements, and quantum measurement families. It is explicitly **prediction-relative**, not an assertion about ultimate ontology.
@@ -602,7 +602,7 @@ For probabilistic records, define
 ```math
 \delta_A(x,x')=
 \sup_{\pi\in A}
-\mathrm{TV}
+{TV}
 \left[P_\pi(\cdot\mid x),P_\pi(\cdot\mid x')\right].
 ```
 
@@ -744,7 +744,7 @@ Inside each exceptional predictive doubleton, the complete density future leaves
 Under an equal prior within that pair, the unresolved microscopic information is
 
 ```math
-\log_2 2=1\ \mathrm{bit}.
+\log_2 2=1\ {bit}.
 ```
 
 The observer can know the entire future density movie and still be unable to recover that one microscopic binary distinction.
@@ -1056,7 +1056,7 @@ Define
 \right)^2.
 ```
 
-A practical recurrence criterion can be declared by choosing a detection threshold $\chi_\mathrm{crit}^2$.
+A practical recurrence criterion can be declared by choosing a detection threshold $\chi_{crit}^2$.
 
 This is not a universal definition of identity. It is a transparent way to say:
 
@@ -1067,7 +1067,7 @@ This is not a universal definition of identity. It is a transparent way to say:
 When measurements are stochastic, use total-variation distance:
 
 ```math
-d_\mathrm{TV}(P,Q)
+d_{TV}(P,Q)
 =
 \frac12\sum_y |P(y)-Q(y)|
 ```
@@ -1080,7 +1080,7 @@ Then define the strongest available observer test:
 d_O(x,x')
 =
 \sup_{\pi\in\Pi_O}
-d_\mathrm{TV}
+d_{TV}
 \left(
 P_\pi(\cdot|x),
 P_\pi(\cdot|x')
@@ -1141,15 +1141,15 @@ It asks whether the returned world would be physically and experientially indist
 A useful future study would calculate a ladder such as:
 
 ```math
-\varepsilon_\mathrm{exact}=0
+\varepsilon_{exact}=0
 <
-\varepsilon_\mathrm{quantum}
+\varepsilon_{quantum}
 <
-\varepsilon_\mathrm{instrument}
+\varepsilon_{instrument}
 <
-\varepsilon_\mathrm{human}
+\varepsilon_{human}
 <
-\varepsilon_\mathrm{biographical}.
+\varepsilon_{biographical}.
 ```
 
 Each level would correspond to a different recurrence claim:
@@ -1206,7 +1206,7 @@ d_O
 ```
 
 ```math
-\tau_\mathrm{divergence}
+\tau_{divergence}
 \quad\text{time until the mismatch becomes detectable}.
 ```
 
@@ -1217,7 +1217,7 @@ d_X>0,
 \qquad
 d_O\approx0,
 \qquad
-\tau_\mathrm{divergence}>H_\mathrm{observer}.
+\tau_{divergence}>H_{observer}.
 ```
 
 In that regime the universe is not exactly the same, but it is functionally indistinguishable to that observer for the observer’s entire accessible future.
@@ -1229,7 +1229,7 @@ d_X>0,
 \qquad
 d_O=0,
 \qquad
-\tau_\mathrm{divergence}=\infty
+\tau_{divergence}=\infty
 ```
 
 for the selected observation.
@@ -1254,7 +1254,7 @@ Define
 \Phi_C
 =
 \frac{2}{\pi}
-\tan^{-1}\left(\frac{\rho_\mathrm{DE}}{\rho_m}\right).
+\tan^{-1}\left(\frac{\rho_{DE}}{\rho_m}\right).
 ```
 
 Then
@@ -1286,7 +1286,7 @@ The reference macrostates are:
 Using the declared flat matter-plus-$\Lambda$ reference values
 
 ```math
-H_0=68.11\ \mathrm{km\,s^{-1}\,Mpc^{-1}},
+H_0=68.11\ {km\,s^{-1}\,Mpc^{-1}},
 ```
 
 ```math
@@ -1304,7 +1304,7 @@ the present reference coordinate is
 The reference cosmic age is
 
 ```math
-13.787\ \mathrm{Gyr}.
+13.787\ {Gyr}.
 ```
 
 ## 13.4 Reference clock equations
@@ -1334,7 +1334,7 @@ The late-time analytic age relation is
 t(\Phi_C)
 =
 \frac{2}{3H_0\sqrt{\Omega_{\Lambda0}}}
-\mathrm{asinh}
+{asinh}
 \left[
 \sqrt{
 \tan\left(\frac{\pi\Phi_C}{2}\right)
@@ -1419,7 +1419,7 @@ H_0\sqrt{\Omega_\Lambda}.
 The de Sitter horizon radius is
 
 ```math
-r_\mathrm{dS}
+r_{dS}
 =
 \frac{c}{H_\Lambda},
 ```
@@ -1427,23 +1427,23 @@ r_\mathrm{dS}
 and the Gibbons-Hawking horizon entropy is
 
 ```math
-\frac{S_\mathrm{dS}}{k_B}
+\frac{S_{dS}}{k_B}
 =
-\frac{\pi r_\mathrm{dS}^2}{\ell_P^2}.
+\frac{\pi r_{dS}^2}{\ell_P^2}.
 ```
 
 At the declared reference point:
 
 ```math
-H_\Lambda^{-1}=17.2105\ \mathrm{Gyr},
+H_\Lambda^{-1}=17.2105\ {Gyr},
 ```
 
 ```math
-r_\mathrm{dS}=1.6282\times10^{26}\ \mathrm{m},
+r_{dS}=1.6282\times10^{26}\ {m},
 ```
 
 ```math
-\frac{S_\mathrm{dS}}{k_B}
+\frac{S_{dS}}{k_B}
 =
 3.18835\times10^{122}.
 ```
@@ -1451,16 +1451,16 @@ r_\mathrm{dS}=1.6282\times10^{26}\ \mathrm{m},
 A conventional entropy-exponential thermodynamic recurrence scale is
 
 ```math
-t_\mathrm{thermo}
+t_{thermo}
 \sim
 H_\Lambda^{-1}
-\exp(S_\mathrm{dS}/k_B).
+\exp(S_{dS}/k_B).
 ```
 
 It is more useful to report its logarithm:
 
 ```math
-\log_{10}\left(\frac{t_\mathrm{thermo}}\mathrm{yr}\right)
+\log_{10}\left(\frac{t_{thermo}}{yr}\right)
 =
 1.38468\times10^{122}.
 ```
@@ -1468,9 +1468,9 @@ It is more useful to report its logarithm:
 Symbolically,
 
 ```math
-t_\mathrm{thermo}
+t_{thermo}
 \sim
-10^{\,1.38468\times10^{122}}\ \mathrm{years}.
+10^{\,1.38468\times10^{122}}\ {years}.
 ```
 
 This number is not a universal countdown.
@@ -1515,8 +1515,8 @@ Under a simple independent constant-hazard model,
 ```math
 P(\text{recurrence before decay})
 =
-\frac{\tau_\mathrm{decay}}
-{\tau_\mathrm{decay}+t_\mathrm{rec}}.
+\frac{\tau_{decay}}
+{\tau_{decay}+t_{rec}}.
 ```
 
 Because a thermodynamic recurrence time can be entropy-exponentially large, a vacuum lifetime that appears immense on ordinary astrophysical scales may still be tiny relative to the recurrence scale.
@@ -1541,7 +1541,7 @@ the standard late-time approximation gives a finite remaining proper time
 \Delta t
 \approx
 \frac{2}
-{3|1+w|H_0\sqrt{\Omega_\mathrm{DE}}}.
+{3|1+w|H_0\sqrt{\Omega_{DE}}}.
 ```
 
 At the declared reference cosmology:
@@ -1714,8 +1714,8 @@ A representative propagation gives:
 | $H_0$ (km s$^{-1}$ Mpc$^{-1}$) | 68.1728 | [67.6174, 68.7181] |
 | $\Omega_m$ | 0.302655 | [0.295669, 0.309883] |
 | $H_\Lambda^{-1}$ (Gyr) | 17.1758 | [16.9552, 17.4050] |
-| $S_\mathrm{dS}/k_B$ | $3.17551\times10^{122}$ | $[3.09448,3.26082]\times10^{122}$ |
-| $\log_{10}(t_\mathrm{thermo}/\mathrm{yr})$ | $1.37911\times10^{122}$ | $[1.34391,1.41616]\times10^{122}$ |
+| $S_{dS}/k_B$ | $3.17551\times10^{122}$ | $[3.09448,3.26082]\times10^{122}$ |
+| $\log_{10}(t_{thermo}/{yr})$ | $1.37911\times10^{122}$ | $[1.34391,1.41616]\times10^{122}$ |
 
 The main lesson is scale separation:
 
@@ -1767,22 +1767,22 @@ They should not be reported as measured probabilities.
 
 ## 22.5 Finite-horizon rare-event probability
 
-If a recurrence process is modeled as a stationary rare event with mean wait $t_\mathrm{rec}$,
+If a recurrence process is modeled as a stationary rare event with mean wait $t_{rec}$,
 
 ```math
-P(T)=1-e^{-T/t_\mathrm{rec}}.
+P(T)=1-e^{-T/t_{rec}}.
 ```
 
 For
 
 ```math
-T\ll t_\mathrm{rec},
+T\ll t_{rec},
 ```
 
 ```math
 \log_{10}P
 \approx
-\log_{10}T-\log_{10}t_\mathrm{rec}.
+\log_{10}T-\log_{10}t_{rec}.
 ```
 
 When the recurrence exponent is of order $10^{122}$, ordinary floating-point presentation can erase differences between finite horizons. High-precision arithmetic is required even for the numerical bookkeeping.
@@ -1987,7 +1987,7 @@ Whether the two experiences remain the same depends on the divergence time.
 Define
 
 ```math
-\tau_\mathrm{detect}
+\tau_{detect}
 =
 \inf
 \left\{
@@ -1998,9 +1998,9 @@ d_O(F^{T+t}x,F^t x)>\varepsilon_O
 
 Then:
 
-- if $\tau_\mathrm{detect}$ is short, the worlds quickly become observably different;
-- if $\tau_\mathrm{detect}$ exceeds the observer’s lifetime, the mismatch is never experienced;
-- if $\tau_\mathrm{detect}=\infty$, the states are predictively equivalent for that observer despite microscopic difference.
+- if $\tau_{detect}$ is short, the worlds quickly become observably different;
+- if $\tau_{detect}$ exceeds the observer’s lifetime, the mismatch is never experienced;
+- if $\tau_{detect}=\infty$, the states are predictively equivalent for that observer despite microscopic difference.
 
 This quantity may be more relevant to lived recurrence than exact global equality.
 
@@ -2204,7 +2204,7 @@ d_X,
 \qquad
 d_O,
 \qquad
-\tau_\mathrm{detect}.
+\tau_{detect}.
 ```
 
 This would directly study “not exactly the same, but indistinguishable to us.”
@@ -2216,7 +2216,7 @@ For controlled deterministic systems:
 - generate states at known microscopic distances;
 - evolve both states;
 - measure when different observer maps first separate;
-- estimate the distribution of $\tau_\mathrm{detect}$;
+- estimate the distribution of $\tau_{detect}$;
 - identify perturbations that remain permanently hidden.
 
 This can distinguish harmless mismatch from dynamically amplified mismatch.
@@ -2313,7 +2313,7 @@ The complete framework can be summarized in the following statements.
 
 5. **The practical recurrence threshold is observer-relative.** What matters to an observer is not only microscopic state distance but whether any accessible measurement can distinguish the states.
 
-6. **A useful observer recurrence calculation requires three quantities:** microscopic mismatch $d_X$, observer mismatch $d_O$, and detection/divergence time $\tau_\mathrm{detect}$.
+6. **A useful observer recurrence calculation requires three quantities:** microscopic mismatch $d_X$, observer mismatch $d_O$, and detection/divergence time $\tau_{detect}$.
 
 7. **Quantum recurrence is spectral.** Exact unitary recurrence requires commensurate occupied energy gaps. Near phase recurrence does not imply exact recurrence.
 
